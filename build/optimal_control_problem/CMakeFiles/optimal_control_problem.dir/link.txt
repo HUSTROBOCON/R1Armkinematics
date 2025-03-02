@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O2 -g -DNDEBUG -shared -Wl,-soname,liboptimal_control_problem.so -o liboptimal_control_problem.so CMakeFiles/optimal_control_problem.dir/src/OptimalControlProblem.cpp.o  -Wl,-rpath,/opt/ros/humble/lib: -lcasadi /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.7.0 /opt/ros/humble/lib/libament_index_cpp.so 

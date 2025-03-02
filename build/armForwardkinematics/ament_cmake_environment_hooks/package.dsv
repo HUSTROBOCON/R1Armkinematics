@@ -1,0 +1,4 @@
+source;share/armForwardkinematics/local_setup.bash
+source;share/armForwardkinematics/local_setup.dsv
+source;share/armForwardkinematics/local_setup.sh
+source;share/armForwardkinematics/local_setup.zsh

@@ -1,0 +1,45 @@
+[0.014s] Invoking command in '/home/xsm/R1_ws/build/armForwardkinematics': CMAKE_PREFIX_PATH=/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/xsm/R1_ws/install/mit_msgs/lib:/home/xsm/R1_ws/install/optimal_control_problem/lib:/home/xsm/R1_ws/install/lock_utils/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia /usr/bin/cmake --build /home/xsm/R1_ws/build/armForwardkinematics -- -j16 -l16
+[0.074s] [35m[1mConsolidate compiler generated dependencies of target pino_armkine_node[0m
+[0.122s] [ 25%] [32mBuilding CXX object CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/FT_method.cpp.o[0m
+[4.904s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:[m[K In member function ‘[01m[KEigen::Matrix3d FT_method::generateM(Eigen::Vector3d)[m[K’:
+[4.905s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:35:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kq1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.905s]    35 |     double [01;35m[Kq1[m[K = q_0(0);
+[4.905s]       |            [01;35m[K^~[m[K
+[4.905s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:[m[K In member function ‘[01m[KEigen::Vector3d FT_method::generateC(Eigen::Vector3d, Eigen::Vector3d)[m[K’:
+[4.905s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:64:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kq1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.906s]    64 |     double [01;35m[Kq1[m[K = q_0(0);
+[4.906s]       |            [01;35m[K^~[m[K
+[4.919s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:[m[K In member function ‘[01m[KMatrixNumd4 FT_method::endTrajectory(float)[m[K’:
+[4.919s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:120:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.919s]   120 |     double [01;35m[Kvx[m[K = k*v_end;
+[4.919s]       |            [01;35m[K^~[m[K
+[4.919s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:121:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvy[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.919s]   121 |     double [01;35m[Kvy[m[K = k*v_end;
+[4.920s]       |            [01;35m[K^~[m[K
+[4.920s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:124:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kt[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.920s]   124 |     double [01;35m[Kt[m[K = 2*v_end/a; // 前半段加速，后半段减速
+[4.920s]       |            [01;35m[K^[m[K
+[4.922s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:[m[K In member function ‘[01m[KEigen::Vector3d FT_method::myinverseKinematics(double, double, int)[m[K’:
+[4.922s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:189:19:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KqLast[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[4.922s]   189 |     static double [01;35m[KqLast[m[K = 0;
+[4.922s]       |                   [01;35m[K^~~~~[m[K
+[4.984s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:[m[K In member function ‘[01m[KEigen::MatrixXd FT_method::computeJacobian(Eigen::Vector3d&)[m[K’:
+[4.984s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:291:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kdq[m[K’ was not declared in this scope; did you mean ‘[01m[Kq[m[K’?
+[4.984s]   291 | (-L3 * sin(q(0) + q(1) + q(2))) * [01;31m[Kdq[m[K(0) + (-L3 * sin(q(0) + q(1) + q(2))) * dq(1) + (-L3 * sin(q(0) + q(1) + q(2))) * dq(2)
+[4.984s]       |                                   [01;31m[K^~[m[K
+[4.984s]       |                                   [32m[Kq[m[K
+[5.060s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:[m[K In member function ‘[01m[KEigen::Vector2d FT_method::trace(const Vector2d&, int, Eigen::Vector2d&)[m[K’:
+[5.060s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:376:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KAccOutput[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[5.060s]   376 |     float [01;35m[KAccOutput[m[K = errorVelPid.PIDcalculate(nowVelocity.norm());
+[5.060s]       |           [01;35m[K^~~~~~~~~[m[K
+[5.060s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:382:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[5.060s]   382 | [01;35m[K}[m[K
+[5.060s]       | [01;35m[K^[m[K
+[5.173s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:[m[K In constructor ‘[01m[KFT_method::FT_method()[m[K’:
+[5.173s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:585:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KH[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[5.174s]   585 |     double [01;35m[KH[m[K = b * x_end - x_end * x_end;
+[5.174s]       |            [01;35m[K^[m[K
+[10.421s] gmake[2]: *** [CMakeFiles/pino_armkine_node.dir/build.make:90：CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/FT_method.cpp.o] 错误 1
+[10.422s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/pino_armkine_node.dir/all] 错误 2
+[10.422s] gmake: *** [Makefile:146：all] 错误 2
+[10.425s] Invoked command in '/home/xsm/R1_ws/build/armForwardkinematics' returned '2': CMAKE_PREFIX_PATH=/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/xsm/R1_ws/install/mit_msgs/lib:/home/xsm/R1_ws/install/optimal_control_problem/lib:/home/xsm/R1_ws/install/lock_utils/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia /usr/bin/cmake --build /home/xsm/R1_ws/build/armForwardkinematics -- -j16 -l16

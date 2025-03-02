@@ -1,0 +1,11 @@
+source;share/lock_utils/hook/cmake_prefix_path.ps1
+source;share/lock_utils/hook/cmake_prefix_path.dsv
+source;share/lock_utils/hook/cmake_prefix_path.sh
+source;share/lock_utils/hook/ld_library_path_lib.ps1
+source;share/lock_utils/hook/ld_library_path_lib.dsv
+source;share/lock_utils/hook/ld_library_path_lib.sh
+source;share/lock_utils/local_setup.bash
+source;share/lock_utils/local_setup.dsv
+source;share/lock_utils/local_setup.ps1
+source;share/lock_utils/local_setup.sh
+source;share/lock_utils/local_setup.zsh

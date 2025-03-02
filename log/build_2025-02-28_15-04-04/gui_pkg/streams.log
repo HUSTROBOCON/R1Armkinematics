@@ -1,0 +1,19 @@
+[0.539s] Invoking command in '/home/xsm/R1_ws/build/gui_pkg': PYTHONPATH=/home/xsm/R1_ws/build/gui_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xsm/R1_ws/install/gui_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/xsm/R1_ws/build/gui_pkg/build --no-deps symlink_data
+[0.734s] running develop
+[0.734s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.734s]   warnings.warn(
+[0.857s] running egg_info
+[0.858s] writing gui_pkg.egg-info/PKG-INFO
+[0.858s] writing dependency_links to gui_pkg.egg-info/dependency_links.txt
+[0.858s] writing entry points to gui_pkg.egg-info/entry_points.txt
+[0.858s] writing requirements to gui_pkg.egg-info/requires.txt
+[0.858s] writing top-level names to gui_pkg.egg-info/top_level.txt
+[0.860s] reading manifest file 'gui_pkg.egg-info/SOURCES.txt'
+[0.860s] writing manifest file 'gui_pkg.egg-info/SOURCES.txt'
+[0.861s] running build_ext
+[0.861s] Creating /home/xsm/R1_ws/install/gui_pkg/lib/python3.10/site-packages/gui-pkg.egg-link (link to .)
+[0.862s] Installing gui_node script to /home/xsm/R1_ws/install/gui_pkg/lib/gui_pkg
+[0.862s] 
+[0.862s] Installed /home/xsm/R1_ws/build/gui_pkg
+[0.862s] running symlink_data
+[0.900s] Invoked command in '/home/xsm/R1_ws/build/gui_pkg' returned '0': PYTHONPATH=/home/xsm/R1_ws/build/gui_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xsm/R1_ws/install/gui_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/xsm/R1_ws/build/gui_pkg/build --no-deps symlink_data

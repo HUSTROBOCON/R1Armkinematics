@@ -1,0 +1,6 @@
+msg/MITJointCommand.idl
+msg/MITJointCommand.msg
+msg/MITJointCommands.idl
+msg/MITJointCommands.msg
+msg/MITLowState.idl
+msg/MITLowState.msg

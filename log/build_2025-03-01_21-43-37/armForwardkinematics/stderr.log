@@ -1,0 +1,36 @@
+[01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:[m[K In member function ‘[01m[KEigen::Matrix3d FT_method::generateM(Eigen::Vector3d)[m[K’:
+[01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:35:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kq1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   35 |     double [01;35m[Kq1[m[K = q_0(0);
+      |            [01;35m[K^~[m[K
+[01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:[m[K In member function ‘[01m[KEigen::Vector3d FT_method::generateC(Eigen::Vector3d, Eigen::Vector3d)[m[K’:
+[01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:64:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kq1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   64 |     double [01;35m[Kq1[m[K = q_0(0);
+      |            [01;35m[K^~[m[K
+[01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:[m[K In member function ‘[01m[KMatrixNumd4 FT_method::endTrajectory(float)[m[K’:
+[01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:120:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  120 |     double [01;35m[Kvx[m[K = k*v_end;
+      |            [01;35m[K^~[m[K
+[01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:121:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvy[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  121 |     double [01;35m[Kvy[m[K = k*v_end;
+      |            [01;35m[K^~[m[K
+[01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:124:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kt[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  124 |     double [01;35m[Kt[m[K = 2*v_end/a; // 前半段加速，后半段减速
+      |            [01;35m[K^[m[K
+[01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:[m[K In member function ‘[01m[KEigen::Vector3d FT_method::myinverseKinematics(double, double, int)[m[K’:
+[01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:189:19:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KqLast[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  189 |     static double [01;35m[KqLast[m[K = 0;
+      |                   [01;35m[K^~~~~[m[K
+[01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:195:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ki0[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  195 |     double [01;35m[Ki0[m[K = double(num)/50.0;
+      |            [01;35m[K^~[m[K
+[01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:[m[K In member function ‘[01m[KEigen::Vector2d FT_method::trace(const Vector2d&, int, Eigen::Vector2d&)[m[K’:
+[01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:385:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KAccOutput[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  385 |     float [01;35m[KAccOutput[m[K = errorVelPid.PIDcalculate(nowVelocity.norm());
+      |           [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:391:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  391 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:[m[K In constructor ‘[01m[KFT_method::FT_method()[m[K’:
+[01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:596:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KH[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  596 |     double [01;35m[KH[m[K = b * x_end - x_end * x_end;
+      |            [01;35m[K^[m[K

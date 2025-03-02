@@ -1,0 +1,1 @@
+/home/xsm/R1_ws/build/mit_msgs/rosidl_generator_py/mit_msgs/msg/_mit_joint_command_s.c

@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/xsm/R1_ws/build/optimal_control_problem",
+  "command": "/usr/bin/c++ -Doptimal_control_problem_EXPORTS -I/home/xsm/R1_ws/src/public/OptimalControlProblem/include -I/usr/include/eigen3 -isystem /opt/ros/humble/include/ament_index_cpp -O2 -g -DNDEBUG -fPIC -o CMakeFiles/optimal_control_problem.dir/src/OptimalControlProblem.cpp.o -c /home/xsm/R1_ws/src/public/OptimalControlProblem/src/OptimalControlProblem.cpp",
+  "file": "/home/xsm/R1_ws/src/public/OptimalControlProblem/src/OptimalControlProblem.cpp"
+}
+]

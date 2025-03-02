@@ -1,0 +1,4 @@
+source;share/arm_dynamics_hw/local_setup.bash
+source;share/arm_dynamics_hw/local_setup.dsv
+source;share/arm_dynamics_hw/local_setup.sh
+source;share/arm_dynamics_hw/local_setup.zsh

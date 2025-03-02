@@ -1,0 +1,3 @@
+[console_scripts]
+gui_node = gui_pkg.gui_node:main
+

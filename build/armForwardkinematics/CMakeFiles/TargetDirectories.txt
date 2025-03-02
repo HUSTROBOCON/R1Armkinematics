@@ -1,0 +1,10 @@
+/home/xsm/R1_ws/build/armForwardkinematics/CMakeFiles/uninstall.dir
+/home/xsm/R1_ws/build/armForwardkinematics/CMakeFiles/armForwardkinematics_uninstall.dir
+/home/xsm/R1_ws/build/armForwardkinematics/CMakeFiles/pino_armkine_node.dir
+/home/xsm/R1_ws/build/armForwardkinematics/CMakeFiles/test.dir
+/home/xsm/R1_ws/build/armForwardkinematics/CMakeFiles/edit_cache.dir
+/home/xsm/R1_ws/build/armForwardkinematics/CMakeFiles/rebuild_cache.dir
+/home/xsm/R1_ws/build/armForwardkinematics/CMakeFiles/list_install_components.dir
+/home/xsm/R1_ws/build/armForwardkinematics/CMakeFiles/install.dir
+/home/xsm/R1_ws/build/armForwardkinematics/CMakeFiles/install/local.dir
+/home/xsm/R1_ws/build/armForwardkinematics/CMakeFiles/install/strip.dir

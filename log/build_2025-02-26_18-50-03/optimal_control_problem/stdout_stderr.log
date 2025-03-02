@@ -1,0 +1,62 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Checking for module 'casadi'
+--   Found casadi, version 3.6.7+
+-- Found ament_index_cpp: 1.4.0 (/opt/ros/humble/share/ament_index_cpp/cmake)
+-- Checking include directories for CASADI
+-- Using CASADI_INCLUDE_DIRS
+-- Checking include directories for Eigen3
+-- Using EIGEN3_INCLUDE_DIRS
+-- Checking include directories for yaml-cpp
+-- No include directories found for yaml-cpp
+-- Checking include directories for ament_index_cpp
+-- No include directories found for ament_index_cpp
+-- Processing target: optimal_control_problem
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/xsm/R1_ws/build/optimal_control_problem
+[ 50%] [32mBuilding CXX object CMakeFiles/optimal_control_problem.dir/src/OptimalControlProblem.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library liboptimal_control_problem.so[0m
+[100%] Built target optimal_control_problem
+-- Install configuration: "RelWithDebInfo"
+-- Execute custom install script
+-- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/environment/library_path.sh
+-- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/environment/library_path.dsv
+-- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/include/optimal_control_problem/OptimalControlProblem.h
+-- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem//code_gen/.gitignore
+-- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem//include/optimal_control_problem/OptimalControlProblem.h
+-- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem//log/.gitignore
+-- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem//log/constraints.csv 
+-- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/ament_index/resource_index/package_run_dependencies/optimal_control_problem
+-- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/ament_index/resource_index/parent_prefix_path/optimal_control_problem
+-- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/environment/path.sh
+-- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/environment/path.dsv
+-- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/local_setup.bash
+-- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/local_setup.sh
+-- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/local_setup.zsh
+-- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/local_setup.dsv
+-- Symlinking: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/package.dsv
+-- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/ament_index/resource_index/packages/optimal_control_problem
+-- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/cmake/optimal_control_problemConfig.cmake
+-- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/cmake/optimal_control_problemConfig-version.cmake
+-- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/package.xml
+-- Installing: /home/xsm/R1_ws/install/optimal_control_problem/lib/liboptimal_control_problem.so
+-- Set runtime path of "/home/xsm/R1_ws/install/optimal_control_problem/lib/liboptimal_control_problem.so" to ""

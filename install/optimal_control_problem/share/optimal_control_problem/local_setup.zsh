@@ -1,0 +1,1 @@
+/home/xsm/R1_ws/build/optimal_control_problem/ament_cmake_environment_hooks/local_setup.zsh

@@ -1,0 +1,8 @@
+{
+  "package_name": "mit_msgs",
+  "non_idl_tuples": [
+    "/home/xsm/R1_ws/src/public/mit_msgs:msg/MITJointCommand.msg",
+    "/home/xsm/R1_ws/src/public/mit_msgs:msg/MITJointCommands.msg",
+    "/home/xsm/R1_ws/src/public/mit_msgs:msg/MITLowState.msg"
+  ]
+}

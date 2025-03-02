@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+gui_pkg/__init__.py
+gui_pkg/gui_node.py
+gui_pkg.egg-info/PKG-INFO
+gui_pkg.egg-info/SOURCES.txt
+gui_pkg.egg-info/dependency_links.txt
+gui_pkg.egg-info/entry_points.txt
+gui_pkg.egg-info/requires.txt
+gui_pkg.egg-info/top_level.txt
+gui_pkg.egg-info/zip-safe
+resource/gui_pkg

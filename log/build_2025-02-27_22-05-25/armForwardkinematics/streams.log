@@ -1,0 +1,61 @@
+[0.014s] Invoking command in '/home/xsm/R1_ws/build/armForwardkinematics': CMAKE_PREFIX_PATH=/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/xsm/R1_ws/install/mit_msgs/lib:/home/xsm/R1_ws/install/optimal_control_problem/lib:/home/xsm/R1_ws/install/lock_utils/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia /usr/bin/cmake --build /home/xsm/R1_ws/build/armForwardkinematics -- -j16 -l16
+[0.071s] [35m[1mConsolidate compiler generated dependencies of target pino_armkine_node[0m
+[0.119s] [ 25%] [32mBuilding CXX object CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/FT_method.cpp.o[0m
+[4.918s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:[m[K In member function ‘[01m[KEigen::Matrix3d FT_method::generateM(Eigen::Vector3d)[m[K’:
+[4.918s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:35:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kq1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.918s]    35 |     double [01;35m[Kq1[m[K = q_0(0);
+[4.918s]       |            [01;35m[K^~[m[K
+[4.918s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:[m[K In member function ‘[01m[KEigen::Vector3d FT_method::generateC(Eigen::Vector3d, Eigen::Vector3d)[m[K’:
+[4.918s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:64:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kq1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.918s]    64 |     double [01;35m[Kq1[m[K = q_0(0);
+[4.918s]       |            [01;35m[K^~[m[K
+[4.931s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:[m[K In member function ‘[01m[KMatrixNumd4 FT_method::endTrajectory(float)[m[K’:
+[4.932s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:120:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.932s]   120 |     double [01;35m[Kvx[m[K = k*v_end;
+[4.932s]       |            [01;35m[K^~[m[K
+[4.932s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:121:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvy[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.932s]   121 |     double [01;35m[Kvy[m[K = k*v_end;
+[4.932s]       |            [01;35m[K^~[m[K
+[4.932s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:124:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kt[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.932s]   124 |     double [01;35m[Kt[m[K = 2*v_end/a; // 前半段加速，后半段减速
+[4.932s]       |            [01;35m[K^[m[K
+[4.934s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:[m[K In member function ‘[01m[KEigen::Vector3d FT_method::myinverseKinematics(double, double, int)[m[K’:
+[4.934s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:189:19:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KqLast[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[4.934s]   189 |     static double [01;35m[KqLast[m[K = 0;
+[4.934s]       |                   [01;35m[K^~~~~[m[K
+[5.066s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:[m[K In member function ‘[01m[KEigen::Vector2d FT_method::trace(const Vector2d&, int, Eigen::Vector2d&)[m[K’:
+[5.066s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:384:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KAccOutput[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[5.066s]   384 |     float [01;35m[KAccOutput[m[K = errorVelPid.PIDcalculate(nowVelocity.norm());
+[5.066s]       |           [01;35m[K^~~~~~~~~[m[K
+[5.066s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:390:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[5.066s]   390 | [01;35m[K}[m[K
+[5.066s]       | [01;35m[K^[m[K
+[5.209s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:[m[K In constructor ‘[01m[KFT_method::FT_method()[m[K’:
+[5.210s] [01m[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:563:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KH[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[5.210s]   563 |     double [01;35m[KH[m[K = b * x_end - x_end * x_end;
+[5.210s]       |            [01;35m[K^[m[K
+[16.516s] [ 50%] [32m[1mLinking CXX executable pino_armkine_node[0m
+[17.045s] [100%] Built target pino_armkine_node
+[17.058s] Invoked command in '/home/xsm/R1_ws/build/armForwardkinematics' returned '0': CMAKE_PREFIX_PATH=/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/xsm/R1_ws/install/mit_msgs/lib:/home/xsm/R1_ws/install/optimal_control_problem/lib:/home/xsm/R1_ws/install/lock_utils/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia /usr/bin/cmake --build /home/xsm/R1_ws/build/armForwardkinematics -- -j16 -l16
+[17.126s] Invoking command in '/home/xsm/R1_ws/build/armForwardkinematics': CMAKE_PREFIX_PATH=/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/xsm/R1_ws/install/mit_msgs/lib:/home/xsm/R1_ws/install/optimal_control_problem/lib:/home/xsm/R1_ws/install/lock_utils/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia /usr/bin/cmake --install /home/xsm/R1_ws/build/armForwardkinematics
+[17.135s] -- Install configuration: ""
+[17.135s] -- Execute custom install script
+[17.135s] -- Up-to-date symlink: /home/xsm/R1_ws/install/armForwardkinematics/lib/armForwardkinematics/pino_armkine_node
+[17.136s] -- Up-to-date symlink: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/launch/armInv.py
+[17.136s] -- Up-to-date symlink: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics//config/config.yaml
+[17.136s] -- Up-to-date symlink: /home/xsm/R1_ws/install/armForwardkinematics/share/ament_index/resource_index/package_run_dependencies/armForwardkinematics
+[17.136s] -- Up-to-date symlink: /home/xsm/R1_ws/install/armForwardkinematics/share/ament_index/resource_index/parent_prefix_path/armForwardkinematics
+[17.136s] -- Up-to-date symlink: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/environment/ament_prefix_path.sh
+[17.136s] -- Up-to-date symlink: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/environment/ament_prefix_path.dsv
+[17.136s] -- Up-to-date symlink: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/environment/path.sh
+[17.136s] -- Up-to-date symlink: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/environment/path.dsv
+[17.136s] -- Up-to-date symlink: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/local_setup.bash
+[17.137s] -- Up-to-date symlink: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/local_setup.sh
+[17.137s] -- Up-to-date symlink: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/local_setup.zsh
+[17.137s] -- Up-to-date symlink: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/local_setup.dsv
+[17.137s] -- Symlinking: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/package.dsv
+[17.148s] -- Up-to-date symlink: /home/xsm/R1_ws/install/armForwardkinematics/share/ament_index/resource_index/packages/armForwardkinematics
+[17.148s] -- Up-to-date symlink: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/cmake/armForwardkinematicsConfig.cmake
+[17.148s] -- Up-to-date symlink: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/cmake/armForwardkinematicsConfig-version.cmake
+[17.148s] -- Up-to-date symlink: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/package.xml
+[17.150s] Invoked command in '/home/xsm/R1_ws/build/armForwardkinematics' returned '0': CMAKE_PREFIX_PATH=/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/xsm/R1_ws/install/mit_msgs/lib:/home/xsm/R1_ws/install/optimal_control_problem/lib:/home/xsm/R1_ws/install/lock_utils/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia /usr/bin/cmake --install /home/xsm/R1_ws/build/armForwardkinematics

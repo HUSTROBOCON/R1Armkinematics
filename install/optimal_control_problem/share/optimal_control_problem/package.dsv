@@ -1,0 +1,11 @@
+source;share/optimal_control_problem/hook/cmake_prefix_path.ps1
+source;share/optimal_control_problem/hook/cmake_prefix_path.dsv
+source;share/optimal_control_problem/hook/cmake_prefix_path.sh
+source;share/optimal_control_problem/hook/ld_library_path_lib.ps1
+source;share/optimal_control_problem/hook/ld_library_path_lib.dsv
+source;share/optimal_control_problem/hook/ld_library_path_lib.sh
+source;share/optimal_control_problem/local_setup.bash
+source;share/optimal_control_problem/local_setup.dsv
+source;share/optimal_control_problem/local_setup.ps1
+source;share/optimal_control_problem/local_setup.sh
+source;share/optimal_control_problem/local_setup.zsh

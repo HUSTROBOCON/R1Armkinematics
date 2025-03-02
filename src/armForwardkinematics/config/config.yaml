@@ -1,0 +1,25 @@
+pino_armkine_node :
+    ros__parameters:
+      kp: 2300.0
+      kd: 60.0
+      joint1: -45.0
+      joint2: 135.0
+      joint3: 90.0
+      b: 2.0
+      Ntest: 50
+      errposkp: 5.0
+      errposkd: 0.0
+      errposki: 0.1
+      errposoutlimit: 10.0
+      errposinterlimit: 1.0
+      errvelkp: 10.0
+      errvelkd: 0.0
+      errvelki: 0.1
+      errveloutlimit:  25.0
+      errvelinterlimit: 1.0
+      errwristkp: 5.0
+      errwristkd: 0.0
+      errwristki: 0.1
+      errwristoutlimit:  25.0
+      errwristinterlimit: 1.0
+      Vmax: 1.0

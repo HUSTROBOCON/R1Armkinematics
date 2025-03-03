@@ -234,6 +234,30 @@ source/ForwardkinematicsT/FT_method.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pino_armkine_node.dir/build.make CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/FT_method.cpp.s
 .PHONY : source/ForwardkinematicsT/FT_method.cpp.s
 
+source/ForwardkinematicsT/zwzVel.o: source/ForwardkinematicsT/zwzVel.cpp.o
+.PHONY : source/ForwardkinematicsT/zwzVel.o
+
+# target to build an object file
+source/ForwardkinematicsT/zwzVel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pino_armkine_node.dir/build.make CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzVel.cpp.o
+.PHONY : source/ForwardkinematicsT/zwzVel.cpp.o
+
+source/ForwardkinematicsT/zwzVel.i: source/ForwardkinematicsT/zwzVel.cpp.i
+.PHONY : source/ForwardkinematicsT/zwzVel.i
+
+# target to preprocess a source file
+source/ForwardkinematicsT/zwzVel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pino_armkine_node.dir/build.make CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzVel.cpp.i
+.PHONY : source/ForwardkinematicsT/zwzVel.cpp.i
+
+source/ForwardkinematicsT/zwzVel.s: source/ForwardkinematicsT/zwzVel.cpp.s
+.PHONY : source/ForwardkinematicsT/zwzVel.s
+
+# target to generate assembly for a file
+source/ForwardkinematicsT/zwzVel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pino_armkine_node.dir/build.make CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzVel.cpp.s
+.PHONY : source/ForwardkinematicsT/zwzVel.cpp.s
+
 source/ForwardkinematicsT/zwzmcg.o: source/ForwardkinematicsT/zwzmcg.cpp.o
 .PHONY : source/ForwardkinematicsT/zwzmcg.o
 
@@ -325,6 +349,9 @@ help:
 	@echo "... source/ForwardkinematicsT/FT_method.o"
 	@echo "... source/ForwardkinematicsT/FT_method.i"
 	@echo "... source/ForwardkinematicsT/FT_method.s"
+	@echo "... source/ForwardkinematicsT/zwzVel.o"
+	@echo "... source/ForwardkinematicsT/zwzVel.i"
+	@echo "... source/ForwardkinematicsT/zwzVel.s"
 	@echo "... source/ForwardkinematicsT/zwzmcg.o"
 	@echo "... source/ForwardkinematicsT/zwzmcg.i"
 	@echo "... source/ForwardkinematicsT/zwzmcg.s"

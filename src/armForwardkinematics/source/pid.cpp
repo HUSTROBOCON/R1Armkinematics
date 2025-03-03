@@ -1,8 +1,6 @@
 #include "pid.hpp"
 #include <algorithm> // for clamp
 
-
-
 PID::PID(float _kp, float _ki, float _kd, float _output_limit, float _integrallimit, float _DT) :
     kp(_kp),
     ki(_ki),

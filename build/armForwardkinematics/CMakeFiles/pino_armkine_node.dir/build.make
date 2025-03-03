@@ -111,10 +111,24 @@ CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzmcg.cpp.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzmcg.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/zwzmcg.cpp -o CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzmcg.cpp.s
 
+CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzVel.cpp.o: CMakeFiles/pino_armkine_node.dir/flags.make
+CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzVel.cpp.o: /home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/zwzVel.cpp
+CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzVel.cpp.o: CMakeFiles/pino_armkine_node.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xsm/R1_ws/build/armForwardkinematics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzVel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzVel.cpp.o -MF CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzVel.cpp.o.d -o CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzVel.cpp.o -c /home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/zwzVel.cpp
+
+CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzVel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzVel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/zwzVel.cpp > CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzVel.cpp.i
+
+CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzVel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzVel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/zwzVel.cpp -o CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzVel.cpp.s
+
 CMakeFiles/pino_armkine_node.dir/source/pid.cpp.o: CMakeFiles/pino_armkine_node.dir/flags.make
 CMakeFiles/pino_armkine_node.dir/source/pid.cpp.o: /home/xsm/R1_ws/src/armForwardkinematics/source/pid.cpp
 CMakeFiles/pino_armkine_node.dir/source/pid.cpp.o: CMakeFiles/pino_armkine_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xsm/R1_ws/build/armForwardkinematics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pino_armkine_node.dir/source/pid.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xsm/R1_ws/build/armForwardkinematics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pino_armkine_node.dir/source/pid.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pino_armkine_node.dir/source/pid.cpp.o -MF CMakeFiles/pino_armkine_node.dir/source/pid.cpp.o.d -o CMakeFiles/pino_armkine_node.dir/source/pid.cpp.o -c /home/xsm/R1_ws/src/armForwardkinematics/source/pid.cpp
 
 CMakeFiles/pino_armkine_node.dir/source/pid.cpp.i: cmake_force
@@ -130,6 +144,7 @@ pino_armkine_node_OBJECTS = \
 "CMakeFiles/pino_armkine_node.dir/src/armPino.cpp.o" \
 "CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/FT_method.cpp.o" \
 "CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzmcg.cpp.o" \
+"CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzVel.cpp.o" \
 "CMakeFiles/pino_armkine_node.dir/source/pid.cpp.o"
 
 # External object files for target pino_armkine_node
@@ -138,6 +153,7 @@ pino_armkine_node_EXTERNAL_OBJECTS =
 pino_armkine_node: CMakeFiles/pino_armkine_node.dir/src/armPino.cpp.o
 pino_armkine_node: CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/FT_method.cpp.o
 pino_armkine_node: CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzmcg.cpp.o
+pino_armkine_node: CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzVel.cpp.o
 pino_armkine_node: CMakeFiles/pino_armkine_node.dir/source/pid.cpp.o
 pino_armkine_node: CMakeFiles/pino_armkine_node.dir/build.make
 pino_armkine_node: /opt/ros/humble/lib/librclcpp.so
@@ -236,7 +252,7 @@ pino_armkine_node: /opt/ros/humble/lib/librcpputils.so
 pino_armkine_node: /opt/ros/humble/lib/librosidl_runtime_c.so
 pino_armkine_node: /opt/ros/humble/lib/librcutils.so
 pino_armkine_node: CMakeFiles/pino_armkine_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xsm/R1_ws/build/armForwardkinematics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable pino_armkine_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xsm/R1_ws/build/armForwardkinematics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable pino_armkine_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pino_armkine_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

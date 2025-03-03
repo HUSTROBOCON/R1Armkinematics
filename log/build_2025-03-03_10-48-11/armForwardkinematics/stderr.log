@@ -1,0 +1,4 @@
+gmake[2]: *** [CMakeFiles/pino_armkine_node.dir/build.make:90: CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/FT_method.cpp.o] 中断
+gmake[2]: *** [CMakeFiles/pino_armkine_node.dir/build.make:118: CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzVel.cpp.o] 中断
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pino_armkine_node.dir/all] 中断
+gmake: *** [Makefile:146: all] 中断

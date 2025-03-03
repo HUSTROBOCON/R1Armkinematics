@@ -32,6 +32,7 @@
 /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/meshes/link1.STL
 /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/meshes/link2.STL
 /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/meshes/link3.STL
+/home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/zwzArm.zip
 /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/zwzArm/CMakeLists.txt
 /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/zwzArm/config/joint_names_zwzArm.yaml
 /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/zwzArm/export.log

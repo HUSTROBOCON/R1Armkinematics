@@ -31,6 +31,7 @@ set(dependencies
 set(SOURCES
     source/ForwardkinematicsT/FT_method.cpp
     source/ForwardkinematicsT/zwzmcg.cpp
+    source/ForwardkinematicsT/zwzVel.cpp
     source/pid.cpp
 )
 

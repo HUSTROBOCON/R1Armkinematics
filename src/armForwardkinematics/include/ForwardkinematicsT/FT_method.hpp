@@ -109,7 +109,7 @@ private:
     //初始化模型
     void pino_init();
     // 角度归一化
-    double nomalozeangle(double angle);
+    double nomalizeangle(double angle);
     //逆解函数
     bool pino_inv(double target_x,double target_y,double target_z);
     
@@ -144,6 +144,13 @@ private:
     const int backwardSearchPointNum; // 向后搜索点数
     int lastClosestPointId; // 上次搜索到最近点的id
 
+    Eigen::Vector3d initial_q;
+    Eigen::MatrixXd poscircle;
+    Eigen::MatrixXd velcircle;
+    Eigen::VectorXd yawcircle;
+    Eigen::VectorXd wristcircle;
+    Eigen::Vector3d init_pos ;
+
     // ros订阅
     rclcpp::Subscription<mit_msgs::msg::MITLowState>::SharedPtr FTrobotStatusSub_;
     rclcpp::Publisher<mit_msgs::msg::MITJointCommands>::SharedPtr
@@ -165,7 +172,7 @@ private:
     Eigen::Vector3d myinverseKinematics(double x ,double z ,int num);
 
     // 使用pinocchio库计算机械臂关节期望速度
-    Eigen:: Vector3d MycomputeEndEffectorVelocity(double dx, double dy , Eigen::Vector3d q);
+    Eigen:: Vector3d MycomputeEndEffectorVelocity(double dx, double dy , double w, Eigen::Vector3d q);
     // 使用pinocchio库计算机械臂关节期望加速度
     Eigen:: Vector3d computeJointAcceleration(const Eigen::Vector3d &ddx, const Eigen::Vector3d &dq ,Eigen ::Vector3d q ,double dw);
 
@@ -173,12 +180,12 @@ private:
     Eigen::Vector2d trace(const Eigen::Vector2d& nowPosition, const int closestPointId ,Eigen::Vector2d& nowVelocity);
     
     // 寻找最近点
-    int findClosestPoint(const Eigen::Vector2d& nowPosition);
+    int findClosestPoint(const Eigen::Vector2d& nowPosition , const Eigen::MatrixXd& ExpPosition ,int num ,double nowyaw ,const Eigen::VectorXd& expyaw);
 
     Eigen::MatrixXd computeJacobian(Eigen::Vector3d &q); // 计算雅各比矩阵的函数声明
     Eigen::MatrixXd computeJacobianDerivative(const Eigen::VectorXd &q ,const Eigen::VectorXd &dq); // 计算雅各比矩阵导数的函数声明
 
-    double calculateDistance(const Eigen::Vector2d& a, const Eigen::Vector2d& b);
+    double calculateDistance(const Eigen::Vector2d& a, const Eigen::Vector2d& b ,double nowtheta ,double exptheta); // 计算两点之间的距离
 
     Eigen::Vector3d forwardKinematics(const Eigen::Vector3d& q);
 
@@ -186,6 +193,14 @@ private:
 
     void robotStatusCallback(mit_msgs::msg::MITLowState::SharedPtr msg) ;
 
+
+    Eigen::MatrixXd pathPlan( int pathnum);
+    Eigen::MatrixXd velPlan( int pathnum);
+    Eigen::VectorXd yawPlan( int pathnum);
+    Eigen::VectorXd wristPlan( int pathnum);
     Eigen::Vector3d zwzmcgcal(Eigen::Vector3d q, Eigen::Vector3d dq, Eigen::Vector3d ddq);
+    Eigen:: Vector3d zwzVelcal(Eigen::Vector3d& qnow ,Eigen::Vector3d& dqnow);
+    Eigen::Vector3d zwzVeltaucal(Eigen::Vector3d& qnow ,Eigen::Vector3d& dqnow);
+
 };
 

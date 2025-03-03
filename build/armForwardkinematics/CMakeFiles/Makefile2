@@ -135,12 +135,12 @@ CMakeFiles/armForwardkinematics_uninstall.dir/clean:
 CMakeFiles/pino_armkine_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pino_armkine_node.dir/build.make CMakeFiles/pino_armkine_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pino_armkine_node.dir/build.make CMakeFiles/pino_armkine_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsm/R1_ws/build/armForwardkinematics/CMakeFiles --progress-num=1,2,3,4,5 "Built target pino_armkine_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsm/R1_ws/build/armForwardkinematics/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target pino_armkine_node"
 .PHONY : CMakeFiles/pino_armkine_node.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pino_armkine_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsm/R1_ws/build/armForwardkinematics/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsm/R1_ws/build/armForwardkinematics/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/pino_armkine_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsm/R1_ws/build/armForwardkinematics/CMakeFiles 0
 .PHONY : CMakeFiles/pino_armkine_node.dir/rule

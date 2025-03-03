@@ -1,0 +1,51 @@
+[0.215s] Invoking command in '/home/xsm/R1_ws/build/optimal_control_problem': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake /home/xsm/R1_ws/src/public/OptimalControlProblem -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=/home/xsm/R1_ws/install/optimal_control_problem
+[0.227s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.338s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.350s] -- Found ament_index_cpp: 1.4.0 (/opt/ros/humble/share/ament_index_cpp/cmake)
+[0.350s] -- Checking include directories for CASADI
+[0.350s] -- Using CASADI_INCLUDE_DIRS
+[0.350s] -- Checking include directories for Eigen3
+[0.350s] -- Using EIGEN3_INCLUDE_DIRS
+[0.351s] -- Checking include directories for yaml-cpp
+[0.351s] -- No include directories found for yaml-cpp
+[0.351s] -- Checking include directories for ament_index_cpp
+[0.351s] -- No include directories found for ament_index_cpp
+[0.351s] -- Processing target: optimal_control_problem
+[0.414s] -- Configuring done
+[0.419s] -- Generating done
+[0.419s] -- Build files have been written to: /home/xsm/R1_ws/build/optimal_control_problem
+[0.421s] Invoked command in '/home/xsm/R1_ws/build/optimal_control_problem' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake /home/xsm/R1_ws/src/public/OptimalControlProblem -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=/home/xsm/R1_ws/install/optimal_control_problem
+[0.422s] Invoking command in '/home/xsm/R1_ws/build/optimal_control_problem': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/xsm/R1_ws/build/optimal_control_problem -- -j16 -l16
+[0.471s] [35m[1mConsolidate compiler generated dependencies of target optimal_control_problem[0m
+[0.491s] [100%] Built target optimal_control_problem
+[0.509s] Invoked command in '/home/xsm/R1_ws/build/optimal_control_problem' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/xsm/R1_ws/build/optimal_control_problem -- -j16 -l16
+[0.587s] Invoking command in '/home/xsm/R1_ws/build/optimal_control_problem': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --install /home/xsm/R1_ws/build/optimal_control_problem
+[0.598s] -- Install configuration: "RelWithDebInfo"
+[0.598s] -- Execute custom install script
+[0.598s] -- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/environment/library_path.sh
+[0.599s] -- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/environment/library_path.dsv
+[0.599s] -- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/include/optimal_control_problem/OptimalControlProblem.h
+[0.599s] -- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem//code_gen/.gitignore
+[0.599s] -- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem//include/optimal_control_problem/OptimalControlProblem.h
+[0.599s] -- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem//log/.gitignore
+[0.600s] -- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem//log/constraints.csv 
+[0.600s] -- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/ament_index/resource_index/package_run_dependencies/optimal_control_problem
+[0.600s] -- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/ament_index/resource_index/parent_prefix_path/optimal_control_problem
+[0.600s] -- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/environment/ament_prefix_path.sh
+[0.600s] -- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/environment/ament_prefix_path.dsv
+[0.600s] -- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/environment/path.sh
+[0.601s] -- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/environment/path.dsv
+[0.601s] -- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/local_setup.bash
+[0.601s] -- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/local_setup.sh
+[0.601s] -- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/local_setup.zsh
+[0.601s] -- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/local_setup.dsv
+[0.601s] -- Symlinking: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/package.dsv
+[0.613s] -- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/ament_index/resource_index/packages/optimal_control_problem
+[0.613s] -- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/cmake/ament_cmake_export_libraries-extras.cmake
+[0.613s] -- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.614s] -- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.614s] -- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/cmake/optimal_control_problemConfig.cmake
+[0.614s] -- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/cmake/optimal_control_problemConfig-version.cmake
+[0.614s] -- Up-to-date symlink: /home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/package.xml
+[0.614s] -- Up-to-date: /home/xsm/R1_ws/install/optimal_control_problem/lib/liboptimal_control_problem.so
+[0.626s] Invoked command in '/home/xsm/R1_ws/build/optimal_control_problem' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --install /home/xsm/R1_ws/build/optimal_control_problem

@@ -16,9 +16,9 @@
 
 
                                                                                                                              
-double FT_method:: nomalozeangle(double angle)
+double FT_method:: nomalizeangle(double angle)
 {
-    while (angle > M_PI)
+    while (angle >= M_PI)
     {
         angle -= 2 * M_PI;
     }
@@ -232,7 +232,7 @@ Eigen::Vector3d FT_method::myinverseKinematics(double x ,double z ,int num)
     return q;
 }
 
-Eigen:: Vector3d FT_method::MycomputeEndEffectorVelocity(double dx, double dy , Eigen::Vector3d q)
+Eigen:: Vector3d FT_method::MycomputeEndEffectorVelocity(double dx, double dy ,double w, Eigen::Vector3d q)
 {
     Eigen::MatrixXd Jt(6, 3);
     // pinocchio::computeJointJacobian(model, data, q, jointNumber, Jt);
@@ -241,7 +241,7 @@ Eigen:: Vector3d FT_method::MycomputeEndEffectorVelocity(double dx, double dy , 
     Eigen::VectorXd target_dq(6);
     // std::cout << "q: " << q << std::endl;
     Jt = computeJacobian(q);
-    target_dq << dx, 0, dy, 0, 0, 0;
+    target_dq << dx, 0, dy, 0, w, 0;
     // RCLCPP_INFO(this->get_logger(), "Jt: %f, %f, %f", Jt(0, 0), Jt(0, 1), Jt(0, 2));
     Eigen::MatrixXd Jt_pinv = Jt.completeOrthogonalDecomposition().pseudoInverse();
     // std::cout << "Jt_pinv: " <<std::endl;
@@ -391,25 +391,26 @@ Eigen::Vector2d FT_method:: trace(const Eigen::Vector2d& nowPosition, const int 
 }
 
 // 计算两点之间的距离
-double FT_method::calculateDistance(const Eigen::Vector2d& a, const Eigen::Vector2d& b) {
-    return (a - b).norm();
+double FT_method::calculateDistance(const Eigen::Vector2d& a, const Eigen::Vector2d& b ,double nowtheta ,double exptheta) {
+    double dis = sqrt(pow(a(0) - b(0), 2) + pow(a(1) - b(1), 2) + 0.01 * pow(nomalizeangle(nowtheta) - nomalizeangle(exptheta), 2));
+    return dis;
 }
 
 // 寻找最近点
-int FT_method:: findClosestPoint(const Eigen::Vector2d& nowPosition)
+int FT_method:: findClosestPoint(const Eigen::Vector2d& nowPosition , const Eigen::MatrixXd& ExpPosition ,int num ,double nowyaw ,const Eigen::VectorXd& expyaw)
 {
     float minDistance = std::numeric_limits<float>::infinity();
 
     int startId = lastClosestPointId - forwardSearchPointNum;
     int endId = lastClosestPointId + backwardSearchPointNum;
     // 众所周知，程序员从0数数
-    startId = std::clamp(startId, 0, num0-1);
-    endId = std::clamp(endId, 0, num0-1);
+    startId = std::clamp(startId, 0, num-1);
+    endId = std::clamp(endId, 0, num-1);
 
     int closestPointId = -1;
 
     for (int i = startId; i <= endId; i++) {
-        float distance = calculateDistance(posExp.row(i).cast<double>(), nowPosition);
+        float distance = calculateDistance(Eigen::Vector2d(ExpPosition(i,0),ExpPosition(i,2)), nowPosition ,nowyaw ,expyaw(i));
         if (distance < minDistance) {
             minDistance = distance;
             closestPointId = i;
@@ -418,10 +419,6 @@ int FT_method:: findClosestPoint(const Eigen::Vector2d& nowPosition)
 
     lastClosestPointId = closestPointId;
 
-    // auto logger = rclcpp::get_logger("navigation_logger");
-    // RCLCPP_INFO(logger, "closest point: x:%.3f, y:%.3f", 
-    //     positionPoints[closestPointId](0), positionPoints[closestPointId](1));
-
     return closestPointId;
 }
 
@@ -429,7 +426,7 @@ Eigen::Vector3d FT_method::
 computeEfftor(Eigen::Vector3d& qnow ,Eigen::Vector3d& dqnow)
 {
     static int count = 0;
-    static int i00 = 0;
+    static int id = 0;
 
     Eigen::Vector3d nowPosition = forwardKinematics(qnow);
     Eigen::VectorXd nowVelocity = computeJacobian(qnow) * dqnow;
@@ -439,19 +436,19 @@ computeEfftor(Eigen::Vector3d& qnow ,Eigen::Vector3d& dqnow)
     nowPosition2d << nowPosition(0), nowPosition(2);
     Eigen::Vector2d nowVelocity2d;
     nowVelocity2d << nowVelocity(0), nowVelocity(2);
-    Eigen::Vector3d ExpPosition = forwardKinematics(TestposExp.row(i00).cast<double>());
+    Eigen::Vector3d ExpPosition = forwardKinematics(TestposExp.row(id).cast<double>());
 
     // // 到位检测
-    // if ((nowPosition2d - Eigen::Vector2d(ExpPosition(0), ExpPosition(2))).norm() < 0.05)
-    // {
-    //     // 如果到位，切换到下一个点
-    //     if (i00 < 49)
-    //     {
-    //         i00 = i00 + 1;            
-    //     }
-    // }
+    if ((nowPosition2d - Eigen::Vector2d(ExpPosition(0), ExpPosition(2))).norm() < 0.05)
+    {
+        // 如果到位，切换到下一个点
+        if (id < 49)
+        {
+            id = id + 1;            
+        }
+    }
 
-    i00 = 5;
+    // i00 = 5;
 
     //==== 方法1 ====
     // // 预期加速度 
@@ -459,31 +456,54 @@ computeEfftor(Eigen::Vector3d& qnow ,Eigen::Vector3d& dqnow)
     inputAcc << 0, 0, 0;
     Eigen::Vector3d qExpI ;
     
-    qExpI << TestposExp(i00, 0), TestposExp(i00, 1), TestposExp(i00, 2);
+    qExpI << TestposExp(id, 0), TestposExp(id, 1), TestposExp(id, 2);
     Eigen::Vector3d dqExpI ;
-    // dqExpI << TestvelExp(i00, 0), TestvelExp(i00, 1), TestvelExp(i00, 2);
-    dqExpI << 0, 0, 0;
+    // dqExpI = zwzVelcal(qnow, dqnow);
 
     // 结合一下方法二
     PID errorOuterPosPid(this->get_parameter("errposkp").as_double(), this->get_parameter("errposki").as_double(), this->get_parameter("errposkd").as_double(), this->get_parameter("errposoutlimit").as_double(), this->get_parameter("errposinterlimit").as_double(), 0.001);
     PID errorOuterVelPid(this->get_parameter("errvelkp").as_double(), this->get_parameter("errvelki").as_double(), this->get_parameter("errvelkd").as_double(), this->get_parameter("errveloutlimit").as_double(), this->get_parameter("errvelinterlimit").as_double(), 0.001);
     PID errwirsPid(this->get_parameter("errwristkp").as_double(), this->get_parameter("errwristki").as_double(), this->get_parameter("errwristkd").as_double(), this->get_parameter("errwristoutlimit").as_double(), this->get_parameter("errwristinterlimit").as_double(), 0.001);
-    double angelTest = atan2(0.2 - nowPosition(2), 0.8 - nowPosition(0));
-    double dwzwz = errwirsPid.PIDcalculate(1.32 - noww); 
-    double inputanorm = errorOuterPosPid.PIDcalculate((Eigen::Vector3d(0.2,0,0.8) - nowPosition).norm());
-    double inputanormV = errorOuterVelPid.PIDcalculate((Eigen::Vector2d(inputanorm * cos(angelTest), inputanorm * sin(angelTest)) - nowVelocity2d).norm());
+    // PID 跟踪
+    double angelTest = atan2(ExpPosition(2) - nowPosition(2), ExpPosition(0) - nowPosition(0));
+    double dwzwz = errwirsPid.PIDcalculate(1 - noww); 
+
+    int closestId;
+
+    if (id < 49)
+    {
+        double distanceid = (ExpPosition - nowPosition).norm();
+        double distanceid1 = (forwardKinematics(TestposExp.row(id + 1).cast<double>()) - nowPosition).norm();
+
+        if (distanceid < distanceid1)
+        {
+            closestId = id;
+        }
+        else
+        {
+            closestId = id + 1;
+        }
+    }
+    else
+    {
+        
+    }
+    double EndExpspeed = errorOuterPosPid.PIDcalculate((ExpPosition - nowPosition).norm());
+    double EndExpacce = errorOuterVelPid.PIDcalculate((Eigen::Vector2d(EndExpspeed * cos(angelTest), EndExpspeed * sin(angelTest)) - nowVelocity2d).norm());
     // inputAcc << inputanormV * cos(angelTest), 0, inputanormV * sin(angelTest);
     // inputAcc = computeJointAcceleration(inputAcc, dqnow, qnow);
-    inputAcc = computeJointAcceleration(Eigen::Vector3d(inputanormV * cos(angelTest), 0, inputanormV * sin(angelTest)), dqnow, qnow ,dwzwz);
+    inputAcc = computeJointAcceleration(Eigen::Vector3d(EndExpacce * cos(angelTest), 0, EndExpacce * sin(angelTest)), dqnow, qnow ,dwzwz);
     
     // inputAcc = inputAcc + arm_kp * (qExpI - qnow) + arm_kd * (dqExpI - dqnow);
+    // inputAcc = arm_kd * (dqExpI - dqnow);
     // RCLCPP_INFO(this->get_logger(), "inputAcc: %f, %f, %f", inputAcc(0), inputAcc(1), inputAcc(2));
 
     // 打印误差
     Eigen::Vector2d errorPos;
     errorPos(0) = forwardKinematics(qExpI)(0) - nowPosition(0);
-    if (i00 < 49)
-    {RCLCPP_INFO(this->get_logger(), "errorPos: %f, %f", errorPos(0), errorPos(1));}
+    errorPos(1) = forwardKinematics(qExpI)(2) - nowPosition(2);
+    // if (id < 49)
+    // {RCLCPP_INFO(this->get_logger(), "errorPos: %f, %f", errorPos(0), errorPos(1));}
 
     // Eigen::Matrix3d M = generateM(qnow);
     // Eigen::Vector3d C = generateC(qnow, dqnow);
@@ -493,10 +513,14 @@ computeEfftor(Eigen::Vector3d& qnow ,Eigen::Vector3d& dqnow)
     //==============
 
 
+    // tau = pid(jointvel) 
     // 计算关节力矩
     // Eigen::Vector3d tau = M * inputAcc + C + G;
     Eigen::Vector3d tau = zwzmcgcal(qnow, dqnow, inputAcc);
-    // RCLCPP_INFO(this->get_logger(), "tau: %f, %f, %f", tau(0), tau(1), tau(2));
+    if (id < 49)
+    {
+        RCLCPP_INFO(this->get_logger(), "ID: %d, tau: %f, %f, %f", id, tau(0), tau(1), tau(2));
+    }
 
     if (count < 50)
     {
@@ -504,16 +528,17 @@ computeEfftor(Eigen::Vector3d& qnow ,Eigen::Vector3d& dqnow)
     }
     else
     {
-        i00 = i00 + 1;
+        id = id + 1;
         count = 0;
     }
 
-    if (i00 >= 49)
+    if (id >= 49)
     {
-        i00 = 49;
+        id = 49;
     }
 
     return tau;
+ 
 }
 
 // 回调函数
@@ -537,20 +562,21 @@ void FT_method::robotStatusCallback(mit_msgs::msg::MITLowState::SharedPtr msg) {
         
         //RCLCPP_INFO(this->get_logger(), "robotStatusPos: %f, %f, %f", robotStatusPos(0), robotStatusPos(1), robotStatusPos(2));
 
-        Eigen::Vector3d effort = computeEfftor(robotStatusPos, robotStatusVel);
+        Eigen::Vector3d effort = zwzVeltaucal(robotStatusPos, robotStatusVel);
+        // Eigen::Vector3d testVel = zwzVelcal(robotStatusPos, robotStatusVel);
 
         // 计算当前位置
         mit_msgs::msg::MITJointCommands jointCommand;
         jointCommand.commands.resize(3);
         jointCommand.commands[0].pos = 0;//double(-90*pi/180);//effortPosVel(1, 0);
         jointCommand.commands[0].vel = 0;//effortPosVel(2, 0);
-        jointCommand.commands[0].eff =  effort(0);
+        jointCommand.commands[0].eff = effort(0);
         jointCommand.commands[1].pos = 0;//effortPosVel(1, 1);
         jointCommand.commands[1].vel = 0;//effortPosVel(2, 1);
-        jointCommand.commands[1].eff =  effort(1);
+        jointCommand.commands[1].eff = effort(1);
         jointCommand.commands[2].pos = 0;//effortPosVel(1, 2);
-        jointCommand.commands[2].vel = 0;//effortPosVel(2, 2);
-        jointCommand.commands[2].eff =  effort(2);
+        jointCommand.commands[2].vel = 1;//effortPosVel(2, 2);
+        jointCommand.commands[2].eff = effort(2);
         jointCommandPub_->publish(jointCommand);
 
 }
@@ -560,8 +586,8 @@ FT_method ::FT_method() :
     rclcpp::Node("FT_method_node"), // 使用节点名称初始化基类
     errorPosPid(5, 0.5, 0, 1, 0.05, 0.01),
     errorVelPid(5, 0.5, 0.5, 1, 0.05, 0.01), 
-    forwardSearchPointNum(5),
-    backwardSearchPointNum(5)
+    forwardSearchPointNum(50),
+    backwardSearchPointNum(50)
 {
     // 初始化参数
     this->declare_parameter<double>("kp");
@@ -587,6 +613,7 @@ FT_method ::FT_method() :
     this->declare_parameter<double>("errwristoutlimit");
     this->declare_parameter<double>("errwristinterlimit");
     this->declare_parameter<double>("Vmax");
+    this->declare_parameter<int>("Nzwz");
 
 
     arm_kp = this->get_parameter("kp").as_double();
@@ -594,9 +621,9 @@ FT_method ::FT_method() :
 
 
     //===测试代码===
-    Eigen::Vector3d initial_q(this->get_parameter("joint1").as_double(), this->get_parameter("joint2").as_double(), this->get_parameter("joint3").as_double());
+    initial_q <<this->get_parameter("joint1").as_double(), this->get_parameter("joint2").as_double(), this->get_parameter("joint3").as_double();
     initial_q = initial_q * pi / 180;
-    Eigen::Vector3d init_pos = forwardKinematics(initial_q);
+    init_pos = forwardKinematics(initial_q);
     RCLCPP_INFO(this->get_logger(), "init_pos: %f, %f, %f", init_pos(0), init_pos(1), init_pos(2));
 
     double b = this->get_parameter("b").as_double();
@@ -606,20 +633,6 @@ FT_method ::FT_method() :
     TestposExp = Eigen::MatrixXd::Zero(Ntest, 3); // 用于存储测试轨迹
     TestvelExp = Eigen::MatrixXd::Zero(Ntest, 3); // 用于存储测试速度
 
-    // Eigen::MatrixXd M(6,3);
-    // M << 6, 0, 0,
-    //      5, 6, 0,
-    //      4, 5, 6,
-    //      3, 4, 5,
-    //      2, 3, 4,
-    //      1, 2, 3; 
-    // Eigen::MatrixXd MT(3,6);
-    
-    // MT = M.completeOrthogonalDecomposition().pseudoInverse();
-    // RCLCPP_INFO(this->get_logger(), "MT: %f, %f, %f ,%f ,%f, %f", MT(0, 0), MT(0, 1), MT(0, 2), MT(0, 3), MT(0, 4), MT(0, 5));
-    // RCLCPP_INFO(this->get_logger(), "MT: %f, %f, %f ,%f ,%f, %f", MT(1, 0), MT(1, 1), MT(1, 2), MT(1, 3), MT(1, 4), MT(1, 5));
-    // RCLCPP_INFO(this->get_logger(), "MT: %f, %f, %f ,%f ,%f, %f", MT(2, 0), MT(2, 1), MT(2, 2), MT(2, 3), MT(2, 4), MT(2, 5));
-   
     // 轨迹规划
     for (int i = 0 ;i < Ntest; i++)
     {
@@ -644,47 +657,24 @@ FT_method ::FT_method() :
         double vangle = atan(b - 2 * TestposExp(i, 0));
         double vnorm = sin((i * M_PI / 2) / Ntest) * vtest;
         Eigen::Vector3d vel(vnorm * cos(vangle), 0 , vnorm * sin(vangle));
-        TestvelExp.row(i) = MycomputeEndEffectorVelocity(vel(0), vel(2), TestposExp.row(i));
-        RCLCPP_INFO(this->get_logger(), "TestvelExp: %f, %f, %f", TestvelExp(i, 0), TestvelExp(i, 1), TestvelExp(i, 2));
+        TestvelExp.row(i) = MycomputeEndEffectorVelocity(vel(0), vel(2), 0, TestposExp.row(i));
+        //RCLCPP_INFO(this->get_logger(), "TestvelExp: %f, %f, %f", TestvelExp(i, 0), TestvelExp(i, 1), TestvelExp(i, 2));
     }
 
-    Eigen::Matrix3d TESTM;
-    TESTM << 1, 2, 3, //q
-        0.1, 0.2, 0.3, //dq
-        0.01, 0.02, 0.03; //ddq
-    
-    Eigen::Vector3d tauxsm = generateM(TESTM.row(0).transpose()) * TESTM.row(2).transpose() + generateC(TESTM.row(0).transpose(), TESTM.row(1).transpose()) + generateG(TESTM.row(0).transpose());
-    Eigen::Vector3d tauzwz = zwzmcgcal(TESTM.row(0).transpose(), TESTM.row(1).transpose(), TESTM.row(2).transpose());
-    RCLCPP_INFO(this->get_logger(), "tauxsm: %f, %f, %f", tauxsm(0), tauxsm(1), tauxsm(2));
-    RCLCPP_INFO(this->get_logger(), "tauzwz: %f, %f, %f", tauzwz(0), tauzwz(1), tauzwz(2));
-    //===测试代码===
+    // 新速度规划
+    int Nnum = this->get_parameter("Nzwz").as_int();
+    poscircle = Eigen::MatrixXd::Zero(Nnum, 3);
+    velcircle = Eigen::MatrixXd::Zero(Nnum, 2);
+    poscircle = pathPlan(Nnum);
+    velcircle = velPlan(Nnum);
+    yawcircle = yawPlan(Nnum);
+    wristcircle = wristPlan(Nnum);
 
-    // 给定速度调节系数k,  得到轨迹， 规划出序列
-    
-    // RCLCPP_INFO(this->get_logger(), "FT_method_node has been started.");
-    // MatrixNumd4 posvelExp = endTrajectory(1);
-    // RCLCPP_INFO(this->get_logger(), " endTrajectory finished.");
-
-    // // 从轨迹中提取位置和速度,上半部分是位置，下半部分是速度
-    // for (int i = 0; i < num1; i++)
-    // {
-    //     posExp(i, 0) = posvelExp(i, 0);
-    //     posExp(i, 1) = posvelExp(i, 1);
-    //     velExp(i, 0) = posvelExp(i + num1, 0);
-    //     velExp(i, 1) = posvelExp(i + num1, 1);
-    // }
-    // RCLCPP_INFO(this->get_logger(),"here");
-    // // 根据序列计算出机械臂预期的关节速度和角度
-    // qExp = Eigen::MatrixXd::Zero(num1, 3);
-    // dqExp = Eigen::MatrixXd::Zero(num1, 3);
-
-    // RCLCPP_INFO(this->get_logger(), "compute qExp and dqExp");
-
-    // for (int i = 0; i < num1; i++)
-    // {
-    //     qExp.row(i) = myinverseKinematics(posExp(i, 0) , posExp(i, 1) , i);
-    //     dqExp.row(i) = MycomputeEndEffectorVelocity(velExp(i, 0), velExp(i, 1), qExp.row(i));
-    // }
+    for (int i = 0; i < Nnum; i++)
+    {
+        // RCLCPP_INFO(this->get_logger(), "poscircle: %f, %f", poscircle(i, 0), poscircle(i, 2));
+        RCLCPP_INFO(this->get_logger(), "velcircle: %f, %f", velcircle(i, 0), velcircle(i, 1));
+    }
 
     // 定时器
     RCLCPP_INFO(this->get_logger(), "FT_method::FT_method has been callback.");

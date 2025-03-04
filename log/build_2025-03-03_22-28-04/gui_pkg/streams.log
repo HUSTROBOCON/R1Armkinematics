@@ -1,0 +1,21 @@
+[0.609s] Invoking command in '/home/xsm/R1_ws/src/gui_pkg': PYTHONPATH=/home/xsm/R1_ws/build/gui_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xsm/R1_ws/install/gui_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/gui_pkg build --build-base /home/xsm/R1_ws/build/gui_pkg/build install --record /home/xsm/R1_ws/build/gui_pkg/install.log --single-version-externally-managed install_data
+[0.827s] running egg_info
+[0.827s] writing ../../build/gui_pkg/gui_pkg.egg-info/PKG-INFO
+[0.828s] writing dependency_links to ../../build/gui_pkg/gui_pkg.egg-info/dependency_links.txt
+[0.828s] writing entry points to ../../build/gui_pkg/gui_pkg.egg-info/entry_points.txt
+[0.828s] writing requirements to ../../build/gui_pkg/gui_pkg.egg-info/requires.txt
+[0.828s] writing top-level names to ../../build/gui_pkg/gui_pkg.egg-info/top_level.txt
+[0.829s] reading manifest file '../../build/gui_pkg/gui_pkg.egg-info/SOURCES.txt'
+[0.830s] writing manifest file '../../build/gui_pkg/gui_pkg.egg-info/SOURCES.txt'
+[0.830s] running build
+[0.830s] running build_py
+[0.830s] running install
+[0.830s] running install_lib
+[0.832s] running install_data
+[0.832s] running install_egg_info
+[0.834s] removing '/home/xsm/R1_ws/install/gui_pkg/lib/python3.10/site-packages/gui_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[0.834s] Copying ../../build/gui_pkg/gui_pkg.egg-info to /home/xsm/R1_ws/install/gui_pkg/lib/python3.10/site-packages/gui_pkg-0.0.0-py3.10.egg-info
+[0.835s] running install_scripts
+[0.853s] Installing gui_node script to /home/xsm/R1_ws/install/gui_pkg/lib/gui_pkg
+[0.854s] writing list of installed files to '/home/xsm/R1_ws/build/gui_pkg/install.log'
+[0.884s] Invoked command in '/home/xsm/R1_ws/src/gui_pkg' returned '0': PYTHONPATH=/home/xsm/R1_ws/build/gui_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xsm/R1_ws/install/gui_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/gui_pkg build --build-base /home/xsm/R1_ws/build/gui_pkg/build install --record /home/xsm/R1_ws/build/gui_pkg/install.log --single-version-externally-managed install_data

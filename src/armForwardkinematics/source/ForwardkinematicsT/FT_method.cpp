@@ -392,7 +392,7 @@ Eigen::Vector2d FT_method:: trace(const Eigen::Vector2d& nowPosition, const int 
 
 // 计算两点之间的距离
 double FT_method::calculateDistance(const Eigen::Vector2d& a, const Eigen::Vector2d& b ,double nowtheta ,double exptheta) {
-    double dis = sqrt(pow(a(0) - b(0), 2) + pow(a(1) - b(1), 2) + 0.01 * pow(nomalizeangle(nowtheta) - nomalizeangle(exptheta), 2));
+    double dis = sqrt(pow(a(0) - b(0), 2) + pow(a(1) - b(1), 2) + 0.1 * pow((nowtheta - exptheta), 2));
     return dis;
 }
 
@@ -586,8 +586,8 @@ FT_method ::FT_method() :
     rclcpp::Node("FT_method_node"), // 使用节点名称初始化基类
     errorPosPid(5, 0.5, 0, 1, 0.05, 0.01),
     errorVelPid(5, 0.5, 0.5, 1, 0.05, 0.01), 
-    forwardSearchPointNum(50),
-    backwardSearchPointNum(50)
+    forwardSearchPointNum(5),
+    backwardSearchPointNum(10)
 {
     // 初始化参数
     this->declare_parameter<double>("kp");
@@ -614,6 +614,10 @@ FT_method ::FT_method() :
     this->declare_parameter<double>("errwristinterlimit");
     this->declare_parameter<double>("Vmax");
     this->declare_parameter<int>("Nzwz");
+    this->declare_parameter<double>("lineangle");
+    this->declare_parameter<double>("linewidth");
+    this->declare_parameter<double>("Wmax");
+    this->declare_parameter<double>("shootangle");
 
 
     arm_kp = this->get_parameter("kp").as_double();
@@ -665,11 +669,14 @@ FT_method ::FT_method() :
     int Nnum = this->get_parameter("Nzwz").as_int();
     poscircle = Eigen::MatrixXd::Zero(Nnum, 3);
     velcircle = Eigen::MatrixXd::Zero(Nnum, 2);
-    poscircle = pathPlan(Nnum);
-    velcircle = velPlan(Nnum);
-    yawcircle = yawPlan(Nnum);
-    wristcircle = wristPlan(Nnum);
-
+    // poscircle = pathPlan(Nnum);
+    // velcircle = velPlan(Nnum);
+    // yawcircle = yawPlan(Nnum);
+    // wristcircle = wristPlan(Nnum);
+    poscircle = linepathPlan(Nnum);
+    velcircle = linespeedpathPlan(Nnum);
+    yawcircle = lineyawPlan(Nnum);
+    wristcircle = linewristPlan(Nnum);
     for (int i = 0; i < Nnum; i++)
     {
         // RCLCPP_INFO(this->get_logger(), "poscircle: %f, %f", poscircle(i, 0), poscircle(i, 2));

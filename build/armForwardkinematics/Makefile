@@ -234,6 +234,30 @@ source/ForwardkinematicsT/FT_method.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pino_armkine_node.dir/build.make CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/FT_method.cpp.s
 .PHONY : source/ForwardkinematicsT/FT_method.cpp.s
 
+source/ForwardkinematicsT/path.o: source/ForwardkinematicsT/path.cpp.o
+.PHONY : source/ForwardkinematicsT/path.o
+
+# target to build an object file
+source/ForwardkinematicsT/path.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pino_armkine_node.dir/build.make CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/path.cpp.o
+.PHONY : source/ForwardkinematicsT/path.cpp.o
+
+source/ForwardkinematicsT/path.i: source/ForwardkinematicsT/path.cpp.i
+.PHONY : source/ForwardkinematicsT/path.i
+
+# target to preprocess a source file
+source/ForwardkinematicsT/path.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pino_armkine_node.dir/build.make CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/path.cpp.i
+.PHONY : source/ForwardkinematicsT/path.cpp.i
+
+source/ForwardkinematicsT/path.s: source/ForwardkinematicsT/path.cpp.s
+.PHONY : source/ForwardkinematicsT/path.s
+
+# target to generate assembly for a file
+source/ForwardkinematicsT/path.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pino_armkine_node.dir/build.make CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/path.cpp.s
+.PHONY : source/ForwardkinematicsT/path.cpp.s
+
 source/ForwardkinematicsT/zwzVel.o: source/ForwardkinematicsT/zwzVel.cpp.o
 .PHONY : source/ForwardkinematicsT/zwzVel.o
 
@@ -349,6 +373,9 @@ help:
 	@echo "... source/ForwardkinematicsT/FT_method.o"
 	@echo "... source/ForwardkinematicsT/FT_method.i"
 	@echo "... source/ForwardkinematicsT/FT_method.s"
+	@echo "... source/ForwardkinematicsT/path.o"
+	@echo "... source/ForwardkinematicsT/path.i"
+	@echo "... source/ForwardkinematicsT/path.s"
 	@echo "... source/ForwardkinematicsT/zwzVel.o"
 	@echo "... source/ForwardkinematicsT/zwzVel.i"
 	@echo "... source/ForwardkinematicsT/zwzVel.s"

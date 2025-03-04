@@ -1,7 +1,7 @@
 pino_armkine_node :
     ros__parameters:
-      kp: 5.0
-      kd: 2000.0
+      kp: 230.0
+      kd: 6.0
       joint1: -45.0
       joint2: 135.0
       joint3: 90.0
@@ -12,15 +12,19 @@ pino_armkine_node :
       errposki: 0.1
       errposoutlimit: 10.0
       errposinterlimit: 1.0
-      errvelkp: 1.0
+      errvelkp: 60.0
       errvelkd: 0.0
-      errvelki: 0.1
-      errveloutlimit:  15.0
-      errvelinterlimit: 1.0
-      errwristkp: 1.0
-      errwristkd: 0.0
-      errwristki: 0.1
-      errwristoutlimit:  25.0
-      errwristinterlimit: 1.0
+      errvelki: 0.5
+      errveloutlimit: 60.0
+      errvelinterlimit: 5.0
+      errwristkp: 60.0
+      errwristkd: 0.1
+      errwristki: 0.2
+      errwristoutlimit: 60.0
+      errwristinterlimit: 5.0
       Vmax: 0.1
       Nzwz : 200
+      lineangle: 70.0
+      linewidth: 0.9
+      Wmax : 0.0
+      shootangle: 90.0

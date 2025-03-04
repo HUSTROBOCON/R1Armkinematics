@@ -198,6 +198,10 @@ private:
     Eigen::MatrixXd velPlan( int pathnum);
     Eigen::VectorXd yawPlan( int pathnum);
     Eigen::VectorXd wristPlan( int pathnum);
+    Eigen::MatrixXd linepathPlan( int pathnum);
+    Eigen::MatrixXd linespeedpathPlan( int pathnum);
+    Eigen::VectorXd lineyawPlan( int pathnum);
+    Eigen::VectorXd linewristPlan( int pathnum);
     Eigen::Vector3d zwzmcgcal(Eigen::Vector3d q, Eigen::Vector3d dq, Eigen::Vector3d ddq);
     Eigen:: Vector3d zwzVelcal(Eigen::Vector3d& qnow ,Eigen::Vector3d& dqnow);
     Eigen::Vector3d zwzVeltaucal(Eigen::Vector3d& qnow ,Eigen::Vector3d& dqnow);

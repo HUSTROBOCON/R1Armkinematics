@@ -1,0 +1,177 @@
+[0.018s] Invoking command in '/home/xsm/R1_ws/build/arm_dynamics_hw': CMAKE_PREFIX_PATH=/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/xsm/R1_ws/install/mit_msgs/lib:/home/xsm/R1_ws/install/lock_utils/lib:/home/xsm/R1_ws/install/optimal_control_problem/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia /usr/bin/cmake /home/xsm/R1_ws/src/arm_dynamics_hw -DCMAKE_INSTALL_PREFIX=/home/xsm/R1_ws/install/arm_dynamics_hw
+[0.032s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.141s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.147s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.165s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.167s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.171s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.178s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.187s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.225s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.242s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.243s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.341s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.367s] -- Found mit_msgs: 0.0.0 (/home/xsm/R1_ws/install/mit_msgs/share/mit_msgs/cmake)
+[0.393s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[0.434s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.469s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.471s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.477s] -- Searching for dependencies of ignition-math6
+[0.479s] -- Looking for OGRE...
+[0.486s] -- Found Ogre Ghadamon (1.9.0)
+[0.487s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.494s] -- Looking for OGRE_Paging...
+[0.494s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.494s] -- Looking for OGRE_Terrain...
+[0.494s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.494s] -- Looking for OGRE_Property...
+[0.494s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.494s] -- Looking for OGRE_RTShaderSystem...
+[0.494s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.494s] -- Looking for OGRE_Volume...
+[0.494s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.494s] -- Looking for OGRE_Overlay...
+[0.495s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[0.608s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.609s] -- Looking for ignition-transport8 -- found version 8.2.1
+[0.609s] -- Searching for dependencies of ignition-transport8
+[0.628s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[0.639s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.646s] -- Checking for module 'libzmq >= 4'
+[0.670s] --   Found libzmq , version 4.3.4
+[0.738s] -- Checking for module 'uuid'
+[0.758s] --   Found uuid, version 2.37.2
+[0.811s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.811s] -- Searching for dependencies of ignition-msgs5
+[0.831s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.838s] -- Checking for module 'tinyxml2'
+[0.859s] --   Found tinyxml2, version 9.0.0
+[0.914s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.915s] -- Looking for ignition-common3 -- found version 3.14.0
+[0.915s] -- Searching for dependencies of ignition-common3
+[0.915s] -- Looking for dlfcn.h - found
+[0.915s] -- Looking for libdl - found
+[0.927s] -- Searching for <ignition-common3> component [graphics]
+[0.928s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[0.929s] -- Searching for dependencies of ignition-common3-graphics
+[0.929s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.931s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[0.931s] -- Searching for dependencies of ignition-fuel_tools4
+[0.977s] -- Checking for module 'jsoncpp'
+[0.997s] --   Found jsoncpp, version 1.9.5
+[1.057s] -- Checking for module 'libzip'
+[1.077s] --   Found libzip, version 1.7.3
+[1.134s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.134s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.135s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.136s] -- Gazebo version: 11.10
+[1.138s] -- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[1.169s] -- Found gazebo_ros_pkgs: 3.9.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)
+[1.170s] -- Found lock_utils: 0.0.0 (/home/xsm/R1_ws/install/lock_utils/share/lock_utils/cmake)
+[1.171s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[1.193s] -- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)
+[1.195s] -- Checking include directories for yaml-cpp
+[1.196s] -- No include directories found for yaml-cpp
+[1.196s] -- Checking include directories for nav_msgs
+[1.196s] -- Using nav_msgs_INCLUDE_DIRS
+[1.196s] -- Checking include directories for rclcpp
+[1.196s] -- Using rclcpp_INCLUDE_DIRS
+[1.196s] -- Checking include directories for mit_msgs
+[1.196s] -- Using mit_msgs_INCLUDE_DIRS
+[1.196s] -- Checking include directories for geometry_msgs
+[1.196s] -- Using geometry_msgs_INCLUDE_DIRS
+[1.196s] -- Checking include directories for sensor_msgs
+[1.196s] -- Using sensor_msgs_INCLUDE_DIRS
+[1.196s] -- Checking include directories for gazebo_ros
+[1.196s] -- Using gazebo_ros_INCLUDE_DIRS
+[1.196s] -- Checking include directories for gazebo_msgs
+[1.196s] -- Using gazebo_msgs_INCLUDE_DIRS
+[1.196s] -- Checking include directories for gazebo_ros_pkgs
+[1.196s] -- No include directories found for gazebo_ros_pkgs
+[1.196s] -- Checking include directories for lock_utils
+[1.197s] -- Using lock_utils_INCLUDE_DIRS
+[1.197s] -- Checking include directories for urdf
+[1.197s] -- Using urdf_INCLUDE_DIRS
+[1.197s] -- Checking include directories for tf2
+[1.197s] -- Using tf2_INCLUDE_DIRS
+[1.197s] -- Processing target: arm_dynamics_hw
+[1.201s] -- Processing target: publisher
+[1.263s] -- Configuring done
+[1.299s] -- Generating done
+[1.300s] -- Build files have been written to: /home/xsm/R1_ws/build/arm_dynamics_hw
+[1.310s] Invoked command in '/home/xsm/R1_ws/build/arm_dynamics_hw' returned '0': CMAKE_PREFIX_PATH=/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/xsm/R1_ws/install/mit_msgs/lib:/home/xsm/R1_ws/install/lock_utils/lib:/home/xsm/R1_ws/install/optimal_control_problem/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia /usr/bin/cmake /home/xsm/R1_ws/src/arm_dynamics_hw -DCMAKE_INSTALL_PREFIX=/home/xsm/R1_ws/install/arm_dynamics_hw
+[1.311s] Invoking command in '/home/xsm/R1_ws/build/arm_dynamics_hw': CMAKE_PREFIX_PATH=/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/xsm/R1_ws/install/mit_msgs/lib:/home/xsm/R1_ws/install/lock_utils/lib:/home/xsm/R1_ws/install/optimal_control_problem/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia /usr/bin/cmake --build /home/xsm/R1_ws/build/arm_dynamics_hw -- -j16 -l16
+[1.363s] [35m[1mConsolidate compiler generated dependencies of target publisher[0m
+[1.364s] [35m[1mConsolidate compiler generated dependencies of target arm_dynamics_hw[0m
+[1.385s] [ 40%] Built target publisher
+[1.391s] [100%] Built target arm_dynamics_hw
+[1.405s] Invoked command in '/home/xsm/R1_ws/build/arm_dynamics_hw' returned '0': CMAKE_PREFIX_PATH=/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/xsm/R1_ws/install/mit_msgs/lib:/home/xsm/R1_ws/install/lock_utils/lib:/home/xsm/R1_ws/install/optimal_control_problem/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia /usr/bin/cmake --build /home/xsm/R1_ws/build/arm_dynamics_hw -- -j16 -l16
+[1.477s] Invoking command in '/home/xsm/R1_ws/build/arm_dynamics_hw': CMAKE_PREFIX_PATH=/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/xsm/R1_ws/install/mit_msgs/lib:/home/xsm/R1_ws/install/lock_utils/lib:/home/xsm/R1_ws/install/optimal_control_problem/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia /usr/bin/cmake --install /home/xsm/R1_ws/build/arm_dynamics_hw
+[1.485s] -- Install configuration: "RelWithDebInfo"
+[1.486s] -- Execute custom install script
+[1.486s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/lib/arm_dynamics_hw//arm_dynamics_hw
+[1.486s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/lib/arm_dynamics_hw//publisher
+[1.486s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/include/gazebo_tuner/GazeboTuner.h
+[1.487s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//config/RC_config.yaml
+[1.487s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//config/effort_control.yaml
+[1.487s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//include/gazebo_tuner/GazeboTuner.h
+[1.487s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//launch/arm_dynamics.launch.py
+[1.487s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//launch/get_entity_state.py
+[1.487s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//launch/gui.py
+[1.488s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/ARMvertical.csv
+[1.488s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/ARMvertical.urdf
+[1.488s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/ARMvertical/CMakeLists.txt
+[1.488s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/ARMvertical/config/joint_names_ARMvertical.yaml
+[1.489s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/ARMvertical/export.log
+[1.489s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/ARMvertical/launch/display.launch
+[1.489s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/ARMvertical/launch/gazebo.launch
+[1.489s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/ARMvertical/meshes/base_link.STL
+[1.489s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/ARMvertical/meshes/link1.STL
+[1.489s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/ARMvertical/meshes/link2.STL
+[1.489s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/ARMvertical/meshes/link3.STL
+[1.489s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/ARMvertical/package.xml
+[1.489s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/ARMvertical/urdf/ARM_gazebo_autoexport.urdf
+[1.489s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/ARMvertical/urdf/ARM_gazebo_off_collsion.urdf
+[1.489s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/ARMvertical/urdf/ARMvertical.csv
+[1.489s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/ARMvertical/urdf/ARMvertical.urdf
+[1.489s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/R1ARMvertical.csv
+[1.490s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/R1ARMvertical.urdf
+[1.490s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/R1arm.urdf
+[1.490s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/R1arm_control.urdf
+[1.490s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/R1arm_off_collison.urdf
+[1.490s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/meshes/base_link.STL
+[1.490s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/meshes/link1.STL
+[1.490s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/meshes/link2.STL
+[1.490s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/meshes/link3.STL
+[1.490s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/zwzArm.zip
+[1.490s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/zwzArm/CMakeLists.txt
+[1.490s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/zwzArm/config/joint_names_zwzArm.yaml
+[1.490s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/zwzArm/export.log
+[1.490s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/zwzArm/launch/display.launch
+[1.491s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/zwzArm/launch/gazebo.launch
+[1.491s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/zwzArm/meshes/base_link.STL
+[1.491s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/zwzArm/meshes/link1.STL
+[1.491s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/zwzArm/meshes/link2.STL
+[1.491s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/zwzArm/meshes/link3.STL
+[1.491s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/zwzArm/package.xml
+[1.491s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/zwzArm/urdf/zwzArm.csv
+[1.491s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//urdf/zwzArm/urdf/zwzArm.urdf
+[1.491s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw//worlds/empty_world.world
+[1.491s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/ament_index/resource_index/package_run_dependencies/arm_dynamics_hw
+[1.492s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/ament_index/resource_index/parent_prefix_path/arm_dynamics_hw
+[1.492s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw/environment/ament_prefix_path.sh
+[1.492s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw/environment/ament_prefix_path.dsv
+[1.492s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw/environment/path.sh
+[1.492s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw/environment/path.dsv
+[1.492s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw/local_setup.bash
+[1.492s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw/local_setup.sh
+[1.492s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw/local_setup.zsh
+[1.492s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw/local_setup.dsv
+[1.492s] -- Symlinking: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw/package.dsv
+[1.503s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/ament_index/resource_index/packages/arm_dynamics_hw
+[1.503s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.503s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.504s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw/cmake/arm_dynamics_hwConfig.cmake
+[1.504s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw/cmake/arm_dynamics_hwConfig-version.cmake
+[1.504s] -- Up-to-date symlink: /home/xsm/R1_ws/install/arm_dynamics_hw/share/arm_dynamics_hw/package.xml
+[1.506s] Invoked command in '/home/xsm/R1_ws/build/arm_dynamics_hw' returned '0': CMAKE_PREFIX_PATH=/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/xsm/R1_ws/install/mit_msgs/lib:/home/xsm/R1_ws/install/lock_utils/lib:/home/xsm/R1_ws/install/optimal_control_problem/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia /usr/bin/cmake --install /home/xsm/R1_ws/build/arm_dynamics_hw

@@ -2,7 +2,6 @@
 
 Eigen:: Vector3d FT_method::zwzVelcal(Eigen::Vector3d& qnow ,Eigen::Vector3d& dqnow)
 {
-    int count = 0;
     int id = 0;
     
     Eigen::Vector3d endTargetvel(0, 0 ,0.2);
@@ -68,14 +67,20 @@ Eigen::Vector3d FT_method::zwzVeltaucal(Eigen::Vector3d& qnow ,Eigen::Vector3d& 
 {
 
     static int count = 0;
+    static Eigen::Vector3d qpre = qnow;
+    static Eigen::Vector3d dqpre = dqnow;
 
     Eigen::Vector3d nowPos = forwardKinematics(qnow);
     Eigen::Vector2d nowPos2d(nowPos(0), nowPos(2));
     double nowyaw = qnow(0) + qnow(1) + qnow(2);
-    RCLCPP_INFO(this->get_logger(), "nowyaw: %f", nowyaw);
+    double nowyawprint = nowyaw * 180 / pi;
+    RCLCPP_INFO(this->get_logger(), "nowyaw: %f", nowyawprint);
+    double nowlineyaw = atan2(nowPos(2) - init_pos(2), nowPos(0) - init_pos(0));
+    RCLCPP_INFO(this->get_logger(), "nowlineyaw: %f", nowlineyaw * 180 / pi);
+    RCLCPP_INFO(this->get_logger(), "nowpos: %f, %f, %f" , nowPos(0), nowPos(1), nowPos(2));
 
     // 计算路径跟踪线速度
-    int closestPointId = findClosestPoint(nowPos2d, poscircle, 800 ,nowyaw ,yawcircle);
+    int closestPointId = findClosestPoint(nowPos2d, poscircle, 200 ,nowyaw ,yawcircle);
     RCLCPP_INFO(this->get_logger(), "closestPointId: %d", closestPointId);
 
     // 计算垂足
@@ -91,37 +96,50 @@ Eigen::Vector3d FT_method::zwzVeltaucal(Eigen::Vector3d& qnow ,Eigen::Vector3d& 
     // 计算速度;
     Eigen::Vector2d errcorrectVel = err.normalized() * erroutput;
     Eigen::Vector2d finalcombinevel = velcircle.row(closestPointId).transpose() + errcorrectVel;
-    RCLCPP_INFO(this->get_logger(), "finalcombinevel: %f, %f", finalcombinevel(0), finalcombinevel(1));
+    // RCLCPP_INFO(this->get_logger(), "finalcombinevel: %f, %f", finalcombinevel(0), finalcombinevel(1));
 
     // 计算路径跟踪角速度
     double erryaw = yawcircle(closestPointId) - nowyaw;
     PID yawPid(this->get_parameter("errwristkp").as_double(), this->get_parameter("errwristki").as_double(), this->get_parameter("errwristkd").as_double(), this->get_parameter("errwristoutlimit").as_double(), this->get_parameter("errwristinterlimit").as_double(), 0.001);
     double errwristoutput = yawPid.PIDcalculate(nomalizeangle(erryaw));
     double finalwrist = errwristoutput + wristcircle(closestPointId);
-    RCLCPP_INFO(this->get_logger(), "finalwrist: %f", finalwrist);
 
     Eigen::Vector3d endTargetvel(finalcombinevel(0), 0 ,finalcombinevel(1));
 
     Eigen::Vector3d jointvel = MycomputeEndEffectorVelocity(endTargetvel(0), endTargetvel(2) , finalwrist, qnow);
 
     PID accPid(this->get_parameter("errposkp").as_double(), this->get_parameter("errposki").as_double(), this->get_parameter("errposkd").as_double(), this->get_parameter("errposoutlimit").as_double(), this->get_parameter("errposinterlimit").as_double(), 0.001);
-    Eigen::Vector3d velAcc = accPid.PIDcalculate((jointvel - dqnow).norm())*(jointvel - dqnow).normalized() ;
+    Eigen::Vector3d velAcc = accPid.PIDcalculate((jointvel - dqnow).norm()) * (jointvel - dqnow).normalized() ;
 
     Eigen::Vector3d tau ;
     // 方法一
-    tau = zwzmcgcal(qnow, dqnow, velAcc);
+    if (closestPointId >= 199 || count ==1)
+    {   
+        RCLCPP_INFO(this->get_logger(), "count: %d", count);
+        // if ((calculateDistance(nowPos2d ,Eigen::Vector2d(poscircle(180, 0) ,poscircle(180, 1)) ,nowyaw ,yawcircle(180))) < 0.5)
+        if ((nowyaw - this->get_parameter("shootangle").as_double()) * 180 / pi < 1)
+        {
+            if (count == 0)
+            {
+                qpre = qnow;
+            }
+            count = 1; 
+        }
+        if (count == 1)
+        {tau = arm_kp * (qpre - qnow) - arm_kd *  dqnow + zwzmcgcal(qnow, Eigen::Vector3d(0, 0, 0), Eigen::Vector3d(0, 0, 0));}
+        
+    }
+    else
+    {   
+        qpre = qnow;
+        tau = zwzmcgcal(qnow, dqnow, velAcc);    
+    }
+    
+    
     // 方法二
     // tau = generateM(qnow) * velAcc + generateC(qnow, dqnow) + generateG(qnow);
 
+ 
     RCLCPP_INFO(this->get_logger(), "tau: %f, %f, %f", tau(0), tau(1), tau(2));
-
-    Eigen::VectorXd velnow = computeJacobian(qnow) * dqnow;
-    Eigen::Vector3d velnow3(velnow(0), velnow(1), velnow(2));
-    Eigen::Vector3d velerr = endTargetvel - velnow3;
-
-    if(count < 1000)
-    {RCLCPP_INFO(this->get_logger(), "vel: %f, %f",velnow3.norm(), endTargetvel.norm());}
-
-    count = count + 1;
     return tau;
 }

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/FT_method.cpp.o"
   "CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/FT_method.cpp.o.d"
+  "CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/path.cpp.o"
+  "CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/path.cpp.o.d"
   "CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzVel.cpp.o"
   "CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzVel.cpp.o.d"
   "CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzmcg.cpp.o"

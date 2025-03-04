@@ -24,7 +24,7 @@ pino_armkine_node :
       errwristinterlimit: 5.0
       Vmax: 0.1
       Nzwz : 200
-      lineangle: 70.0
+      lineangle: 60.0
       linewidth: 0.9
       Wmax : 0.0
-      shootangle: 90.0
+      shootangle: 100.0

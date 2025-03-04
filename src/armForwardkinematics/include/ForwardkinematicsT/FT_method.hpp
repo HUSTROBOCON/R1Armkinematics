@@ -85,34 +85,17 @@ private:
     double a = 0.5; // 上升加速度
     int num = num0; // 采样点数
     
-    // pinochio部分
-    //创建模型
-    //urdf文件路径
-    //创建模型
-    pinocchio::Model model;
-    //定义刚体数据
-    pinocchio::Data data;
+
     //定义关节和计算参数
     int jointNumber ;
-    //逆解的参数
-    int arm_nv;
 
     // 机械臂kp kd
     double arm_kp ;
     double arm_kd ;
 
-    //计算结果反馈
-    bool SolveFlag;
-    //定义雅克比矩阵
-    pinocchio::Data::Matrix6x J;    //定义解算结果
-    Eigen::VectorXd q_out;
-    //初始化模型
-    void pino_init();
     // 角度归一化
     double nomalizeangle(double angle);
-    //逆解函数
-    bool pino_inv(double target_x,double target_y,double target_z);
-    
+
     // 定义速度存储数组
     MatrixNumd2 posExp;
     MatrixNumd2 velExp;
@@ -134,10 +117,6 @@ private:
     Eigen::Vector2d nowVelocity;
     Eigen::Vector3d qnow;
     Eigen::Vector3d dqnow;
-
-    // 轨迹规划参数
-    double x0 = 0.4;
-    double b = 2*x0 + 1;
 
     // 寻找最近点参数
     const int forwardSearchPointNum; // 向前搜索点数
@@ -163,22 +142,12 @@ private:
     Eigen::Vector3d generateC(Eigen::Vector3d q_0, Eigen::Vector3d dq_0);
     Eigen::Vector3d generateG(Eigen::Vector3d q_0);
 
-    // 末端速度轨迹规划
-    MatrixNumd4 endTrajectory(float k);
 
-    // 使用pinocchio库计算机械臂关节期望位置
-    Eigen::Vector3d computeEndEffectorPosition(double x ,double y);
-    // 使用自己写的库计算
-    Eigen::Vector3d myinverseKinematics(double x ,double z ,int num);
-
-    // 使用pinocchio库计算机械臂关节期望速度
+    // 计算机械臂关节速度
     Eigen:: Vector3d MycomputeEndEffectorVelocity(double dx, double dy , double w, Eigen::Vector3d q);
-    // 使用pinocchio库计算机械臂关节期望加速度
+    // 计算机械臂关节期望加速度
     Eigen:: Vector3d computeJointAcceleration(const Eigen::Vector3d &ddx, const Eigen::Vector3d &dq ,Eigen ::Vector3d q ,double dw);
 
-    // 跟踪计算速度
-    Eigen::Vector2d trace(const Eigen::Vector2d& nowPosition, const int closestPointId ,Eigen::Vector2d& nowVelocity);
-    
     // 寻找最近点
     int findClosestPoint(const Eigen::Vector2d& nowPosition , const Eigen::MatrixXd& ExpPosition ,int num ,double nowyaw ,const Eigen::VectorXd& expyaw);
 
@@ -189,11 +158,11 @@ private:
 
     Eigen::Vector3d forwardKinematics(const Eigen::Vector3d& q);
 
-    Eigen::Vector3d computeEfftor(Eigen::Vector3d& qnow ,Eigen::Vector3d& dqnow);
-
+    //  仿真回调函数
     void robotStatusCallback(mit_msgs::msg::MITLowState::SharedPtr msg) ;
 
-
+    
+    // 轨迹规划
     Eigen::MatrixXd pathPlan( int pathnum);
     Eigen::MatrixXd velPlan( int pathnum);
     Eigen::VectorXd yawPlan( int pathnum);
@@ -202,9 +171,10 @@ private:
     Eigen::MatrixXd linespeedpathPlan( int pathnum);
     Eigen::VectorXd lineyawPlan( int pathnum);
     Eigen::VectorXd linewristPlan( int pathnum);
-    Eigen::Vector3d zwzmcgcal(Eigen::Vector3d q, Eigen::Vector3d dq, Eigen::Vector3d ddq);
-    Eigen:: Vector3d zwzVelcal(Eigen::Vector3d& qnow ,Eigen::Vector3d& dqnow);
-    Eigen::Vector3d zwzVeltaucal(Eigen::Vector3d& qnow ,Eigen::Vector3d& dqnow);
 
+    // 动力学方程，赵为之版
+    Eigen::Vector3d zwzmcgcal(Eigen::Vector3d q, Eigen::Vector3d dq, Eigen::Vector3d ddq);
+
+    Eigen::Vector3d zwzVeltaucal(Eigen::Vector3d& qnow ,Eigen::Vector3d& dqnow);
 };
 

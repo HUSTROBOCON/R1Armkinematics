@@ -1,16 +1,5 @@
 #include "ForwardkinematicsT/FT_method.hpp"
 
-Eigen:: Vector3d FT_method::zwzVelcal(Eigen::Vector3d& qnow ,Eigen::Vector3d& dqnow)
-{
-    int id = 0;
-    
-    Eigen::Vector3d endTargetvel(0, 0 ,0.2);
-    Eigen::Vector3d jointvel;
-
-    jointvel = MycomputeEndEffectorVelocity(endTargetvel(0), endTargetvel(2) , 0, qnow);
-    return jointvel;
-} 
-
 // 实现规划路径
 Eigen::MatrixXd FT_method::pathPlan( int pathnum)
 {
@@ -134,11 +123,6 @@ Eigen::Vector3d FT_method::zwzVeltaucal(Eigen::Vector3d& qnow ,Eigen::Vector3d& 
         qpre = qnow;
         tau = zwzmcgcal(qnow, dqnow, velAcc);    
     }
-    
-    
-    // 方法二
-    // tau = generateM(qnow) * velAcc + generateC(qnow, dqnow) + generateG(qnow);
-
  
     RCLCPP_INFO(this->get_logger(), "tau: %f, %f, %f", tau(0), tau(1), tau(2));
     return tau;

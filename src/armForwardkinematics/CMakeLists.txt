@@ -12,11 +12,16 @@ find_package(pinocchio REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(Boost REQUIRED COMPONENTS python310)
 find_package(mit_msgs REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(xsm_msg REQUIRED)
 
-include_directories(${EIGEN3_INCLUDE_DIR} ${PINOCCHIO_INCLUDE_DIRS})
 
 include_directories(include)
 include_directories(include/pid)
+
+include_directories(${EIGEN3_INCLUDE_DIR} ${PINOCCHIO_INCLUDE_DIRS})
+
 
 set(ARM_INCLUDE
 include
@@ -26,6 +31,7 @@ set(dependencies
   rclcpp
   std_msgs
   mit_msgs
+  xsm_msg
 )
 
 set(SOURCES
@@ -39,6 +45,7 @@ set(SOURCES
 add_executable(pino_armkine_node src/armPino.cpp ${SOURCES})
 ament_target_dependencies(pino_armkine_node rclcpp pinocchio ${dependencies})
 target_link_libraries(pino_armkine_node ${EIGEN3_LIBRARIES} ${PINOCCHIO_LIBRARIES} ${Boost_LIBRARIES})
+
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)

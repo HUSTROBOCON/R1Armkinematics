@@ -1,1 +1,0 @@
-/home/xsm/R1_ws/build/mit_msgs/rosidl_generator_py/mit_msgs/__init__.py

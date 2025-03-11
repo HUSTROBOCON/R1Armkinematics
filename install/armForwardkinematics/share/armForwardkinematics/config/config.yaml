@@ -1,1 +1,30 @@
-/home/xsm/R1_ws/src/armForwardkinematics/config/config.yaml
+pino_armkine_node :
+    ros__parameters:
+      kp: 230.0
+      kd: 6.0
+      joint1: -45.0
+      joint2: 135.0
+      joint3: 90.0
+      b: 2.0
+      Ntest: 50
+      errposkp: 5.0
+      errposkd: 0.1
+      errposki: 1.0
+      errposoutlimit: 15.0
+      errposinterlimit: 2.0
+      errvelkp: 5.0
+      errvelkd: 0.1
+      errvelki: 1.0
+      errveloutlimit: 15.0
+      errvelinterlimit: 2.0
+      errwristkp: 7.0
+      errwristkd: 0.0
+      errwristki: 0.5
+      errwristoutlimit: 15.0
+      errwristinterlimit: 2.0
+      Vmax: 0.1
+      Nzwz : 200
+      lineangle: 70.0
+      linewidth: 1.0
+      Wmax : 0.0
+      shootangle: 105.0

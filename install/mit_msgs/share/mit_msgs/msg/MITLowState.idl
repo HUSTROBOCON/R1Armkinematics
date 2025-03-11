@@ -1,1 +1,19 @@
-/home/xsm/R1_ws/build/mit_msgs/rosidl_adapter/mit_msgs/msg/MITLowState.idl
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mit_msgs/msg/MITLowState.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+#include "sensor_msgs/msg/Imu.idl"
+#include "sensor_msgs/msg/JointState.idl"
+
+module mit_msgs {
+  module msg {
+    struct MITLowState {
+      builtin_interfaces::msg::Time stamp;
+
+      sensor_msgs::msg::Imu imu;
+
+      sensor_msgs::msg::JointState joint_states;
+    };
+  };
+};

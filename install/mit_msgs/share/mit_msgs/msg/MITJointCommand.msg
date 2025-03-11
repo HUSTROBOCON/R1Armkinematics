@@ -1,1 +1,6 @@
-/home/xsm/R1_ws/src/public/mit_msgs/msg/MITJointCommand.msg
+# DogeJointCommand.msg
+float32 kp
+float32 kd
+float32 pos
+float32 vel
+float32 eff

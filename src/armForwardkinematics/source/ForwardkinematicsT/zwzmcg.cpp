@@ -1,4 +1,5 @@
 #include "ForwardkinematicsT/FT_method.hpp"
+#include <algorithm>
 
 double Fn1(Eigen::Vector3d qi)
 {
@@ -154,6 +155,10 @@ Eigen::Vector3d FT_method::zwzmcgcal(Eigen::Vector3d q, Eigen::Vector3d dq, Eige
     double dT2dq3 = 0;
 
     double tau3 = ddtdT1ddotq3 + ddtdT2ddotq3 + ddtdT3ddotq3 - dT1dq3 - dT2dq3 - dT3dq3 + dU1dq3 + dU2dq3 + dU3dq3;
+
+    tau1 = std::clamp(tau1, -20.0, 20.0);
+    tau2 = std::clamp(tau2, -20.0, 20.0);
+    tau3 = std::clamp(tau3, -20.0, 20.0);
 
     return Eigen::Vector3d(tau1, tau2, tau3);
 }

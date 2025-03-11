@@ -1,0 +1,4 @@
+source;share/xsm_msg/environment/ament_prefix_path.sh
+source;share/xsm_msg/environment/library_path.sh
+source;share/xsm_msg/environment/path.sh
+source;share/xsm_msg/environment/pythonpath.sh

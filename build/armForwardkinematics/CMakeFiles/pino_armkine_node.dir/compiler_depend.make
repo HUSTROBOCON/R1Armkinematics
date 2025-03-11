@@ -2120,6 +2120,10 @@ CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/FT_method.cpp.o: /hom
   /home/xsm/R1_ws/install/mit_msgs/include/mit_msgs/mit_msgs/msg/detail/mit_low_state__traits.hpp \
   /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/get_package_share_directory.hpp \
   /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/visibility_control.h \
+  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/hwrev.hpp \
+  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__struct.hpp \
+  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__builder.hpp \
+  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
   /usr/include/signal.h \
@@ -4593,6 +4597,10 @@ CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/path.cpp.o: /home/xsm
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__traits.hpp \
   /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/get_package_share_directory.hpp \
   /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/visibility_control.h \
+  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/hwrev.hpp \
+  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__struct.hpp \
+  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__builder.hpp \
+  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
   /usr/include/signal.h \
@@ -7066,6 +7074,10 @@ CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzVel.cpp.o: /home/x
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__traits.hpp \
   /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/get_package_share_directory.hpp \
   /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/visibility_control.h \
+  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/hwrev.hpp \
+  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__struct.hpp \
+  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__builder.hpp \
+  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
   /usr/include/signal.h \
@@ -9539,6 +9551,10 @@ CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzmcg.cpp.o: /home/x
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__traits.hpp \
   /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/get_package_share_directory.hpp \
   /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/visibility_control.h \
+  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/hwrev.hpp \
+  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__struct.hpp \
+  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__builder.hpp \
+  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
   /usr/include/signal.h \
@@ -12514,7 +12530,11 @@ CMakeFiles/pino_armkine_node.dir/src/armPino.cpp.o: /home/xsm/R1_ws/src/armForwa
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__traits.hpp \
   /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/get_package_share_directory.hpp \
-  /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/visibility_control.h
+  /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/visibility_control.h \
+  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/hwrev.hpp \
+  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__struct.hpp \
+  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__builder.hpp \
+  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__traits.hpp
 
 
 /home/xsm/R1_ws/src/armForwardkinematics/src/armPino.cpp:
@@ -12546,8 +12566,6 @@ CMakeFiles/pino_armkine_node.dir/src/armPino.cpp.o: /home/xsm/R1_ws/src/armForwa
 /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp:
 
@@ -12630,6 +12648,14 @@ CMakeFiles/pino_armkine_node.dir/src/armPino.cpp.o: /home/xsm/R1_ws/src/armForwa
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__struct.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp:
 
 /usr/include/boost/type_traits/is_base_of.hpp:
 
@@ -13325,8 +13351,6 @@ CMakeFiles/pino_armkine_node.dir/src/armPino.cpp.o: /home/xsm/R1_ws/src/armForwa
 
 /usr/include/boost/fusion/view/iterator_range/detail/size_impl.hpp:
 
-/usr/include/boost/predef/architecture/x86/64.h:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
 
 /usr/include/boost/serialization/type_info_implementation.hpp:
@@ -13338,8 +13362,6 @@ CMakeFiles/pino_armkine_node.dir/src/armPino.cpp.o: /home/xsm/R1_ws/src/armForwa
 /usr/include/boost/detail/workaround.hpp:
 
 /usr/include/boost/archive/detail/common_oarchive.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__struct.hpp:
 
 /usr/include/boost/range/rend.hpp:
 
@@ -13602,8 +13624,6 @@ CMakeFiles/pino_armkine_node.dir/src/armPino.cpp.o: /home/xsm/R1_ws/src/armForwa
 /usr/include/boost/fusion/view/iterator_range/detail/begin_impl.hpp:
 
 /usr/include/boost/range/reverse_iterator.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp:
 
 /usr/include/boost/preprocessor/iteration/detail/iter/forward1.hpp:
 
@@ -13946,6 +13966,10 @@ CMakeFiles/pino_armkine_node.dir/src/armPino.cpp.o: /home/xsm/R1_ws/src/armForwa
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp:
+
+/home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__traits.hpp:
 
 /usr/include/c++/11/string:
 
@@ -14811,6 +14835,8 @@ CMakeFiles/pino_armkine_node.dir/src/armPino.cpp.o: /home/xsm/R1_ws/src/armForwa
 
 /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:
 
+/home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__builder.hpp:
+
 /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h:
 
 /usr/include/boost/predef/make.h:
@@ -15603,8 +15629,6 @@ CMakeFiles/pino_armkine_node.dir/src/armPino.cpp.o: /home/xsm/R1_ws/src/armForwa
 
 /usr/include/boost/type_traits/has_greater_equal.hpp:
 
-/usr/include/boost/type_traits/has_less_equal.hpp:
-
 /usr/include/boost/type_traits/has_logical_not.hpp:
 
 /usr/include/boost/type_traits/has_logical_or.hpp:
@@ -15833,8 +15857,6 @@ CMakeFiles/pino_armkine_node.dir/src/armPino.cpp.o: /home/xsm/R1_ws/src/armForwa
 
 /opt/ros/humble/include/pinocchio/multibody/joint/joint-common-operations.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
-
 /opt/ros/humble/include/pinocchio/math/matrix-block.hpp:
 
 /opt/ros/humble/include/pinocchio/multibody/constraint.hpp:
@@ -16050,6 +16072,10 @@ CMakeFiles/pino_armkine_node.dir/src/armPino.cpp.o: /home/xsm/R1_ws/src/armForwa
 /usr/include/boost/serialization/nvp.hpp:
 
 /usr/include/boost/archive/text_oarchive.hpp:
+
+/usr/include/boost/type_traits/has_less_equal.hpp:
+
+/home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__struct.hpp:
 
 /usr/include/c++/11/bits/shared_ptr_atomic.h:
 
@@ -16456,8 +16482,6 @@ CMakeFiles/pino_armkine_node.dir/src/armPino.cpp.o: /home/xsm/R1_ws/src/armForwa
 /usr/include/boost/fusion/container/vector/detail/deref_impl.hpp:
 
 /usr/include/boost/fusion/container/vector/detail/value_of_impl.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp:
 
 /usr/include/boost/fusion/container/vector/detail/next_impl.hpp:
 
@@ -16968,6 +16992,10 @@ CMakeFiles/pino_armkine_node.dir/src/armPino.cpp.o: /home/xsm/R1_ws/src/armForwa
 /usr/include/boost/fusion/iterator/equal_to.hpp:
 
 /usr/include/boost/mpl/zip_view.hpp:
+
+/usr/include/boost/predef/architecture/x86/64.h:
+
+/home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/hwrev.hpp:
 
 /usr/include/boost/fusion/adapted/mpl/detail/at_impl.hpp:
 

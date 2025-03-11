@@ -1,0 +1,226 @@
+[0.012s] Invoking command in '/home/xsm/R1_ws/build/xsm_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake /home/xsm/R1_ws/src/xsm_msg -DCMAKE_INSTALL_PREFIX=/home/xsm/R1_ws/install/xsm_msg
+[0.071s] -- The C compiler identification is GNU 11.4.0
+[0.123s] -- The CXX compiler identification is GNU 11.4.0
+[0.131s] -- Detecting C compiler ABI info
+[0.209s] -- Detecting C compiler ABI info - done
+[0.214s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.214s] -- Detecting C compile features
+[0.214s] -- Detecting C compile features - done
+[0.216s] -- Detecting CXX compiler ABI info
+[0.302s] -- Detecting CXX compiler ABI info - done
+[0.307s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.307s] -- Detecting CXX compile features
+[0.307s] -- Detecting CXX compile features - done
+[0.310s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.467s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.547s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.550s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.556s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.590s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.617s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)
+[0.845s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.019s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.245s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.270s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.271s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.298s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.298s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.299s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.299s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.323s] -- Found PythonExtra: .so  
+[1.355s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.373s] -- Added test 'lint_cmake' to check CMake code style
+[1.374s] -- Added test 'xmllint' to check XML markup files
+[1.376s] -- Configuring done
+[1.397s] -- Generating done
+[1.399s] -- Build files have been written to: /home/xsm/R1_ws/build/xsm_msg
+[1.406s] Invoked command in '/home/xsm/R1_ws/build/xsm_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake /home/xsm/R1_ws/src/xsm_msg -DCMAKE_INSTALL_PREFIX=/home/xsm/R1_ws/install/xsm_msg
+[1.408s] Invoking command in '/home/xsm/R1_ws/build/xsm_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/xsm/R1_ws/build/xsm_msg -- -j16 -l16
+[1.457s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.470s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.481s] [  6%] Built target ament_cmake_python_copy_xsm_msg
+[1.645s] [  6%] Built target xsm_msg__cpp
+[1.661s] [ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.661s] [ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.661s] [ 19%] [32mBuilding C object CMakeFiles/xsm_msg__rosidl_generator_c.dir/rosidl_generator_c/xsm_msg/msg/detail/hwrev__functions.c.o[0m
+[1.661s] [ 19%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.676s] running egg_info
+[1.677s] creating xsm_msg.egg-info
+[1.677s] writing xsm_msg.egg-info/PKG-INFO
+[1.677s] writing dependency_links to xsm_msg.egg-info/dependency_links.txt
+[1.677s] writing top-level names to xsm_msg.egg-info/top_level.txt
+[1.677s] writing manifest file 'xsm_msg.egg-info/SOURCES.txt'
+[1.679s] reading manifest file 'xsm_msg.egg-info/SOURCES.txt'
+[1.679s] writing manifest file 'xsm_msg.egg-info/SOURCES.txt'
+[1.708s] [ 22%] [32m[1mLinking C shared library libxsm_msg__rosidl_generator_c.so[0m
+[1.721s] [ 22%] Built target ament_cmake_python_build_xsm_msg_egg
+[1.753s] [ 22%] Built target xsm_msg__rosidl_generator_c
+[1.768s] [ 29%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.768s] [ 29%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.768s] [ 32%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.842s] [ 35%] [32mBuilding CXX object CMakeFiles/xsm_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/xsm_msg/msg/hwrev__type_support.cpp.o[0m
+[1.868s] [ 38%] [32mBuilding CXX object CMakeFiles/xsm_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/xsm_msg/msg/detail/hwrev__type_support.cpp.o[0m
+[1.872s] [ 41%] [32mBuilding CXX object CMakeFiles/xsm_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/xsm_msg/msg/detail/dds_fastrtps/hwrev__type_support.cpp.o[0m
+[1.958s] [ 45%] [32mBuilding CXX object CMakeFiles/xsm_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/xsm_msg/msg/hwrev__type_support.cpp.o[0m
+[1.973s] [ 48%] [32mBuilding C object CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/hwrev__type_support.c.o[0m
+[1.979s] [ 51%] [32mBuilding CXX object CMakeFiles/xsm_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsm_msg/msg/detail/hwrev__type_support_c.cpp.o[0m
+[1.993s] [ 54%] [32m[1mLinking CXX shared library libxsm_msg__rosidl_typesupport_c.so[0m
+[2.013s] [ 58%] [32m[1mLinking C shared library libxsm_msg__rosidl_typesupport_introspection_c.so[0m
+[2.046s] [ 58%] Built target xsm_msg__rosidl_typesupport_c
+[2.054s] [ 61%] [32m[1mLinking CXX shared library libxsm_msg__rosidl_typesupport_cpp.so[0m
+[2.056s] [ 61%] Built target xsm_msg__rosidl_typesupport_introspection_c
+[2.102s] [ 61%] Built target xsm_msg__rosidl_typesupport_cpp
+[2.167s] [ 64%] [32m[1mLinking CXX shared library libxsm_msg__rosidl_typesupport_introspection_cpp.so[0m
+[2.176s] [ 67%] [32m[1mLinking CXX shared library libxsm_msg__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.237s] [ 70%] [32m[1mLinking CXX shared library libxsm_msg__rosidl_typesupport_fastrtps_c.so[0m
+[2.250s] [ 70%] Built target xsm_msg__rosidl_typesupport_introspection_cpp
+[2.259s] [ 70%] Built target xsm_msg__rosidl_typesupport_fastrtps_cpp
+[2.305s] [ 70%] Built target xsm_msg__rosidl_typesupport_fastrtps_c
+[2.334s] [ 70%] Built target xsm_msg
+[2.360s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.562s] [ 74%] Built target xsm_msg__py
+[2.588s] [ 77%] [32mBuilding C object CMakeFiles/xsm_msg__rosidl_generator_py.dir/rosidl_generator_py/xsm_msg/msg/_hwrev_s.c.o[0m
+[2.667s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/xsm_msg/libxsm_msg__rosidl_generator_py.so[0m
+[2.709s] [ 80%] Built target xsm_msg__rosidl_generator_py
+[2.739s] [ 90%] [32mBuilding C object CMakeFiles/xsm_msg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/xsm_msg/_xsm_msg_s.ep.rosidl_typesupport_c.c.o[0m
+[2.739s] [ 90%] [32mBuilding C object CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/xsm_msg/_xsm_msg_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.739s] [ 90%] [32mBuilding C object CMakeFiles/xsm_msg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/xsm_msg/_xsm_msg_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.814s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/xsm_msg/xsm_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.814s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/xsm_msg/xsm_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.815s] [100%] [32m[1mLinking C shared library rosidl_generator_py/xsm_msg/xsm_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.854s] [100%] Built target xsm_msg__rosidl_typesupport_fastrtps_c__pyext
+[2.854s] [100%] Built target xsm_msg__rosidl_typesupport_c__pyext
+[2.854s] [100%] Built target xsm_msg__rosidl_typesupport_introspection_c__pyext
+[2.868s] Invoked command in '/home/xsm/R1_ws/build/xsm_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/xsm/R1_ws/build/xsm_msg -- -j16 -l16
+[3.021s] Invoking command in '/home/xsm/R1_ws/build/xsm_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --install /home/xsm/R1_ws/build/xsm_msg
+[3.030s] -- Install configuration: ""
+[3.030s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/ament_index/resource_index/rosidl_interfaces/xsm_msg
+[3.030s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg
+[3.031s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg
+[3.031s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/rosidl_generator_c__visibility_control.h
+[3.031s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/hwrev.h
+[3.031s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail
+[3.031s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__functions.h
+[3.031s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__type_support.h
+[3.031s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__struct.h
+[3.031s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__functions.c
+[3.031s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/environment/library_path.sh
+[3.032s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/environment/library_path.dsv
+[3.032s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/lib/libxsm_msg__rosidl_generator_c.so
+[3.032s] -- Set runtime path of "/home/xsm/R1_ws/install/xsm_msg/lib/libxsm_msg__rosidl_generator_c.so" to ""
+[3.032s] -- Up-to-date: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg
+[3.032s] -- Up-to-date: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg
+[3.032s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.032s] -- Up-to-date: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail
+[3.032s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__rosidl_typesupport_fastrtps_c.h
+[3.032s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/lib/libxsm_msg__rosidl_typesupport_fastrtps_c.so
+[3.033s] -- Set runtime path of "/home/xsm/R1_ws/install/xsm_msg/lib/libxsm_msg__rosidl_typesupport_fastrtps_c.so" to ""
+[3.033s] -- Up-to-date: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg
+[3.033s] -- Up-to-date: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg
+[3.033s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.033s] -- Up-to-date: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail
+[3.033s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__type_support.c
+[3.033s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__rosidl_typesupport_introspection_c.h
+[3.033s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/lib/libxsm_msg__rosidl_typesupport_introspection_c.so
+[3.033s] -- Set runtime path of "/home/xsm/R1_ws/install/xsm_msg/lib/libxsm_msg__rosidl_typesupport_introspection_c.so" to ""
+[3.033s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/lib/libxsm_msg__rosidl_typesupport_c.so
+[3.034s] -- Set runtime path of "/home/xsm/R1_ws/install/xsm_msg/lib/libxsm_msg__rosidl_typesupport_c.so" to ""
+[3.034s] -- Up-to-date: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg
+[3.034s] -- Up-to-date: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg
+[3.034s] -- Up-to-date: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail
+[3.034s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__builder.hpp
+[3.034s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__traits.hpp
+[3.034s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__struct.hpp
+[3.034s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/hwrev.hpp
+[3.034s] -- Up-to-date: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg
+[3.034s] -- Up-to-date: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg
+[3.034s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.034s] -- Up-to-date: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail
+[3.035s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/dds_fastrtps
+[3.035s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__rosidl_typesupport_fastrtps_cpp.hpp
+[3.035s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/lib/libxsm_msg__rosidl_typesupport_fastrtps_cpp.so
+[3.035s] -- Set runtime path of "/home/xsm/R1_ws/install/xsm_msg/lib/libxsm_msg__rosidl_typesupport_fastrtps_cpp.so" to ""
+[3.035s] -- Up-to-date: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg
+[3.035s] -- Up-to-date: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg
+[3.035s] -- Up-to-date: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail
+[3.035s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__type_support.cpp
+[3.035s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__rosidl_typesupport_introspection_cpp.hpp
+[3.035s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/lib/libxsm_msg__rosidl_typesupport_introspection_cpp.so
+[3.036s] -- Set runtime path of "/home/xsm/R1_ws/install/xsm_msg/lib/libxsm_msg__rosidl_typesupport_introspection_cpp.so" to ""
+[3.036s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/lib/libxsm_msg__rosidl_typesupport_cpp.so
+[3.036s] -- Set runtime path of "/home/xsm/R1_ws/install/xsm_msg/lib/libxsm_msg__rosidl_typesupport_cpp.so" to ""
+[3.036s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/environment/pythonpath.sh
+[3.036s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/environment/pythonpath.dsv
+[3.036s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg-0.0.0-py3.10.egg-info
+[3.036s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg-0.0.0-py3.10.egg-info/PKG-INFO
+[3.036s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.037s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.037s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg-0.0.0-py3.10.egg-info/top_level.txt
+[3.037s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg
+[3.037s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg/_xsm_msg_s.ep.rosidl_typesupport_introspection_c.c
+[3.037s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg/__init__.py
+[3.037s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg/xsm_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.037s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg/libxsm_msg__rosidl_generator_py.so
+[3.037s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg/xsm_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.037s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg/msg
+[3.037s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg/msg/__init__.py
+[3.038s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg/msg/_hwrev.py
+[3.038s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg/msg/_hwrev_s.c
+[3.038s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg/_xsm_msg_s.ep.rosidl_typesupport_c.c
+[3.038s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg/_xsm_msg_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.038s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg/xsm_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.065s] Listing '/home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg'...
+[3.065s] Compiling '/home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg/__init__.py'...
+[3.065s] Listing '/home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg/msg'...
+[3.065s] Compiling '/home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg/msg/__init__.py'...
+[3.066s] Compiling '/home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg/msg/_hwrev.py'...
+[3.069s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg/xsm_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.069s] -- Set runtime path of "/home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg/xsm_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.069s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg/xsm_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.070s] -- Set runtime path of "/home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg/xsm_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.070s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg/xsm_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.070s] -- Set runtime path of "/home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages/xsm_msg/xsm_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.070s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/lib/libxsm_msg__rosidl_generator_py.so
+[3.070s] -- Set runtime path of "/home/xsm/R1_ws/install/xsm_msg/lib/libxsm_msg__rosidl_generator_py.so" to ""
+[3.070s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/msg/Hwrev.idl
+[3.071s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/msg/Hwrev.msg
+[3.071s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/ament_index/resource_index/package_run_dependencies/xsm_msg
+[3.071s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/ament_index/resource_index/parent_prefix_path/xsm_msg
+[3.071s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/environment/ament_prefix_path.sh
+[3.071s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/environment/ament_prefix_path.dsv
+[3.071s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/environment/path.sh
+[3.071s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/environment/path.dsv
+[3.072s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/local_setup.bash
+[3.072s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/local_setup.sh
+[3.072s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/local_setup.zsh
+[3.072s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/local_setup.dsv
+[3.072s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/package.dsv
+[3.072s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/ament_index/resource_index/packages/xsm_msg
+[3.072s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake/export_xsm_msg__rosidl_generator_cExport.cmake
+[3.072s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake/export_xsm_msg__rosidl_generator_cExport-noconfig.cmake
+[3.073s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake/export_xsm_msg__rosidl_typesupport_fastrtps_cExport.cmake
+[3.073s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake/export_xsm_msg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.073s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake/xsm_msg__rosidl_typesupport_introspection_cExport.cmake
+[3.073s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake/xsm_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.073s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake/xsm_msg__rosidl_typesupport_cExport.cmake
+[3.073s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake/xsm_msg__rosidl_typesupport_cExport-noconfig.cmake
+[3.073s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake/export_xsm_msg__rosidl_generator_cppExport.cmake
+[3.073s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake/export_xsm_msg__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.074s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake/export_xsm_msg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.074s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake/xsm_msg__rosidl_typesupport_introspection_cppExport.cmake
+[3.074s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake/xsm_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.074s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake/xsm_msg__rosidl_typesupport_cppExport.cmake
+[3.074s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake/xsm_msg__rosidl_typesupport_cppExport-noconfig.cmake
+[3.074s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake/export_xsm_msg__rosidl_generator_pyExport.cmake
+[3.074s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake/export_xsm_msg__rosidl_generator_pyExport-noconfig.cmake
+[3.074s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake/rosidl_cmake-extras.cmake
+[3.075s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.075s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake/ament_cmake_export_libraries-extras.cmake
+[3.075s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake/ament_cmake_export_targets-extras.cmake
+[3.075s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.075s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.075s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.075s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake/xsm_msgConfig.cmake
+[3.075s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake/xsm_msgConfig-version.cmake
+[3.076s] -- Installing: /home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/package.xml
+[3.078s] Invoked command in '/home/xsm/R1_ws/build/xsm_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --install /home/xsm/R1_ws/build/xsm_msg

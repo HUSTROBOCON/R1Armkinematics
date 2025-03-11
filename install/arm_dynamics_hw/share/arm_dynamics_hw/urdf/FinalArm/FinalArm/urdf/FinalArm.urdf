@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="FinalArm">
+    <link name="world" />
+    <joint name="base_to_world" type="fixed">
+              <parent link="world" />
+              <child link="base_link" />
+              <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="2.84868459210497E-05 0.00646103306924694 0.0516909612018821"
+        rpy="0 0 0" />
+      <mass
+        value="0.638560833290521" />
+      <inertia
+        ixx="0.000342424803097014"
+        ixy="3.06353508404664E-08"
+        ixz="-3.84293574835152E-07"
+        iyy="0.00095234772259134"
+        iyz="-1.39850796637679E-06"
+        izz="0.000643762246471621" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="src/arm_dynamics_hw/urdf/FinalArm/FinalArm/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <!-- <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="src/arm_dynamics_hw/urdf/FinalArm/meshes/base_link.STL" />
+      </geometry>
+    </collision> -->
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="0.248708063516311 0.00702215245402657 0.0786936617356035"
+        rpy="0 0 0" />
+      <mass
+        value="0.861326535199061" />
+      <inertia
+        ixx="0.000978441781180357"
+        ixy="-1.48615725513242E-08"
+        ixz="-0.00148241927656951"
+        iyy="0.0055874454640779"
+        iyz="-3.68368883338665E-08"
+        izz="0.00519426015556592" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="src/arm_dynamics_hw/urdf/FinalArm/FinalArm/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <!-- <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="src/arm_dynamics_hw/urdf/FinalArm/meshes/link1.STL" />
+      </geometry>
+    </collision> -->
+  </link>
+  <joint
+    name="joint1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.07"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      effort="20"
+      velocity="30" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="-0.281658164831118 -0.00196458225175345 0.136275461412602"
+        rpy="0 0 0" />
+      <mass
+        value="0.636949690358727" />
+      <inertia
+        ixx="0.000992206299970808"
+        ixy="2.19736529385378E-05"
+        ixz="0.00131148981580626"
+        iyy="0.00391115839523266"
+        iyz="-1.05946419234175E-05"
+        izz="0.00306817981390809" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="src/arm_dynamics_hw/urdf/FinalArm/FinalArm/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <!-- <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="src/arm_dynamics_hw/urdf/FinalArm/meshes/link2.STL" />
+      </geometry>
+    </collision> -->
+  </link>
+  <joint
+    name="joint2"
+    type="continuous">
+    <origin
+      xyz="0.40042 0 0.12673"
+      rpy="0 0 0" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      effort="20"
+      velocity="30" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="-0.0440977889007804 -0.00278954022365608 -0.130092157825862"
+        rpy="0 0 0" />
+      <mass
+        value="0.628504695302231" />
+      <inertia
+        ixx="0.000860361918315193"
+        ixy="8.99380883830855E-08"
+        ixz="-2.66636770821929E-05"
+        iyy="0.000970151501110851"
+        iyz="-7.44625841046905E-08"
+        izz="0.000432481928664648" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="src/arm_dynamics_hw/urdf/FinalArm/FinalArm/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <!-- <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="src/arm_dynamics_hw/urdf/FinalArm/meshes/link3.STL" />
+      </geometry>
+    </collision> -->
+  </link>
+  <joint
+    name="joint3"
+    type="continuous">
+    <origin
+      xyz="-0.43487 0 0.21035"
+      rpy="0 0 0" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      effort="20"
+      velocity="30" />
+  </joint>
+
+    <ros2_control name="GazeboSystem" type="sy.385stem">
+        <hardware>
+            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+        </hardware>
+        <joint name="joint1">
+            <command_interface name="position">
+                <param name="min">-3.14</param>
+                <param name="max">3.14</param>
+            </command_interface>
+            <command_interface name="velocity">
+                <param name="min">-30</param>
+                <param name="max">30</param>
+            </command_interface>
+            <command_interface name="effort">
+                <param name="min">-20</param>
+                <param name="max">20</param>
+            </command_interface>
+            <state_interface name="position">
+                <param name="initial_value">0</param>
+            </state_interface>
+            <state_interface name="velocity"></state_interface>
+            <state_interface name="effort"></state_interface>
+        </joint>
+        <joint name="joint2">
+            <command_interface name="position">
+                <param name="min">-3.14</param>
+                <param name="max">3.14</param>
+            </command_interface>
+            <command_interface name="velocity">
+                <param name="min">-30</param>
+                <param name="max">30</param>
+            </command_interface>
+            <command_interface name="effort">
+                <param name="min">-20</param>
+                <param name="max">20</param>
+            </command_interface>
+            <state_interface name="position">
+                <param name="initial_value">0</param>
+            </state_interface>
+            <state_interface name="velocity"></state_interface>
+            <state_interface name="effort"></state_interface>
+        </joint>
+        <joint name="joint3">
+            <command_interface name="position">
+                <param name="min">-3.14</param>
+                <param name="max">3.14</param>
+            </command_interface>
+            <command_interface name="velocity">
+                <param name="min">-30</param>
+                <param name="max">30</param>
+            </command_interface>
+            <command_interface name="effort">
+                <param name="min">-20</param>
+                <param name="max">20</param>
+            </command_interface>
+            <state_interface name="position">
+                <param name="initial_value">0</param>
+            </state_interface>
+            <state_interface name="velocity"></state_interface>
+            <state_interface name="effort"></state_interface>
+        </joint>
+    </ros2_control>
+    <gazebo>
+        <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+            <parameters>/home/xsm/R1_ws/src/arm_dynamics_hw/config/effort_control.yaml</parameters>
+        </plugin>
+    </gazebo>
+</robot>

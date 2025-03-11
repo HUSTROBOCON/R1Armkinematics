@@ -1,1 +1,2 @@
-/home/xsm/R1_ws/build/armForwardkinematics/ament_cmake_environment_hooks/local_setup.dsv
+source;share/armForwardkinematics/environment/ament_prefix_path.sh
+source;share/armForwardkinematics/environment/path.sh

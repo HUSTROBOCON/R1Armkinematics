@@ -22,7 +22,7 @@
 #include "mit_msgs/msg/mit_joint_commands.hpp"
 #include "mit_msgs/msg/mit_low_state.hpp"
 #include <ament_index_cpp/get_package_share_directory.hpp>
-
+#include "xsm_msg/msg/hwrev.hpp"
 #include "rclcpp/rclcpp.hpp"
 
 
@@ -54,21 +54,21 @@ private:
     rclcpp::TimerBase::SharedPtr timer_;
     double g = 9.81;
 
-    double m1 = 2.092699082; // 质量 m1
-    double m2 = 2.317699082; // 质量 m2
-    double m3 = 2.472699082; // 质量 m3
+    double m1 = 1.2; // 质量 m1 //1.2
+    double m2 = 0.8; // 质量 m2 //0.80
+    double m3 = 0.75; // 质量 m3 //0.75 //0.5
 
-    double Lc1 = 0.16; // 链接1的质心位置
-    double Lc2 = 0.1925; // 链接2的质心位置
-    double Lc3 = 0.179; // 链接3的质心位置
+    double Lc1 = 0.2975; // 链接1的质心位置 
+    double Lc2 = 0.39; // 链接2的质心位置
+    double Lc3 = 0.19025; // 链接3的质心位置 
 
-    double L1 = 0.32; // 链接1的长度
-    double L2 = 0.385; // 链接2的长度
-    double L3 = 0.358; // 链接3的长度
+    double L1 = 0.42; // 链接1的长度 //0.42
+    double L2 = 0.48; // 链接2的长度 //0.52
+    double L3 = 0.3805; // 链接3的长度 //0.358
 
-    double J1 = 0.02828397; // 链接1的惯性矩
-    double J2 = 0.04363308; // 链接2的惯性矩
-    double J3 = 0.03698911; // 链接3的惯性矩
+    double J1 = 0.026805022; // 链接1的惯性矩
+    double J2 = 0.023046232; // 链接2的惯性矩
+    double J3 = 0.007281292; // 链接3的惯性矩
 
     // 定义系数
     double a1 = m1 * Lc1 * Lc1 + J1 + (m2 + m3) * L1 * L1;
@@ -134,6 +134,8 @@ private:
     rclcpp::Subscription<mit_msgs::msg::MITLowState>::SharedPtr FTrobotStatusSub_;
     rclcpp::Publisher<mit_msgs::msg::MITJointCommands>::SharedPtr
             jointCommandPub_;
+    rclcpp::Publisher<xsm_msg::msg::Hwrev>::SharedPtr
+            jamesPub_;
 
 
 
@@ -176,5 +178,7 @@ private:
     Eigen::Vector3d zwzmcgcal(Eigen::Vector3d q, Eigen::Vector3d dq, Eigen::Vector3d ddq);
 
     Eigen::Vector3d zwzVeltaucal(Eigen::Vector3d& qnow ,Eigen::Vector3d& dqnow);
+    Eigen::Vector3d zwzSinglepointForcecal(Eigen::Vector3d& qnow ,Eigen::Vector3d& dqnow);
+
 };
 

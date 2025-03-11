@@ -1,1 +1,18 @@
-/home/xsm/R1_ws/src/arm_dynamics_hw/config/RC_config.yaml
+coral_config:
+  robot_name : "R1arm"
+  record : "true"  # true or false
+  paused : "true"  # true or false
+  fix_base : false
+  desired_positiion: [0,0,2.2]
+  delay : 1
+  joint_command_topic: "gazebo_joint_command_array"
+  low_state_topic: "gazebo_low_state_topic"
+  #  base的位置可以通过配置文件设置
+  base_pos: [0.0, 0.0, 0]
+  base_rpy: [0.0, 0.0, 0.0]
+
+#  填写的顺序就是关节加载的顺序
+  joints:
+    - joint1
+    - joint2
+    - joint3

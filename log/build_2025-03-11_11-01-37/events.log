@@ -1,0 +1,356 @@
+[0.000000] (-) TimerEvent: {}
+[0.000634] (-) JobUnselected: {'identifier': 'arm_dynamics_hw'}
+[0.000666] (-) JobUnselected: {'identifier': 'gui_pkg'}
+[0.000682] (-) JobUnselected: {'identifier': 'lock_utils'}
+[0.000694] (-) JobUnselected: {'identifier': 'mit_msgs'}
+[0.000705] (-) JobUnselected: {'identifier': 'optimal_control_problem'}
+[0.000717] (-) JobUnselected: {'identifier': 'xsm_msg'}
+[0.000733] (armForwardkinematics) JobQueued: {'identifier': 'armForwardkinematics', 'dependencies': OrderedDict([('mit_msgs', '/home/xsm/R1_ws/install/mit_msgs')])}
+[0.000758] (armForwardkinematics) JobStarted: {'identifier': 'armForwardkinematics'}
+[0.015290] (armForwardkinematics) JobProgress: {'identifier': 'armForwardkinematics', 'progress': 'cmake'}
+[0.015745] (armForwardkinematics) JobProgress: {'identifier': 'armForwardkinematics', 'progress': 'build'}
+[0.016230] (armForwardkinematics) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xsm/R1_ws/build/armForwardkinematics', '--', '-j16', '-l16'], 'cwd': '/home/xsm/R1_ws/build/armForwardkinematics', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'xsm'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/xsm/R1_ws/install/mit_msgs/lib:/home/xsm/R1_ws/install/xsmmsg/lib:/home/xsm/R1_ws/install/xsm_msg/lib:/home/xsm/R1_ws/install/optimal_control_problem/lib:/home/xsm/R1_ws/install/lock_utils/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia'), ('HOME', '/home/xsm'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/xsm/R1_ws/src'), ('TERM_PROGRAM_VERSION', '1.95.3'), ('DESKTOP_SESSION', 'ubuntu'), ('DEBUGPY_ADAPTER_ENDPOINTS', '/home/xsm/.vscode/extensions/ms-python.debugpy-2025.0.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-e3ef959b450903d3.txt'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1930'), ('BUNDLED_DEBUGPY_PATH', '/home/xsm/.vscode/extensions/ms-python.debugpy-2025.4.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=843cb7fb6ef1a485375ad84067d00496'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('CONDA_ALLOW_SOFTLINKS', 'false'), ('COLCON_PREFIX_PATH', '/home/xsm/R1_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'xsm'), ('CONDA_ROOT', '/home/xsm/anaconda3'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'xsm'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/xsm/anaconda3/condabin:/opt/ros/humble/bin:/home/xsm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/xsm/.vscode/extensions/ms-python.debugpy-2025.4.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/xsm-ASUS-TUF-Gaming-A15-FA506QM-FA506QM:@/tmp/.ICE-unix/1930,unix/xsm-ASUS-TUF-Gaming-A15-FA506QM-FA506QM:/tmp/.ICE-unix/1930'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1575b9d6_854f_431d_8e3e_f4d34aa228e3'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/xsm/.vscode/extensions/ms-python.debugpy-2025.4.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-e3ef959b450903d3.txt'), ('LD_PRELOAD', '/usr/lib/x86_64-linux-gnu/libGLEW.so'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-4fe38402e5.sock'), ('GNOME_TERMINAL_SERVICE', ':1.90'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/home/xsm/R1_ws/install/xsmmsg:/home/xsm/R1_ws/install/xsm_msg:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/xsm/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xsm/R1_ws/build/armForwardkinematics'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/xsm/anaconda3/bin/conda'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=843cb7fb6ef1a485375ad84067d00496'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/xsm/R1_ws/install/xsmmsg/local/lib/python3.10/dist-packages:/home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages:/home/xsm/R1_ws/install/mit_msgs/local/lib/python3.10/dist-packages:/home/xsm/R1_ws/build/gui_pkg:/home/xsm/R1_ws/install/gui_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/xsmmsg:/home/xsm/R1_ws/install/xsm_msg:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble')]), 'shell': False}
+[0.044919] (armForwardkinematics) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099168] (armForwardkinematics) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.099785] (-) TimerEvent: {}
+[0.153531] (armForwardkinematics) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.174310] (armForwardkinematics) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.175980] (armForwardkinematics) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.179964] (armForwardkinematics) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.186558] (armForwardkinematics) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.195017] (armForwardkinematics) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.199851] (-) TimerEvent: {}
+[0.217096] (armForwardkinematics) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.218098] (armForwardkinematics) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.299952] (-) TimerEvent: {}
+[0.313426] (armForwardkinematics) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.346333] (armForwardkinematics) StdoutLine: {'line': b'-- pinocchio FOUND. pinocchio at /opt/ros/humble/lib/x86_64-linux-gnu/libpinocchio.so\n'}
+[0.346769] (armForwardkinematics) StdoutLine: {'line': b'-- boost_filesystem FOUND. boost_filesystem at /lib/x86_64-linux-gnu/libboost_filesystem.so\n'}
+[0.347069] (armForwardkinematics) StdoutLine: {'line': b'-- boost_serialization FOUND. boost_serialization at /lib/x86_64-linux-gnu/libboost_serialization.so\n'}
+[0.347377] (armForwardkinematics) StdoutLine: {'line': b'-- boost_system FOUND. boost_system at /lib/x86_64-linux-gnu/libboost_system.so\n'}
+[0.353017] (armForwardkinematics) StdoutLine: {'line': b'-- Found Boost: /usr/include (found version "1.74.0") found components: filesystem serialization system \n'}
+[0.353769] (armForwardkinematics) StdoutLine: {'line': b'-- eigenpy FOUND. eigenpy at /opt/ros/humble/lib/x86_64-linux-gnu/libeigenpy.so\n'}
+[0.381504] (armForwardkinematics) StdoutLine: {'line': b'-- Checking for NumPy\n'}
+[0.400027] (-) TimerEvent: {}
+[0.500271] (-) TimerEvent: {}
+[0.544755] (armForwardkinematics) StdoutLine: {'line': b'--   NUMPY_INCLUDE_DIRS=/usr/lib/python3/dist-packages/numpy/core/include\n'}
+[0.600371] (-) TimerEvent: {}
+[0.625519] (armForwardkinematics) StdoutLine: {'line': b'--   NUMPY_VERSION=1.21.5\n'}
+[0.700462] (-) TimerEvent: {}
+[0.800709] (-) TimerEvent: {}
+[0.844434] (armForwardkinematics) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter Development.Module NumPy \n'}
+[0.845024] (armForwardkinematics) StdoutLine: {'line': b'-- PythonLibraryDirs: \n'}
+[0.845124] (armForwardkinematics) StdoutLine: {'line': b'-- PythonLibVersionString: 3.10.12\n'}
+[0.868359] (armForwardkinematics) StdoutLine: {'line': b'-- Python site lib: lib/python3.10/dist-packages\n'}
+[0.868529] (armForwardkinematics) StdoutLine: {'line': b'-- Python include dirs: /usr/include/python3.10\n'}
+[0.900802] (-) TimerEvent: {}
+[0.914290] (armForwardkinematics) StdoutLine: {'line': b'-- Checking for NumPy\n'}
+[0.993517] (armForwardkinematics) StdoutLine: {'line': b'--   NUMPY_INCLUDE_DIRS=/usr/lib/python3/dist-packages/numpy/core/include\n'}
+[1.000881] (-) TimerEvent: {}
+[1.075058] (armForwardkinematics) StdoutLine: {'line': b'--   NUMPY_VERSION=1.21.5\n'}
+[1.075252] (armForwardkinematics) StdoutLine: {'line': b'-- NumPy include dir: /usr/lib/python3/dist-packages/numpy/core/include\n'}
+[1.078285] (armForwardkinematics) StderrLine: {'line': b'\x1b[33mCMake Warning at /usr/share/cmake-3.22/Modules/FindBoost.cmake:2201 (message):\n'}
+[1.078407] (armForwardkinematics) StderrLine: {'line': b'  No header defined for python310; skipping header check (note: header-only\n'}
+[1.078468] (armForwardkinematics) StderrLine: {'line': b'  libraries have no designated component)\n'}
+[1.078520] (armForwardkinematics) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.078618] (armForwardkinematics) StderrLine: {'line': b'  /opt/ros/humble/lib/x86_64-linux-gnu/cmake/eigenpy/boost.cmake:144 (find_package)\n'}
+[1.078667] (armForwardkinematics) StderrLine: {'line': b'  /opt/ros/humble/lib/x86_64-linux-gnu/cmake/eigenpy/eigenpyConfig.cmake:149 (SEARCH_FOR_BOOST_PYTHON)\n'}
+[1.078714] (armForwardkinematics) StderrLine: {'line': b'  /usr/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake:47 (find_package)\n'}
+[1.078760] (armForwardkinematics) StderrLine: {'line': b'  /opt/ros/humble/lib/x86_64-linux-gnu/cmake/pinocchio/pinocchioConfig.cmake:160 (find_dependency)\n'}
+[1.078805] (armForwardkinematics) StderrLine: {'line': b'  CMakeLists.txt:11 (find_package)\n'}
+[1.078919] (armForwardkinematics) StderrLine: {'line': b'\n'}
+[1.078968] (armForwardkinematics) StderrLine: {'line': b'\x1b[0m\n'}
+[1.079013] (armForwardkinematics) StdoutLine: {'line': b'-- Found Boost: /usr/include (found version "1.74.0") found components: python310 \n'}
+[1.079063] (armForwardkinematics) StdoutLine: {'line': b'-- Boost_PYTHON_LIBRARY: /usr/lib/x86_64-linux-gnu/libboost_python310.so\n'}
+[1.100981] (-) TimerEvent: {}
+[1.201247] (-) TimerEvent: {}
+[1.301520] (-) TimerEvent: {}
+[1.340763] (armForwardkinematics) StdoutLine: {'line': b'-- Default C++ standard: 201703\n'}
+[1.340960] (armForwardkinematics) StdoutLine: {'line': b'-- C++ standard sufficient: Minimal required 11, currently defined: 17\n'}
+[1.341028] (armForwardkinematics) StdoutLine: {'line': b'-- CMAKE_CXX_STANDARD was not set: automatically set to currently defined standard 17\n'}
+[1.341790] (armForwardkinematics) StdoutLine: {'line': b'-- hpp-fcl FOUND. hpp-fcl at /opt/ros/humble/lib/x86_64-linux-gnu/libhpp-fcl.so\n'}
+[1.346831] (armForwardkinematics) StdoutLine: {'line': b'-- Found Boost: /usr/include (found version "1.74.0") found components: chrono serialization filesystem \n'}
+[1.347900] (armForwardkinematics) StdoutLine: {'line': b'-- C++ standard sufficient: Minimal required 11, currently defined: 17\n'}
+[1.348307] (armForwardkinematics) StdoutLine: {'line': b'-- C++ standard sufficient: Minimal required 11, currently defined: 17\n'}
+[1.351521] (armForwardkinematics) StderrLine: {'line': b'\x1b[33mCMake Warning at /usr/share/cmake-3.22/Modules/FindBoost.cmake:2201 (message):\n'}
+[1.351617] (armForwardkinematics) StderrLine: {'line': b'  No header defined for python310; skipping header check (note: header-only\n'}
+[1.351674] (armForwardkinematics) StderrLine: {'line': b'  libraries have no designated component)\n'}
+[1.351728] (armForwardkinematics) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.351778] (armForwardkinematics) StderrLine: {'line': b'  CMakeLists.txt:13 (find_package)\n'}
+[1.351834] (armForwardkinematics) StderrLine: {'line': b'\n'}
+[1.351908] (armForwardkinematics) StderrLine: {'line': b'\x1b[0m\n'}
+[1.351960] (armForwardkinematics) StdoutLine: {'line': b'-- Found Boost: /usr/include (found version "1.74.0") found components: python310 \n'}
+[1.352101] (armForwardkinematics) StdoutLine: {'line': b'-- Found mit_msgs: 0.0.0 (/home/xsm/R1_ws/install/mit_msgs/share/mit_msgs/cmake)\n'}
+[1.385494] (armForwardkinematics) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.390792] (armForwardkinematics) StdoutLine: {'line': b'-- Found xsm_msg: 0.0.0 (/home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake)\n'}
+[1.397898] (armForwardkinematics) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.401575] (-) TimerEvent: {}
+[1.442653] (armForwardkinematics) StderrLine: {'line': b'WARNING: Package name "armForwardkinematics" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.\n'}
+[1.501679] (-) TimerEvent: {}
+[1.525152] (armForwardkinematics) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.525421] (armForwardkinematics) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/xsm/R1_ws/src/armForwardkinematics/include;/home/xsm/R1_ws/src/armForwardkinematics/include/pid\n'}
+[1.525507] (armForwardkinematics) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.534493] (armForwardkinematics) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.551955] (armForwardkinematics) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.560761] (armForwardkinematics) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.601752] (-) TimerEvent: {}
+[1.630498] (armForwardkinematics) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.630669] (armForwardkinematics) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.639567] (armForwardkinematics) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.640196] (armForwardkinematics) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.651308] (armForwardkinematics) StdoutLine: {'line': b'-- Generating done\n'}
+[1.652726] (armForwardkinematics) StdoutLine: {'line': b'-- Build files have been written to: /home/xsm/R1_ws/build/armForwardkinematics\n'}
+[1.692418] (armForwardkinematics) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pino_armkine_node\x1b[0m\n'}
+[1.701818] (-) TimerEvent: {}
+[1.747140] (armForwardkinematics) StderrLine: {'line': b'gmake[2]: \xe8\xad\xa6\xe5\x91\x8a\xef\xbc\x9a\xe6\x96\x87\xe4\xbb\xb6\xe2\x80\x9c/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp\xe2\x80\x9d\xe7\x9a\x84\xe4\xbf\xae\xe6\x94\xb9\xe6\x97\xb6\xe9\x97\xb4\xe5\x9c\xa8\xe6\x9c\xaa\xe6\x9d\xa5 23855 \xe7\xa7\x92\xe5\x90\x8e\n'}
+[1.757712] (armForwardkinematics) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/pino_armkine_node.dir/src/armPino.cpp.o\x1b[0m\n'}
+[1.758125] (armForwardkinematics) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/FT_method.cpp.o\x1b[0m\n'}
+[1.759262] (armForwardkinematics) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzmcg.cpp.o\x1b[0m\n'}
+[1.760859] (armForwardkinematics) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzVel.cpp.o\x1b[0m\n'}
+[1.761647] (armForwardkinematics) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/path.cpp.o\x1b[0m\n'}
+[1.762451] (armForwardkinematics) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/pino_armkine_node.dir/source/pid.cpp.o\x1b[0m\n'}
+[1.801932] (-) TimerEvent: {}
+[1.902314] (-) TimerEvent: {}
+[1.986318] (armForwardkinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armForwardkinematics/source/pid.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kfloat PID::PIDreset()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.986552] (armForwardkinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armForwardkinematics/source/pid.cpp:37:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type\x07-Wreturn-type\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.986640] (armForwardkinematics) StderrLine: {'line': b'   37 | \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[1.986716] (armForwardkinematics) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.002400] (-) TimerEvent: {}
+[2.102735] (-) TimerEvent: {}
+[2.203090] (-) TimerEvent: {}
+[2.303450] (-) TimerEvent: {}
+[2.403807] (-) TimerEvent: {}
+[2.504271] (-) TimerEvent: {}
+[2.604579] (-) TimerEvent: {}
+[2.704888] (-) TimerEvent: {}
+[2.805178] (-) TimerEvent: {}
+[2.905482] (-) TimerEvent: {}
+[3.005846] (-) TimerEvent: {}
+[3.106162] (-) TimerEvent: {}
+[3.206446] (-) TimerEvent: {}
+[3.306782] (-) TimerEvent: {}
+[3.407126] (-) TimerEvent: {}
+[3.507443] (-) TimerEvent: {}
+[3.607756] (-) TimerEvent: {}
+[3.708058] (-) TimerEvent: {}
+[3.808392] (-) TimerEvent: {}
+[3.908717] (-) TimerEvent: {}
+[4.009054] (-) TimerEvent: {}
+[4.109379] (-) TimerEvent: {}
+[4.209721] (-) TimerEvent: {}
+[4.310109] (-) TimerEvent: {}
+[4.410430] (-) TimerEvent: {}
+[4.510750] (-) TimerEvent: {}
+[4.611077] (-) TimerEvent: {}
+[4.711420] (-) TimerEvent: {}
+[4.811746] (-) TimerEvent: {}
+[4.912092] (-) TimerEvent: {}
+[5.012474] (-) TimerEvent: {}
+[5.112886] (-) TimerEvent: {}
+[5.213288] (-) TimerEvent: {}
+[5.313630] (-) TimerEvent: {}
+[5.414000] (-) TimerEvent: {}
+[5.514376] (-) TimerEvent: {}
+[5.614719] (-) TimerEvent: {}
+[5.715057] (-) TimerEvent: {}
+[5.815409] (-) TimerEvent: {}
+[5.915729] (-) TimerEvent: {}
+[6.016073] (-) TimerEvent: {}
+[6.116420] (-) TimerEvent: {}
+[6.216730] (-) TimerEvent: {}
+[6.317045] (-) TimerEvent: {}
+[6.417395] (-) TimerEvent: {}
+[6.517745] (-) TimerEvent: {}
+[6.618076] (-) TimerEvent: {}
+[6.718416] (-) TimerEvent: {}
+[6.818748] (-) TimerEvent: {}
+[6.919062] (-) TimerEvent: {}
+[7.019396] (-) TimerEvent: {}
+[7.052063] (armForwardkinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/zwzVel.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KEigen::MatrixXd FT_method::velPlan(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.052296] (armForwardkinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/zwzVel.cpp:21:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KR\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.052395] (armForwardkinematics) StderrLine: {'line': b'   21 |     double \x1b[01;35m\x1b[KR\x1b[m\x1b[K = 0.8;\n'}
+[7.052463] (armForwardkinematics) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[7.096144] (armForwardkinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix3d FT_method::generateM(Eigen::Vector3d)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.096345] (armForwardkinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:35:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kq1\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.096433] (armForwardkinematics) StderrLine: {'line': b'   35 |     double \x1b[01;35m\x1b[Kq1\x1b[m\x1b[K = q_0(0);\n'}
+[7.096514] (armForwardkinematics) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[7.097260] (armForwardkinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector3d FT_method::generateC(Eigen::Vector3d, Eigen::Vector3d)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.097333] (armForwardkinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/FT_method.cpp:64:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kq1\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.097381] (armForwardkinematics) StderrLine: {'line': b'   64 |     double \x1b[01;35m\x1b[Kq1\x1b[m\x1b[K = q_0(0);\n'}
+[7.097423] (armForwardkinematics) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[7.109352] (armForwardkinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/zwzmcg.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector3d FT_method::zwzmcgcal(Eigen::Vector3d, Eigen::Vector3d, Eigen::Vector3d)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.109619] (armForwardkinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/zwzmcg.cpp:31:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ky2\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.109694] (armForwardkinematics) StderrLine: {'line': b'   31 |     double \x1b[01;35m\x1b[Ky2\x1b[m\x1b[K = L1 * sin(q1(0)) + Lc2 * sin(q1(0) + q2(0));\n'}
+[7.109751] (armForwardkinematics) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[7.109801] (armForwardkinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/zwzmcg.cpp:32:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ky3\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.109863] (armForwardkinematics) StderrLine: {'line': b'   32 |     double \x1b[01;35m\x1b[Ky3\x1b[m\x1b[K = L1 * sin(q1(0)) + L2 * sin(q1(0) + q2(0)) + Lc3 * sin(q1(0) + q2(0) + q3(0));\n'}
+[7.109913] (armForwardkinematics) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[7.109958] (armForwardkinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/zwzmcg.cpp:46:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KdT1ddotq1\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.110004] (armForwardkinematics) StderrLine: {'line': b'   46 |     double \x1b[01;35m\x1b[KdT1ddotq1\x1b[m\x1b[K = m1 * Lc1 * q1(1) + Lc1 * q1(0) + J1 * q1(1);\n'}
+[7.110049] (armForwardkinematics) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.110095] (armForwardkinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/zwzmcg.cpp:51:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KdT2ddotq1\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.110157] (armForwardkinematics) StderrLine: {'line': b'   51 |     double \x1b[01;35m\x1b[KdT2ddotq1\x1b[m\x1b[K = m2 * dx2 * ddotx2ddotq1 + m2 * dy2 * ddoty2ddotq1 + J2 * (q1(1) + q2(1));\n'}
+[7.110206] (armForwardkinematics) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.110243] (armForwardkinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/zwzmcg.cpp:56:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KdT3ddotq1\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.110285] (armForwardkinematics) StderrLine: {'line': b'   56 |     double \x1b[01;35m\x1b[KdT3ddotq1\x1b[m\x1b[K = m3 * dx3 * ddotx3ddotq1 + m3 * dy3 * ddoty3ddotq1 + J3 * (q1(1) + q2(1) + q3(1));\n'}
+[7.110325] (armForwardkinematics) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.110363] (armForwardkinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/zwzmcg.cpp:88:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KdT1ddotq2\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.110402] (armForwardkinematics) StderrLine: {'line': b'   88 |     double \x1b[01;35m\x1b[KdT1ddotq2\x1b[m\x1b[K = 0;\n'}
+[7.110439] (armForwardkinematics) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.110475] (armForwardkinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/zwzmcg.cpp:94:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KdT2ddotq2\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.110512] (armForwardkinematics) StderrLine: {'line': b'   94 |     double \x1b[01;35m\x1b[KdT2ddotq2\x1b[m\x1b[K = m2 * (dx2 * ddotx2ddotq2 + dy2 * ddoty2ddotq2) + J2 * (q1(1) + q2(1));\n'}
+[7.110548] (armForwardkinematics) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.110583] (armForwardkinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/zwzmcg.cpp:120:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KdT3ddotq2\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.110619] (armForwardkinematics) StderrLine: {'line': b'  120 |     double \x1b[01;35m\x1b[KdT3ddotq2\x1b[m\x1b[K = m3 * (dx3 * ddotx3ddotq2 + dy3 * ddoty3ddotq2) + J3 * (q1(1) + q2(1) + q3(1));\n'}
+[7.110655] (armForwardkinematics) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.110689] (armForwardkinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/zwzmcg.cpp:129:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KdT1ddotq3\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.110725] (armForwardkinematics) StderrLine: {'line': b'  129 |     double \x1b[01;35m\x1b[KdT1ddotq3\x1b[m\x1b[K = 0;\n'}
+[7.110763] (armForwardkinematics) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.110799] (armForwardkinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/zwzmcg.cpp:130:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KdT2ddotq3\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.110863] (armForwardkinematics) StderrLine: {'line': b'  130 |     double \x1b[01;35m\x1b[KdT2ddotq3\x1b[m\x1b[K = 0;\n'}
+[7.110901] (armForwardkinematics) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.110937] (armForwardkinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/zwzmcg.cpp:135:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KdT3ddotq3\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.110978] (armForwardkinematics) StderrLine: {'line': b'  135 |     double \x1b[01;35m\x1b[KdT3ddotq3\x1b[m\x1b[K = m3 * (dx3 * ddotx3ddotq3 + dy3 * ddoty3ddotq3) + J3 * (q1(1) + q2(1) + q3(1));\n'}
+[7.111014] (armForwardkinematics) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.119472] (-) TimerEvent: {}
+[7.150403] (armForwardkinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/zwzVel.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector3d FT_method::zwzVeltaucal(Eigen::Vector3d&, Eigen::Vector3d&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.150599] (armForwardkinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/zwzVel.cpp:57:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kcount\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.150695] (armForwardkinematics) StderrLine: {'line': b'   57 |     static int \x1b[01;35m\x1b[Kcount\x1b[m\x1b[K = 0;\n'}
+[7.150753] (armForwardkinematics) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[7.150806] (armForwardkinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/zwzVel.cpp:58:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kqpre\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.150861] (armForwardkinematics) StderrLine: {'line': b'   58 |     static Eigen::Vector3d \x1b[01;35m\x1b[Kqpre\x1b[m\x1b[K = qnow;\n'}
+[7.150923] (armForwardkinematics) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[7.150977] (armForwardkinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/zwzVel.cpp:59:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kdqpre\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.151028] (armForwardkinematics) StderrLine: {'line': b'   59 |     static Eigen::Vector3d \x1b[01;35m\x1b[Kdqpre\x1b[m\x1b[K = dqnow;\n'}
+[7.151077] (armForwardkinematics) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[7.219582] (-) TimerEvent: {}
+[7.319924] (-) TimerEvent: {}
+[7.420335] (-) TimerEvent: {}
+[7.520660] (-) TimerEvent: {}
+[7.620999] (-) TimerEvent: {}
+[7.721341] (-) TimerEvent: {}
+[7.821665] (-) TimerEvent: {}
+[7.921957] (-) TimerEvent: {}
+[7.961788] (armForwardkinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/zwzVel.cpp:\x1b[m\x1b[K At global scope:\n'}
+[7.961994] (armForwardkinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armForwardkinematics/source/ForwardkinematicsT/zwzVel.cpp:57:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcount\x1b[m\x1b[K\xe2\x80\x99 defined but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.962082] (armForwardkinematics) StderrLine: {'line': b'   57 |     static int \x1b[01;35m\x1b[Kcount\x1b[m\x1b[K = 0;\n'}
+[7.962159] (armForwardkinematics) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.022051] (-) TimerEvent: {}
+[8.122350] (-) TimerEvent: {}
+[8.222646] (-) TimerEvent: {}
+[8.322949] (-) TimerEvent: {}
+[8.423274] (-) TimerEvent: {}
+[8.523536] (-) TimerEvent: {}
+[8.623800] (-) TimerEvent: {}
+[8.724061] (-) TimerEvent: {}
+[8.824349] (-) TimerEvent: {}
+[8.924666] (-) TimerEvent: {}
+[9.024984] (-) TimerEvent: {}
+[9.125332] (-) TimerEvent: {}
+[9.225763] (-) TimerEvent: {}
+[9.326079] (-) TimerEvent: {}
+[9.426387] (-) TimerEvent: {}
+[9.526678] (-) TimerEvent: {}
+[9.626966] (-) TimerEvent: {}
+[9.727268] (-) TimerEvent: {}
+[9.827550] (-) TimerEvent: {}
+[9.927816] (-) TimerEvent: {}
+[10.028213] (-) TimerEvent: {}
+[10.128462] (-) TimerEvent: {}
+[10.228726] (-) TimerEvent: {}
+[10.328996] (-) TimerEvent: {}
+[10.429576] (-) TimerEvent: {}
+[10.529851] (-) TimerEvent: {}
+[10.630131] (-) TimerEvent: {}
+[10.730400] (-) TimerEvent: {}
+[10.830680] (-) TimerEvent: {}
+[10.930958] (-) TimerEvent: {}
+[11.031232] (-) TimerEvent: {}
+[11.131513] (-) TimerEvent: {}
+[11.231795] (-) TimerEvent: {}
+[11.332488] (-) TimerEvent: {}
+[11.432796] (-) TimerEvent: {}
+[11.533076] (-) TimerEvent: {}
+[11.633363] (-) TimerEvent: {}
+[11.733644] (-) TimerEvent: {}
+[11.833941] (-) TimerEvent: {}
+[11.934220] (-) TimerEvent: {}
+[12.034498] (-) TimerEvent: {}
+[12.134783] (-) TimerEvent: {}
+[12.235064] (-) TimerEvent: {}
+[12.335343] (-) TimerEvent: {}
+[12.435617] (-) TimerEvent: {}
+[12.535880] (-) TimerEvent: {}
+[12.636158] (-) TimerEvent: {}
+[12.736425] (-) TimerEvent: {}
+[12.836688] (-) TimerEvent: {}
+[12.936939] (-) TimerEvent: {}
+[13.037215] (-) TimerEvent: {}
+[13.137478] (-) TimerEvent: {}
+[13.237752] (-) TimerEvent: {}
+[13.338018] (-) TimerEvent: {}
+[13.438294] (-) TimerEvent: {}
+[13.538560] (-) TimerEvent: {}
+[13.638830] (-) TimerEvent: {}
+[13.739092] (-) TimerEvent: {}
+[13.839364] (-) TimerEvent: {}
+[13.939627] (-) TimerEvent: {}
+[14.039890] (-) TimerEvent: {}
+[14.140169] (-) TimerEvent: {}
+[14.240433] (-) TimerEvent: {}
+[14.340693] (-) TimerEvent: {}
+[14.440960] (-) TimerEvent: {}
+[14.541236] (-) TimerEvent: {}
+[14.641501] (-) TimerEvent: {}
+[14.741766] (-) TimerEvent: {}
+[14.842029] (-) TimerEvent: {}
+[14.942301] (-) TimerEvent: {}
+[15.042568] (-) TimerEvent: {}
+[15.142838] (-) TimerEvent: {}
+[15.243110] (-) TimerEvent: {}
+[15.343401] (-) TimerEvent: {}
+[15.443700] (-) TimerEvent: {}
+[15.544028] (-) TimerEvent: {}
+[15.644327] (-) TimerEvent: {}
+[15.744614] (-) TimerEvent: {}
+[15.844922] (-) TimerEvent: {}
+[15.945223] (-) TimerEvent: {}
+[16.045544] (-) TimerEvent: {}
+[16.109736] (armForwardkinematics) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pino_armkine_node\x1b[0m\n'}
+[16.145644] (-) TimerEvent: {}
+[16.245977] (-) TimerEvent: {}
+[16.346637] (-) TimerEvent: {}
+[16.446928] (-) TimerEvent: {}
+[16.547181] (-) TimerEvent: {}
+[16.566887] (armForwardkinematics) StderrLine: {'line': b'gmake[2]: \xe8\xad\xa6\xe5\x91\x8a\xef\xbc\x9a\xe6\xa3\x80\xe6\xb5\x8b\xe5\x88\xb0\xe6\x97\xb6\xe9\x92\x9f\xe9\x94\x99\xe8\xaf\xaf\xe3\x80\x82\xe6\x82\xa8\xe7\x9a\x84\xe6\x9e\x84\xe5\xbb\xba\xe7\x89\x88\xe6\x9c\xac\xe5\x8f\xaf\xe8\x83\xbd\xe6\x98\xaf\xe4\xb8\x8d\xe5\xae\x8c\xe6\x95\xb4\xe7\x9a\x84\xe3\x80\x82\n'}
+[16.579078] (armForwardkinematics) StdoutLine: {'line': b'[100%] Built target pino_armkine_node\n'}
+[16.591690] (armForwardkinematics) CommandEnded: {'returncode': 0}
+[16.647258] (-) TimerEvent: {}
+[16.675142] (armForwardkinematics) JobProgress: {'identifier': 'armForwardkinematics', 'progress': 'install'}
+[16.685501] (armForwardkinematics) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xsm/R1_ws/build/armForwardkinematics'], 'cwd': '/home/xsm/R1_ws/build/armForwardkinematics', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'xsm'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/xsm/R1_ws/install/mit_msgs/lib:/home/xsm/R1_ws/install/xsmmsg/lib:/home/xsm/R1_ws/install/xsm_msg/lib:/home/xsm/R1_ws/install/optimal_control_problem/lib:/home/xsm/R1_ws/install/lock_utils/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia'), ('HOME', '/home/xsm'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/xsm/R1_ws/src'), ('TERM_PROGRAM_VERSION', '1.95.3'), ('DESKTOP_SESSION', 'ubuntu'), ('DEBUGPY_ADAPTER_ENDPOINTS', '/home/xsm/.vscode/extensions/ms-python.debugpy-2025.0.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-e3ef959b450903d3.txt'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1930'), ('BUNDLED_DEBUGPY_PATH', '/home/xsm/.vscode/extensions/ms-python.debugpy-2025.4.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=843cb7fb6ef1a485375ad84067d00496'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('CONDA_ALLOW_SOFTLINKS', 'false'), ('COLCON_PREFIX_PATH', '/home/xsm/R1_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'xsm'), ('CONDA_ROOT', '/home/xsm/anaconda3'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'xsm'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/xsm/anaconda3/condabin:/opt/ros/humble/bin:/home/xsm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/xsm/.vscode/extensions/ms-python.debugpy-2025.4.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/xsm-ASUS-TUF-Gaming-A15-FA506QM-FA506QM:@/tmp/.ICE-unix/1930,unix/xsm-ASUS-TUF-Gaming-A15-FA506QM-FA506QM:/tmp/.ICE-unix/1930'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1575b9d6_854f_431d_8e3e_f4d34aa228e3'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/xsm/.vscode/extensions/ms-python.debugpy-2025.4.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-e3ef959b450903d3.txt'), ('LD_PRELOAD', '/usr/lib/x86_64-linux-gnu/libGLEW.so'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-4fe38402e5.sock'), ('GNOME_TERMINAL_SERVICE', ':1.90'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/home/xsm/R1_ws/install/xsmmsg:/home/xsm/R1_ws/install/xsm_msg:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/xsm/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xsm/R1_ws/build/armForwardkinematics'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/xsm/anaconda3/bin/conda'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=843cb7fb6ef1a485375ad84067d00496'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/xsm/R1_ws/install/xsmmsg/local/lib/python3.10/dist-packages:/home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages:/home/xsm/R1_ws/install/mit_msgs/local/lib/python3.10/dist-packages:/home/xsm/R1_ws/build/gui_pkg:/home/xsm/R1_ws/install/gui_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/xsmmsg:/home/xsm/R1_ws/install/xsm_msg:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble')]), 'shell': False}
+[16.694022] (armForwardkinematics) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.694192] (armForwardkinematics) StdoutLine: {'line': b'-- Installing: /home/xsm/R1_ws/install/armForwardkinematics/lib/armForwardkinematics/pino_armkine_node\n'}
+[16.701157] (armForwardkinematics) StdoutLine: {'line': b'-- Set runtime path of "/home/xsm/R1_ws/install/armForwardkinematics/lib/armForwardkinematics/pino_armkine_node" to ""\n'}
+[16.701296] (armForwardkinematics) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/launch\n'}
+[16.701379] (armForwardkinematics) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/launch/armInv.py\n'}
+[16.701434] (armForwardkinematics) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics//config\n'}
+[16.701496] (armForwardkinematics) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics//config/config.yaml\n'}
+[16.701572] (armForwardkinematics) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armForwardkinematics/share/ament_index/resource_index/package_run_dependencies/armForwardkinematics\n'}
+[16.701626] (armForwardkinematics) StdoutLine: {'line': b'-- Installing: /home/xsm/R1_ws/install/armForwardkinematics/share/ament_index/resource_index/parent_prefix_path/armForwardkinematics\n'}
+[16.701688] (armForwardkinematics) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/environment/ament_prefix_path.sh\n'}
+[16.701758] (armForwardkinematics) StdoutLine: {'line': b'-- Installing: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/environment/ament_prefix_path.dsv\n'}
+[16.701813] (armForwardkinematics) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/environment/path.sh\n'}
+[16.701871] (armForwardkinematics) StdoutLine: {'line': b'-- Installing: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/environment/path.dsv\n'}
+[16.701954] (armForwardkinematics) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/local_setup.bash\n'}
+[16.702004] (armForwardkinematics) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/local_setup.sh\n'}
+[16.702050] (armForwardkinematics) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/local_setup.zsh\n'}
+[16.702110] (armForwardkinematics) StdoutLine: {'line': b'-- Installing: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/local_setup.dsv\n'}
+[16.702168] (armForwardkinematics) StdoutLine: {'line': b'-- Installing: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/package.dsv\n'}
+[16.702245] (armForwardkinematics) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armForwardkinematics/share/ament_index/resource_index/packages/armForwardkinematics\n'}
+[16.702303] (armForwardkinematics) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/cmake/armForwardkinematicsConfig.cmake\n'}
+[16.702374] (armForwardkinematics) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/cmake/armForwardkinematicsConfig-version.cmake\n'}
+[16.702425] (armForwardkinematics) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/package.xml\n'}
+[16.704057] (armForwardkinematics) CommandEnded: {'returncode': 0}
+[16.747336] (-) TimerEvent: {}
+[16.800156] (armForwardkinematics) JobEnded: {'identifier': 'armForwardkinematics', 'rc': 0}
+[16.800699] (-) EventReactorShutdown: {}

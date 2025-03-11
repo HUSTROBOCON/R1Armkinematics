@@ -2351,4 +2351,8 @@ CMakeFiles/pino_armkine_node.dir/src/armPino.cpp.o: \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__traits.hpp \
  /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/get_package_share_directory.hpp \
- /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/visibility_control.h
+ /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/visibility_control.h \
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/hwrev.hpp \
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__struct.hpp \
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__builder.hpp \
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__traits.hpp

@@ -1,1 +1,3 @@
-/home/xsm/R1_ws/src/public/mit_msgs/msg/MITLowState.msg
+builtin_interfaces/Time stamp
+sensor_msgs/Imu             imu
+sensor_msgs/JointState      joint_states

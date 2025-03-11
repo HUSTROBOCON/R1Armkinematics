@@ -1,1 +1,30 @@
-/home/xsm/R1_ws/src/arm_dynamics_hw/package.xml
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>arm_dynamics_hw</name>
+  <version>0.0.0</version>
+  <description>TODO: Package description</description>
+  <maintainer email="2244174953@qq.com">lyj</maintainer>
+  <license>TODO: License declaration</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>geometry_msgs</depend>
+  <depend>gazebo_ros</depend>
+  <depend>gazebo_msgs</depend>
+  <depend>mit_msgs</depend>
+  <depend>gazebo_ros_pkgs</depend>
+  <depend>lock_utils</depend>
+  <depend>nav_msgs</depend>
+  <depend>tf2</depend>
+  <depend>urdf</depend>
+  <depend>sensor_msgs</depend>
+
+<!--  好像这两行和最后一行是能让clion取得文件信息的关键-->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

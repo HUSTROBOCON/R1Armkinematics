@@ -1,1 +1,4 @@
-/home/xsm/R1_ws/src/public/OptimalControlProblem/code_gen/.gitignore
+*.so
+*.a
+*.c
+# 这个文件夹下的.c文件只是为了占位，真正运行的时候所引导的是shared文件夹下的

@@ -1,0 +1,9 @@
+[0.016s] Invoking command in '/home/xsm/R1_ws/build/arm_dynamics_hw': CMAKE_PREFIX_PATH=/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/xsm/R1_ws/install/mit_msgs/lib:/home/xsm/R1_ws/install/lock_utils/lib:/home/xsm/R1_ws/install/optimal_control_problem/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia /usr/bin/cmake --build /home/xsm/R1_ws/build/arm_dynamics_hw -- -j16 -l16
+[0.081s] [ 60%] [32mBuilding CXX object CMakeFiles/arm_dynamics_hw.dir/src/gazebo_tuner/GazeboTuner.cpp.o[0m
+[0.081s] [ 60%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/publisher/publisher.cpp.o[0m
+[0.081s] [ 60%] [32mBuilding CXX object CMakeFiles/arm_dynamics_hw.dir/src/gazebo_tuner/main.cpp.o[0m
+[5.875s] [ 80%] [32m[1mLinking CXX executable publisher[0m
+[6.077s] [ 80%] Built target publisher
+[8.627s] gmake[2]: *** [CMakeFiles/arm_dynamics_hw.dir/build.make:76: CMakeFiles/arm_dynamics_hw.dir/src/gazebo_tuner/GazeboTuner.cpp.o] 中断
+[8.627s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/arm_dynamics_hw.dir/all] 中断
+[8.627s] gmake: *** [Makefile:146: all] 中断

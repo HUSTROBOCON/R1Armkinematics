@@ -1,0 +1,108 @@
+[0.000000] (-) TimerEvent: {}
+[0.000697] (-) JobUnselected: {'identifier': 'arm_dynamics_hw'}
+[0.000899] (-) JobUnselected: {'identifier': 'gui_pkg'}
+[0.000935] (-) JobUnselected: {'identifier': 'lock_utils'}
+[0.000953] (-) JobUnselected: {'identifier': 'mit_msgs'}
+[0.000968] (-) JobUnselected: {'identifier': 'optimal_control_problem'}
+[0.000981] (-) JobUnselected: {'identifier': 'xsmmsg'}
+[0.000997] (armForwardkinematics) JobQueued: {'identifier': 'armForwardkinematics', 'dependencies': OrderedDict([('mit_msgs', '/home/xsm/R1_ws/install/mit_msgs')])}
+[0.001125] (armForwardkinematics) JobStarted: {'identifier': 'armForwardkinematics'}
+[0.015266] (armForwardkinematics) JobProgress: {'identifier': 'armForwardkinematics', 'progress': 'cmake'}
+[0.015818] (armForwardkinematics) JobProgress: {'identifier': 'armForwardkinematics', 'progress': 'build'}
+[0.016314] (armForwardkinematics) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xsm/R1_ws/build/armForwardkinematics', '--', '-j16', '-l16'], 'cwd': '/home/xsm/R1_ws/build/armForwardkinematics', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'xsm'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/xsm/R1_ws/install/mit_msgs/lib:/home/xsm/R1_ws/install/optimal_control_problem/lib:/home/xsm/R1_ws/install/lock_utils/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia'), ('HOME', '/home/xsm'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/xsm/R1_ws/src'), ('TERM_PROGRAM_VERSION', '1.95.3'), ('DESKTOP_SESSION', 'ubuntu'), ('DEBUGPY_ADAPTER_ENDPOINTS', '/home/xsm/.vscode/extensions/ms-python.debugpy-2025.0.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-e3ef959b450903d3.txt'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1930'), ('BUNDLED_DEBUGPY_PATH', '/home/xsm/.vscode/extensions/ms-python.debugpy-2025.4.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=843cb7fb6ef1a485375ad84067d00496'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('CONDA_ALLOW_SOFTLINKS', 'false'), ('COLCON_PREFIX_PATH', '/home/xsm/R1_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'xsm'), ('CONDA_ROOT', '/home/xsm/anaconda3'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'xsm'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/xsm/anaconda3/condabin:/opt/ros/humble/bin:/home/xsm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/xsm/.vscode/extensions/ms-python.debugpy-2025.4.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/xsm-ASUS-TUF-Gaming-A15-FA506QM-FA506QM:@/tmp/.ICE-unix/1930,unix/xsm-ASUS-TUF-Gaming-A15-FA506QM-FA506QM:/tmp/.ICE-unix/1930'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1575b9d6_854f_431d_8e3e_f4d34aa228e3'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/xsm/.vscode/extensions/ms-python.debugpy-2025.4.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-e3ef959b450903d3.txt'), ('LD_PRELOAD', '/usr/lib/x86_64-linux-gnu/libGLEW.so'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-4fe38402e5.sock'), ('GNOME_TERMINAL_SERVICE', ':1.90'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/xsm/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xsm/R1_ws/build/armForwardkinematics'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/xsm/anaconda3/bin/conda'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=843cb7fb6ef1a485375ad84067d00496'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/xsm/R1_ws/install/mit_msgs/local/lib/python3.10/dist-packages:/home/xsm/R1_ws/build/gui_pkg:/home/xsm/R1_ws/install/gui_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble')]), 'shell': False}
+[0.045150] (armForwardkinematics) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.097355] (armForwardkinematics) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.099767] (-) TimerEvent: {}
+[0.149272] (armForwardkinematics) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.169771] (armForwardkinematics) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.171695] (armForwardkinematics) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.176011] (armForwardkinematics) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.182518] (armForwardkinematics) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.190738] (armForwardkinematics) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.199852] (-) TimerEvent: {}
+[0.212600] (armForwardkinematics) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.213603] (armForwardkinematics) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.299966] (-) TimerEvent: {}
+[0.303319] (armForwardkinematics) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.336006] (armForwardkinematics) StdoutLine: {'line': b'-- pinocchio FOUND. pinocchio at /opt/ros/humble/lib/x86_64-linux-gnu/libpinocchio.so\n'}
+[0.336588] (armForwardkinematics) StdoutLine: {'line': b'-- boost_filesystem FOUND. boost_filesystem at /lib/x86_64-linux-gnu/libboost_filesystem.so\n'}
+[0.336942] (armForwardkinematics) StdoutLine: {'line': b'-- boost_serialization FOUND. boost_serialization at /lib/x86_64-linux-gnu/libboost_serialization.so\n'}
+[0.337265] (armForwardkinematics) StdoutLine: {'line': b'-- boost_system FOUND. boost_system at /lib/x86_64-linux-gnu/libboost_system.so\n'}
+[0.342955] (armForwardkinematics) StdoutLine: {'line': b'-- Found Boost: /usr/include (found version "1.74.0") found components: filesystem serialization system \n'}
+[0.343731] (armForwardkinematics) StdoutLine: {'line': b'-- eigenpy FOUND. eigenpy at /opt/ros/humble/lib/x86_64-linux-gnu/libeigenpy.so\n'}
+[0.371011] (armForwardkinematics) StdoutLine: {'line': b'-- Checking for NumPy\n'}
+[0.400091] (-) TimerEvent: {}
+[0.500354] (-) TimerEvent: {}
+[0.540840] (armForwardkinematics) StdoutLine: {'line': b'--   NUMPY_INCLUDE_DIRS=/usr/lib/python3/dist-packages/numpy/core/include\n'}
+[0.600705] (-) TimerEvent: {}
+[0.622592] (armForwardkinematics) StdoutLine: {'line': b'--   NUMPY_VERSION=1.21.5\n'}
+[0.700797] (-) TimerEvent: {}
+[0.801051] (-) TimerEvent: {}
+[0.839077] (armForwardkinematics) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter Development.Module NumPy \n'}
+[0.839636] (armForwardkinematics) StdoutLine: {'line': b'-- PythonLibraryDirs: \n'}
+[0.839716] (armForwardkinematics) StdoutLine: {'line': b'-- PythonLibVersionString: 3.10.12\n'}
+[0.861670] (armForwardkinematics) StdoutLine: {'line': b'-- Python site lib: lib/python3.10/dist-packages\n'}
+[0.861800] (armForwardkinematics) StdoutLine: {'line': b'-- Python include dirs: /usr/include/python3.10\n'}
+[0.901147] (-) TimerEvent: {}
+[0.906051] (armForwardkinematics) StdoutLine: {'line': b'-- Checking for NumPy\n'}
+[0.987327] (armForwardkinematics) StdoutLine: {'line': b'--   NUMPY_INCLUDE_DIRS=/usr/lib/python3/dist-packages/numpy/core/include\n'}
+[1.001215] (-) TimerEvent: {}
+[1.067781] (armForwardkinematics) StdoutLine: {'line': b'--   NUMPY_VERSION=1.21.5\n'}
+[1.067950] (armForwardkinematics) StdoutLine: {'line': b'-- NumPy include dir: /usr/lib/python3/dist-packages/numpy/core/include\n'}
+[1.070988] (armForwardkinematics) StderrLine: {'line': b'\x1b[33mCMake Warning at /usr/share/cmake-3.22/Modules/FindBoost.cmake:2201 (message):\n'}
+[1.071116] (armForwardkinematics) StderrLine: {'line': b'  No header defined for python310; skipping header check (note: header-only\n'}
+[1.071177] (armForwardkinematics) StderrLine: {'line': b'  libraries have no designated component)\n'}
+[1.071231] (armForwardkinematics) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.071326] (armForwardkinematics) StderrLine: {'line': b'  /opt/ros/humble/lib/x86_64-linux-gnu/cmake/eigenpy/boost.cmake:144 (find_package)\n'}
+[1.071379] (armForwardkinematics) StderrLine: {'line': b'  /opt/ros/humble/lib/x86_64-linux-gnu/cmake/eigenpy/eigenpyConfig.cmake:149 (SEARCH_FOR_BOOST_PYTHON)\n'}
+[1.071448] (armForwardkinematics) StderrLine: {'line': b'  /usr/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake:47 (find_package)\n'}
+[1.071500] (armForwardkinematics) StderrLine: {'line': b'  /opt/ros/humble/lib/x86_64-linux-gnu/cmake/pinocchio/pinocchioConfig.cmake:160 (find_dependency)\n'}
+[1.071548] (armForwardkinematics) StderrLine: {'line': b'  CMakeLists.txt:11 (find_package)\n'}
+[1.071636] (armForwardkinematics) StderrLine: {'line': b'\n'}
+[1.071694] (armForwardkinematics) StderrLine: {'line': b'\x1b[0m\n'}
+[1.071743] (armForwardkinematics) StdoutLine: {'line': b'-- Found Boost: /usr/include (found version "1.74.0") found components: python310 \n'}
+[1.071798] (armForwardkinematics) StdoutLine: {'line': b'-- Boost_PYTHON_LIBRARY: /usr/lib/x86_64-linux-gnu/libboost_python310.so\n'}
+[1.101315] (-) TimerEvent: {}
+[1.201606] (-) TimerEvent: {}
+[1.301918] (-) TimerEvent: {}
+[1.329216] (armForwardkinematics) StdoutLine: {'line': b'-- Default C++ standard: 201703\n'}
+[1.329429] (armForwardkinematics) StdoutLine: {'line': b'-- C++ standard sufficient: Minimal required 11, currently defined: 17\n'}
+[1.329503] (armForwardkinematics) StdoutLine: {'line': b'-- CMAKE_CXX_STANDARD was not set: automatically set to currently defined standard 17\n'}
+[1.330152] (armForwardkinematics) StdoutLine: {'line': b'-- hpp-fcl FOUND. hpp-fcl at /opt/ros/humble/lib/x86_64-linux-gnu/libhpp-fcl.so\n'}
+[1.335260] (armForwardkinematics) StdoutLine: {'line': b'-- Found Boost: /usr/include (found version "1.74.0") found components: chrono serialization filesystem \n'}
+[1.336340] (armForwardkinematics) StdoutLine: {'line': b'-- C++ standard sufficient: Minimal required 11, currently defined: 17\n'}
+[1.336760] (armForwardkinematics) StdoutLine: {'line': b'-- C++ standard sufficient: Minimal required 11, currently defined: 17\n'}
+[1.340086] (armForwardkinematics) StderrLine: {'line': b'\x1b[33mCMake Warning at /usr/share/cmake-3.22/Modules/FindBoost.cmake:2201 (message):\n'}
+[1.340160] (armForwardkinematics) StderrLine: {'line': b'  No header defined for python310; skipping header check (note: header-only\n'}
+[1.340213] (armForwardkinematics) StderrLine: {'line': b'  libraries have no designated component)\n'}
+[1.340263] (armForwardkinematics) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.340311] (armForwardkinematics) StderrLine: {'line': b'  CMakeLists.txt:13 (find_package)\n'}
+[1.340358] (armForwardkinematics) StderrLine: {'line': b'\n'}
+[1.340437] (armForwardkinematics) StderrLine: {'line': b'\x1b[0m\n'}
+[1.340490] (armForwardkinematics) StdoutLine: {'line': b'-- Found Boost: /usr/include (found version "1.74.0") found components: python310 \n'}
+[1.340727] (armForwardkinematics) StdoutLine: {'line': b'-- Found mit_msgs: 0.0.0 (/home/xsm/R1_ws/install/mit_msgs/share/mit_msgs/cmake)\n'}
+[1.373645] (armForwardkinematics) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.387794] (armForwardkinematics) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:17 (find_package):\n'}
+[1.387904] (armForwardkinematics) StderrLine: {'line': b'  By not providing "Findxsmmsg.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[1.387965] (armForwardkinematics) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "xsmmsg", but\n'}
+[1.388026] (armForwardkinematics) StderrLine: {'line': b'  CMake did not find one.\n'}
+[1.388074] (armForwardkinematics) StderrLine: {'line': b'\n'}
+[1.388119] (armForwardkinematics) StderrLine: {'line': b'  Could not find a package configuration file provided by "xsmmsg" with any\n'}
+[1.388164] (armForwardkinematics) StderrLine: {'line': b'  of the following names:\n'}
+[1.388209] (armForwardkinematics) StderrLine: {'line': b'\n'}
+[1.388253] (armForwardkinematics) StderrLine: {'line': b'    xsmmsgConfig.cmake\n'}
+[1.388296] (armForwardkinematics) StderrLine: {'line': b'    xsmmsg-config.cmake\n'}
+[1.388338] (armForwardkinematics) StderrLine: {'line': b'\n'}
+[1.388381] (armForwardkinematics) StderrLine: {'line': b'  Add the installation prefix of "xsmmsg" to CMAKE_PREFIX_PATH or set\n'}
+[1.388448] (armForwardkinematics) StderrLine: {'line': b'  "xsmmsg_DIR" to a directory containing one of the above files.  If "xsmmsg"\n'}
+[1.388497] (armForwardkinematics) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[1.388547] (armForwardkinematics) StderrLine: {'line': b'  installed.\n'}
+[1.388590] (armForwardkinematics) StderrLine: {'line': b'\n'}
+[1.388626] (armForwardkinematics) StderrLine: {'line': b'\x1b[0m\n'}
+[1.388664] (armForwardkinematics) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.388707] (armForwardkinematics) StdoutLine: {'line': b'See also "/home/xsm/R1_ws/build/armForwardkinematics/CMakeFiles/CMakeOutput.log".\n'}
+[1.395070] (armForwardkinematics) StderrLine: {'line': b'gmake: *** [Makefile:402\xef\xbc\x9acmake_check_build_system] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[1.397400] (armForwardkinematics) CommandEnded: {'returncode': 2}
+[1.401966] (-) TimerEvent: {}
+[1.488749] (armForwardkinematics) JobEnded: {'identifier': 'armForwardkinematics', 'rc': 2}
+[1.499123] (-) EventReactorShutdown: {}

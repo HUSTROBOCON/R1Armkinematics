@@ -1998,6 +1998,10 @@ CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/FT_method.cpp.o: \
  /home/xsm/R1_ws/install/mit_msgs/include/mit_msgs/mit_msgs/msg/detail/mit_low_state__traits.hpp \
  /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/get_package_share_directory.hpp \
  /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/visibility_control.h \
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/hwrev.hpp \
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__struct.hpp \
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__builder.hpp \
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__traits.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \

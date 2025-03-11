@@ -1,1 +1,3 @@
-/home/xsm/R1_ws/build/lock_utils/ament_cmake_environment_hooks/local_setup.dsv
+source;share/lock_utils/environment/ament_prefix_path.sh
+source;share/lock_utils/environment/library_path.sh
+source;share/lock_utils/environment/path.sh

@@ -1,1 +1,3 @@
-/home/xsm/R1_ws/src/public/mit_msgs/msg/MITJointCommands.msg
+# DogeJointCommands.msg
+MITJointCommand[] commands
+builtin_interfaces/Time stamp

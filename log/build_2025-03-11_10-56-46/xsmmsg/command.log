@@ -1,0 +1,6 @@
+Invoking command in '/home/xsm/R1_ws/build/xsmmsg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake /home/xsm/R1_ws/src/xsmmsg -DCMAKE_INSTALL_PREFIX=/home/xsm/R1_ws/install/xsmmsg
+Invoked command in '/home/xsm/R1_ws/build/xsmmsg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake /home/xsm/R1_ws/src/xsmmsg -DCMAKE_INSTALL_PREFIX=/home/xsm/R1_ws/install/xsmmsg
+Invoking command in '/home/xsm/R1_ws/build/xsmmsg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/xsm/R1_ws/build/xsmmsg -- -j16 -l16
+Invoked command in '/home/xsm/R1_ws/build/xsmmsg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/xsm/R1_ws/build/xsmmsg -- -j16 -l16
+Invoking command in '/home/xsm/R1_ws/build/xsmmsg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --install /home/xsm/R1_ws/build/xsmmsg
+Invoked command in '/home/xsm/R1_ws/build/xsmmsg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --install /home/xsm/R1_ws/build/xsmmsg

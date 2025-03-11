@@ -1,1 +1,22 @@
-/home/xsm/R1_ws/build/mit_msgs/rosidl_adapter/mit_msgs/msg/MITJointCommand.idl
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mit_msgs/msg/MITJointCommand.msg
+// generated code does not contain a copyright notice
+
+
+module mit_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "DogeJointCommand.msg")
+    struct MITJointCommand {
+      float kp;
+
+      float kd;
+
+      float pos;
+
+      float vel;
+
+      float eff;
+    };
+  };
+};

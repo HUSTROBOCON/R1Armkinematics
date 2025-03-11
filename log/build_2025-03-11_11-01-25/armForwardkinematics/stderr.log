@@ -1,0 +1,36 @@
+[33mCMake Warning at /usr/share/cmake-3.22/Modules/FindBoost.cmake:2201 (message):
+  No header defined for python310; skipping header check (note: header-only
+  libraries have no designated component)
+Call Stack (most recent call first):
+  /opt/ros/humble/lib/x86_64-linux-gnu/cmake/eigenpy/boost.cmake:144 (find_package)
+  /opt/ros/humble/lib/x86_64-linux-gnu/cmake/eigenpy/eigenpyConfig.cmake:149 (SEARCH_FOR_BOOST_PYTHON)
+  /usr/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake:47 (find_package)
+  /opt/ros/humble/lib/x86_64-linux-gnu/cmake/pinocchio/pinocchioConfig.cmake:160 (find_dependency)
+  CMakeLists.txt:11 (find_package)
+
+[0m
+[33mCMake Warning at /usr/share/cmake-3.22/Modules/FindBoost.cmake:2201 (message):
+  No header defined for python310; skipping header check (note: header-only
+  libraries have no designated component)
+Call Stack (most recent call first):
+  CMakeLists.txt:13 (find_package)
+
+[0m
+[31mCMake Error at CMakeLists.txt:17 (find_package):
+  By not providing "Findxsm_msg.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "xsm_msg", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "xsm_msg" with any
+  of the following names:
+
+    xsm_msgConfig.cmake
+    xsm_msg-config.cmake
+
+  Add the installation prefix of "xsm_msg" to CMAKE_PREFIX_PATH or set
+  "xsm_msg_DIR" to a directory containing one of the above files.  If
+  "xsm_msg" provides a separate development package or SDK, be sure it has
+  been installed.
+
+[0m
+gmake: *** [Makefile:402：cmake_check_build_system] 错误 1

@@ -9,7 +9,12 @@ Eigen::MatrixXd FT_method:: linepathPlan( int pathnum)
         pathPoints(i, 0) = init_pos(0) + cos( this->get_parameter("lineangle").as_double() * pi / 180) * i * this->get_parameter("linewidth").as_double() / pathnum;
         pathPoints(i, 1) = 0;
         pathPoints(i, 2) = init_pos(2) + sin( this->get_parameter("lineangle").as_double() * pi / 180) * i * this->get_parameter("linewidth").as_double() / pathnum;
+        // pathPoints(i, 0) = init_pos(0);
+        // pathPoints(i, 1) = 0;
+        // pathPoints(i, 2) = init_pos(2);
+
     }
+
     return pathPoints;
 }
 
@@ -22,6 +27,9 @@ Eigen::MatrixXd FT_method:: linespeedpathPlan( int pathnum)
     {
         velPoints(i ,0) =  v_cir * (i + 20) * cos( this->get_parameter("lineangle").as_double() * pi / 180) / pathnum;
         velPoints(i ,1) =  v_cir + v_cir * (i + 20) * sin( this->get_parameter("lineangle").as_double() * pi / 180) / pathnum;
+        // velPoints(i, 0) = 0;
+        // velPoints(i, 1) = 0;
+    
     }
     return velPoints;
 }

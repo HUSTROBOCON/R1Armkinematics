@@ -1,1 +1,2 @@
-/home/xsm/R1_ws/src/public/OptimalControlProblem/log/.gitignore
+#起到一个占位的作用
+*.csv

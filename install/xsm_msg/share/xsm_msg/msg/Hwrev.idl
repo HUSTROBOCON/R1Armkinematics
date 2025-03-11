@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from xsm_msg/msg/Hwrev.msg
+// generated code does not contain a copyright notice
+
+
+module xsm_msg {
+  module msg {
+    typedef double double__3[3];
+    struct Hwrev {
+      double__3 tau;
+    };
+  };
+};

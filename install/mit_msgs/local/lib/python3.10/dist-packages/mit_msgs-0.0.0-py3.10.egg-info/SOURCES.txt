@@ -1,1 +1,10 @@
-/home/xsm/R1_ws/build/mit_msgs/ament_cmake_python/mit_msgs/mit_msgs.egg-info/SOURCES.txt
+setup.py
+mit_msgs/__init__.py
+mit_msgs.egg-info/PKG-INFO
+mit_msgs.egg-info/SOURCES.txt
+mit_msgs.egg-info/dependency_links.txt
+mit_msgs.egg-info/top_level.txt
+mit_msgs/msg/__init__.py
+mit_msgs/msg/_mit_joint_command.py
+mit_msgs/msg/_mit_joint_commands.py
+mit_msgs/msg/_mit_low_state.py

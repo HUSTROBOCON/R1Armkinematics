@@ -1,0 +1,8 @@
+setup.py
+xsmmsg/__init__.py
+xsmmsg.egg-info/PKG-INFO
+xsmmsg.egg-info/SOURCES.txt
+xsmmsg.egg-info/dependency_links.txt
+xsmmsg.egg-info/top_level.txt
+xsmmsg/msg/__init__.py
+xsmmsg/msg/_hwrev.py

@@ -1,1 +1,231 @@
-/home/xsm/R1_ws/src/arm_dynamics_hw/urdf/R1arm_control.urdf
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="R1arm">
+    <!-- 世界坐标系 -->
+    <link name="world"/>
+
+    <!-- 基座连杆 -->
+    <link name="base_link">
+        <inertial>
+            <origin xyz="0 0 0.25" rpy="0 0 0"/>  <!-- 调整惯性坐标系到Z轴 -->
+            <mass value="2.89269908169872"/>
+            <inertia ixx="0.0816417751742525" ixy="0" ixz="0"
+                     iyy="0.0029314159014156" iyz="0" izz="0.083367899791627"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="-1.5708 0 0"/>  <!-- X轴旋转-90度补偿模型方向 -->
+            <geometry>
+                <mesh filename="package://arm_dynamics_hw/meshes/base_link.STL"/>
+            </geometry>
+            <material name="white">
+                <color rgba="1 1 1 1"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="-1.5708 0 0"/>
+            <geometry>
+                <mesh filename="package://arm_dynamics_hw/meshes/base_link.STL"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- 基座连接 -->
+    <joint name="base_to_world" type="fixed">
+        <parent link="world"/>
+        <child link="base_link"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>  <!-- 竖直向上 -->
+    </joint>
+
+    <!-- 关节1（Z轴旋转） -->
+    <link name="link1">
+        <inertial>
+            <origin xyz="-0.16 0 0" rpy="0 0 0"/>  <!-- 调整到Z轴坐标系 -->
+            <mass value="2.09269908169872"/>
+            <inertia ixx="0.00458895642020566" ixy="0" ixz="0"
+                     iyy="0.0295487195783596" iyz="0" izz="0.0282839703436107"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://arm_dynamics_hw/meshes/link1.STL"/>
+            </geometry>
+            <material name="white"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://arm_dynamics_hw/meshes/link1.STL"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="joint1" type="revolute">
+        <origin xyz="0 0 0.5" rpy="0 0 0"/>  <!-- 调整到Z轴方向 -->
+        <parent link="base_link"/>
+        <child link="link1"/>
+        <axis xyz="0 0 1"/>  <!-- 绕Z轴旋转 -->
+        <limit lower="-3.14" upper="3.14" effort="20" velocity="30"/>
+    </joint>
+
+    <!-- 关节2（Z轴旋转） -->
+    <link name="link2">
+        <inertial>
+            <origin xyz="-0.1925 0 0" rpy="0 0 0"/>  <!-- 调整到Z轴坐标系 -->
+            <mass value="2.31769908169872"/>
+            <inertia ixx="0.00233245756808227" ixy="0" ixz="0"
+                     iyy="0.042266339997614" iyz="0" izz="0.0436330896149884"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://arm_dynamics_hw/meshes/link2.STL"/>
+            </geometry>
+            <material name="white"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://arm_dynamics_hw/meshes/link2.STL"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="joint2" type="revolute">
+        <origin xyz="-0.32 0 0" rpy="0 0 0"/>
+        <parent link="link1"/>
+        <child link="link2"/>
+        <axis xyz="0 0 1"/>  <!-- 统一Z轴旋转 -->
+        <limit lower="-3.14" upper="3.14" effort="20" velocity="30"/>
+    </joint>
+
+    <!-- 关节3（Z轴旋转） -->
+    <link name="link3">
+        <inertial>
+            <origin xyz="-0.179 0 0" rpy="0 0 0"/>  <!-- 调整到Z轴坐标系 -->
+            <mass value="2.47269908169872"/>
+            <inertia ixx="0.00522228975353901" ixy="0" ixz="0"
+                     iyy="0.0382538543635812" iyz="0" izz="0.0369891051288322"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://arm_dynamics_hw/meshes/link3.STL"/>
+            </geometry>
+            <material name="white"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://arm_dynamics_hw/meshes/link3.STL"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="joint3" type="revolute">
+        <origin xyz="-0.385 0 0" rpy="0 0 0"/>
+        <parent link="link2"/>
+        <child link="link3"/>
+        <axis xyz="0 0 1"/>  <!-- 统一Z轴旋转 -->
+        <limit lower="-3.14" upper="3.14" effort="20" velocity="30"/>
+    </joint>
+
+    <!-- 末端执行器 -->
+    <link name="end_ball">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.1"/>  <!-- 合理质量值 -->
+            <inertia ixx="0.000133" ixy="0" ixz="0"
+                     iyy="0.000133" iyz="0" izz="0.000133"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <sphere radius="0.07"/>
+            </geometry>
+            <material name="red">
+                <color rgba="1 0 0 1"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <sphere radius="0.07"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="joint_ball" type="fixed">
+        <parent link="link3"/>
+        <child link="end_ball"/>
+        <origin xyz="-0.358 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <!-- 控制配置 -->
+    <ros2_control name="GazeboSystem" type="system">
+        <hardware>
+            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+        </hardware>
+        <joint name="joint1">
+            <command_interface name="position">
+                <param name="min">-3.14</param>
+                <param name="max">3.14</param>
+            </command_interface>
+            <command_interface name="velocity">
+                <param name="min">-30</param>
+                <param name="max">30</param>
+            </command_interface>
+            <command_interface name="effort">
+                <param name="min">-20</param>
+                <param name="max">20</param>
+            </command_interface>
+            <state_interface name="position">
+                <param name="initial_value">0.5</param>
+            </state_interface>
+            <state_interface name="velocity"/>
+            <state_interface name="effort"/>
+        </joint>
+        <joint name="joint2">
+            <command_interface name="position">
+                <param name="min">-3.14</param>
+                <param name="max">3.14</param>
+            </command_interface>
+            <command_interface name="velocity">
+                <param name="min">-30</param>
+                <param name="max">30</param>
+            </command_interface>
+            <command_interface name="effort">
+                <param name="min">-20</param>
+                <param name="max">20</param>
+            </command_interface>
+            <state_interface name="position">
+                <param name="initial_value">-0.32</param>
+            </state_interface>
+            <state_interface name="velocity"/>
+            <state_interface name="effort"/>
+        </joint>
+        <joint name="joint3">
+            <command_interface name="position">
+                <param name="min">-3.14</param>
+                <param name="max">3.14</param>
+            </command_interface>
+            <command_interface name="velocity">
+                <param name="min">-30</param>
+                <param name="max">30</param>
+            </command_interface>
+            <command_interface name="effort">
+                <param name="min">-20</param>
+                <param name="max">20</param>
+            </command_interface>
+            <state_interface name="position">
+                <param name="initial_value">-0.385</param>
+            </state_interface>
+            <state_interface name="velocity"/>
+            <state_interface name="effort"/>
+        </joint>
+    </ros2_control>
+
+    <gazebo>
+        <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+            <parameters>/home/lyj/project/R1_ws/src/arm_dynamics_hw/config/effort_control.yaml</parameters>
+        </plugin>
+    </gazebo>
+</robot>

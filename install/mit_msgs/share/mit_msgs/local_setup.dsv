@@ -1,1 +1,4 @@
-/home/xsm/R1_ws/build/mit_msgs/ament_cmake_environment_hooks/local_setup.dsv
+source;share/mit_msgs/environment/ament_prefix_path.sh
+source;share/mit_msgs/environment/library_path.sh
+source;share/mit_msgs/environment/path.sh
+source;share/mit_msgs/environment/pythonpath.sh

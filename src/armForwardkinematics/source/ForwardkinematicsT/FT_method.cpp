@@ -13,7 +13,7 @@
 #include "sensor_msgs/msg/joint_state.hpp"
 #include "ForwardkinematicsT/FT_method.hpp"
 #include "rclcpp/rclcpp.hpp"
-
+#include "xsm_msg/msg/hwrev.hpp"
 
                                                                                                                              
 double FT_method:: nomalizeangle(double angle)
@@ -264,21 +264,21 @@ void FT_method::robotStatusCallback(mit_msgs::msg::MITLowState::SharedPtr msg) {
         Eigen::Vector3d robotStatusPos;
         Eigen::Vector3d robotStatusVel;
 
-        robotStatusPos(0) = msg->joint_states.position[0];
-        robotStatusPos(1) = msg->joint_states.position[1];
-        robotStatusPos(2) = msg->joint_states.position[2];
+        robotStatusPos(0) = msg->joint_states.position[0] ;//+ initial_q(0);
+        robotStatusPos(1) = msg->joint_states.position[1] ;//+ initial_q(1);
+        robotStatusPos(2) = msg->joint_states.position[2] ;//+ initial_q(2);
         robotStatusVel(0) = msg->joint_states.velocity[0];
         robotStatusVel(1) = msg->joint_states.velocity[1];
         robotStatusVel(2) = msg->joint_states.velocity[2];
-        
         
         if(robotStatusPos(0) == 0 && robotStatusPos(1) == 0 && robotStatusPos(2) == 0)
         {
             return;
         }
         
+        // Eigen::Vector3d effort = zwzVeltaucal(robotStatusPos, robotStatusVel);
         Eigen::Vector3d effort = zwzVeltaucal(robotStatusPos, robotStatusVel);
-
+        
         // 计算当前位置
         mit_msgs::msg::MITJointCommands jointCommand;
         jointCommand.commands.resize(3);
@@ -292,6 +292,12 @@ void FT_method::robotStatusCallback(mit_msgs::msg::MITLowState::SharedPtr msg) {
         jointCommand.commands[2].vel = 1;//effortPosVel(2, 2);
         jointCommand.commands[2].eff = effort(2);
         jointCommandPub_->publish(jointCommand);
+
+        xsm_msg::msg::Hwrev james;
+        james.tau[0] = effort(0);
+        james.tau[1] = effort(1);
+        james.tau[2] = effort(2);
+        jamesPub_->publish(james);
 
 }
 
@@ -356,11 +362,11 @@ FT_method ::FT_method() :
     velcircle = linespeedpathPlan(Nnum);
     yawcircle = lineyawPlan(Nnum);
     wristcircle = linewristPlan(Nnum);
-    for (int i = 0; i < Nnum; i++)
-    {
-        // RCLCPP_INFO(this->get_logger(), "poscircle: %f, %f", poscircle(i, 0), poscircle(i, 2));
-        RCLCPP_INFO(this->get_logger(), "velcircle: %f, %f", velcircle(i, 0), velcircle(i, 1));
-    }
+    // for (int i = 0; i < Nnum; i++)
+    // {
+    //     // RCLCPP_INFO(this->get_logger(), "poscircle: %f, %f", poscircle(i, 0), poscircle(i, 2));
+    //     RCLCPP_INFO(this->get_logger(), "velcircle: %f, %f", velcircle(i, 0), velcircle(i, 1));
+    // }
 
     // 定时器
     RCLCPP_INFO(this->get_logger(), "FT_method::FT_method has been callback.");
@@ -374,6 +380,13 @@ FT_method ::FT_method() :
     jointCommandPub_ = this->create_publisher<mit_msgs::msg::MITJointCommands>(
             "gazebo_joint_command_array",
             1);
+    
+    jamesPub_ = this->create_publisher<xsm_msg::msg::Hwrev>(
+            "james_armtaustate",
+            1);
+    
+
+    
 }
 
 Eigen::Vector3d FT_method::forwardKinematics(const Eigen::Vector3d& q)

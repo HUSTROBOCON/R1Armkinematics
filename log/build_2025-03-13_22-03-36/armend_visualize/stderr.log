@@ -1,0 +1,9 @@
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp: not a directory
+[01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:[m[K In constructor ‘[01m[Karmend_visualize::armend_visualize()[m[K’:
+[01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:16:57:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K{[m[K’ token
+   16 |         [this][34m[K([m[Kmit_msgs::msg::MITLowState::SharedPtr msg[01;31m[K{[m[K
+      |               [34m[K~[m[K                                         [01;31m[K^[m[K
+      |                                                         [32m[K)[m[K
+gmake[2]: *** [CMakeFiles/main.dir/build.make:76：CMakeFiles/main.dir/src/main.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/main.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

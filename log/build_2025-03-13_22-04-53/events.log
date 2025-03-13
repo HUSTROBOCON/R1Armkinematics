@@ -1,0 +1,148 @@
+[0.000000] (-) TimerEvent: {}
+[0.000666] (-) JobUnselected: {'identifier': 'armForwardkinematics'}
+[0.000715] (-) JobUnselected: {'identifier': 'arm_dynamics_hw'}
+[0.000752] (-) JobUnselected: {'identifier': 'gui_pkg'}
+[0.000775] (-) JobUnselected: {'identifier': 'lock_utils'}
+[0.000812] (-) JobUnselected: {'identifier': 'mit_msgs'}
+[0.000857] (-) JobUnselected: {'identifier': 'optimal_control_problem'}
+[0.000877] (-) JobUnselected: {'identifier': 'xsm_msg'}
+[0.000897] (armend_visualize) JobQueued: {'identifier': 'armend_visualize', 'dependencies': OrderedDict([('mit_msgs', '/home/xsm/R1_ws/install/mit_msgs')])}
+[0.000919] (armend_visualize) JobStarted: {'identifier': 'armend_visualize'}
+[0.015078] (armend_visualize) JobProgress: {'identifier': 'armend_visualize', 'progress': 'cmake'}
+[0.015482] (armend_visualize) JobProgress: {'identifier': 'armend_visualize', 'progress': 'build'}
+[0.016067] (armend_visualize) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xsm/R1_ws/build/armend_visualize', '--', '-j16', '-l16'], 'cwd': '/home/xsm/R1_ws/build/armend_visualize', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'xsm'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/xsm/R1_ws/install/mit_msgs/lib:/home/xsm/R1_ws/install/xsmmsg/lib:/home/xsm/R1_ws/install/xsm_msg/lib:/home/xsm/R1_ws/install/optimal_control_problem/lib:/home/xsm/R1_ws/install/lock_utils/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia'), ('HOME', '/home/xsm'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/xsm/R1_ws/src'), ('TERM_PROGRAM_VERSION', '1.95.3'), ('DESKTOP_SESSION', 'ubuntu'), ('DEBUGPY_ADAPTER_ENDPOINTS', '/home/xsm/.vscode/extensions/ms-python.debugpy-2025.0.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-e3ef959b450903d3.txt'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2039'), ('BUNDLED_DEBUGPY_PATH', '/home/xsm/.vscode/extensions/ms-python.debugpy-2025.4.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c990f80bd94a6f9a835a40b467d34695'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('CONDA_ALLOW_SOFTLINKS', 'false'), ('COLCON_PREFIX_PATH', '/home/xsm/R1_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'xsm'), ('CONDA_ROOT', '/home/xsm/anaconda3'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'xsm'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/xsm/anaconda3/condabin:/opt/ros/humble/bin:/home/xsm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/xsm/.vscode/extensions/ms-python.debugpy-2025.4.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/xsm-ASUS-TUF-Gaming-A15-FA506QM-FA506QM:@/tmp/.ICE-unix/2039,unix/xsm-ASUS-TUF-Gaming-A15-FA506QM-FA506QM:/tmp/.ICE-unix/2039'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/32f1cdbb_75af_4828_80fc_62309d8d2b36'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/xsm/.vscode/extensions/ms-python.debugpy-2025.4.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-e3ef959b450903d3.txt'), ('LD_PRELOAD', '/usr/lib/x86_64-linux-gnu/libGLEW.so'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-4fe38402e5.sock'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/home/xsm/R1_ws/install/armend_visualize:/home/xsm/R1_ws/install/xsmmsg:/home/xsm/R1_ws/install/xsm_msg:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/xsm/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xsm/R1_ws/build/armend_visualize'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/xsm/anaconda3/bin/conda'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c990f80bd94a6f9a835a40b467d34695'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/xsm/R1_ws/install/xsmmsg/local/lib/python3.10/dist-packages:/home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages:/home/xsm/R1_ws/install/mit_msgs/local/lib/python3.10/dist-packages:/home/xsm/R1_ws/install/gui_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/armend_visualize:/home/xsm/R1_ws/install/xsmmsg:/home/xsm/R1_ws/install/xsm_msg:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble')]), 'shell': False}
+[0.072373] (armend_visualize) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target main\x1b[0m\n'}
+[0.096843] (armend_visualize) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o\x1b[0m\n'}
+[0.099675] (-) TimerEvent: {}
+[0.104502] (armend_visualize) StderrLine: {'line': b'\x1b[01m\x1b[Kcc1plus:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp: not a directory\n'}
+[0.199814] (-) TimerEvent: {}
+[0.300177] (-) TimerEvent: {}
+[0.400501] (-) TimerEvent: {}
+[0.500793] (-) TimerEvent: {}
+[0.601115] (-) TimerEvent: {}
+[0.701488] (-) TimerEvent: {}
+[0.801826] (-) TimerEvent: {}
+[0.902233] (-) TimerEvent: {}
+[1.002495] (-) TimerEvent: {}
+[1.102770] (-) TimerEvent: {}
+[1.203041] (-) TimerEvent: {}
+[1.303308] (-) TimerEvent: {}
+[1.403584] (-) TimerEvent: {}
+[1.503858] (-) TimerEvent: {}
+[1.604112] (-) TimerEvent: {}
+[1.704366] (-) TimerEvent: {}
+[1.804641] (-) TimerEvent: {}
+[1.904926] (-) TimerEvent: {}
+[2.005202] (-) TimerEvent: {}
+[2.105471] (-) TimerEvent: {}
+[2.205756] (-) TimerEvent: {}
+[2.300659] (armend_visualize) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.300836] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.300890] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.300933] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.300973] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.301010] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.301050] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.301092] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.301143] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.301185] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.301237] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.301274] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp:7\x1b[m\x1b[K,\n'}
+[2.301313] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:3\x1b[m\x1b[K:\n'}
+[2.301366] (armend_visualize) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[2.301436] (armend_visualize) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:17:70:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.301493] (armend_visualize) StderrLine: {'line': b'   17 |             RCLCPP_INFO(this->get_logger(), "I heard: [%f, %f, %f]", \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K->joint_states.position[0], msg->joint_states.position[1], msg->joint_states.position[2]);\n'}
+[2.301552] (armend_visualize) StderrLine: {'line': b'      |                                                                      \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.301612] (armend_visualize) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:17:70:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[2.301667] (armend_visualize) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/xsm/R1_ws/install/mit_msgs/include/mit_msgs/mit_msgs/msg/detail/mit_low_state__struct.hpp:20\x1b[m\x1b[K,\n'}
+[2.301722] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp:4\x1b[m\x1b[K,\n'}
+[2.301775] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:3\x1b[m\x1b[K:\n'}
+[2.301842] (armend_visualize) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:27:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.301899] (armend_visualize) StderrLine: {'line': b'   27 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[2.301952] (armend_visualize) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.302011] (armend_visualize) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__struct.hpp:20\x1b[m\x1b[K,\n'}
+[2.302065] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/xsm/R1_ws/install/mit_msgs/include/mit_msgs/mit_msgs/msg/detail/mit_low_state__struct.hpp:22\x1b[m\x1b[K,\n'}
+[2.302119] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp:4\x1b[m\x1b[K,\n'}
+[2.302172] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:3\x1b[m\x1b[K:\n'}
+[2.302226] (armend_visualize) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.302279] (armend_visualize) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[2.302331] (armend_visualize) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.302382] (armend_visualize) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__struct.hpp:22\x1b[m\x1b[K,\n'}
+[2.302428] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/xsm/R1_ws/install/mit_msgs/include/mit_msgs/mit_msgs/msg/detail/mit_low_state__struct.hpp:22\x1b[m\x1b[K,\n'}
+[2.302463] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp:4\x1b[m\x1b[K,\n'}
+[2.302497] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:3\x1b[m\x1b[K:\n'}
+[2.302532] (armend_visualize) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp:27:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.302573] (armend_visualize) StderrLine: {'line': b'   27 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[2.302613] (armend_visualize) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.302648] (armend_visualize) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/xsm/R1_ws/install/mit_msgs/include/mit_msgs/mit_msgs/msg/detail/mit_low_state__struct.hpp:22\x1b[m\x1b[K,\n'}
+[2.302688] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp:4\x1b[m\x1b[K,\n'}
+[2.302723] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:3\x1b[m\x1b[K:\n'}
+[2.302758] (armend_visualize) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__struct.hpp:36:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.302801] (armend_visualize) StderrLine: {'line': b'   36 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[2.302840] (armend_visualize) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.302875] (armend_visualize) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp:4\x1b[m\x1b[K,\n'}
+[2.302910] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:3\x1b[m\x1b[K:\n'}
+[2.302944] (armend_visualize) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xsm/R1_ws/install/mit_msgs/include/mit_msgs/mit_msgs/msg/detail/mit_low_state__struct.hpp:35:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kmit_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.302979] (armend_visualize) StderrLine: {'line': b'   35 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[2.303014] (armend_visualize) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.303050] (armend_visualize) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:7\x1b[m\x1b[K,\n'}
+[2.303085] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:28\x1b[m\x1b[K,\n'}
+[2.303120] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:30\x1b[m\x1b[K,\n'}
+[2.303155] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45\x1b[m\x1b[K,\n'}
+[2.303192] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[2.303229] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.303266] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.303302] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.303337] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.303373] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.303408] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.303448] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.303482] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp:7\x1b[m\x1b[K,\n'}
+[2.303520] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:3\x1b[m\x1b[K:\n'}
+[2.303556] (armend_visualize) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:27:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.303592] (armend_visualize) StderrLine: {'line': b'   27 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[2.303627] (armend_visualize) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.303661] (armend_visualize) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:23\x1b[m\x1b[K,\n'}
+[2.303696] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7\x1b[m\x1b[K,\n'}
+[2.303731] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21\x1b[m\x1b[K,\n'}
+[2.303767] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[2.303812] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[2.303851] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[2.303886] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.303921] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.303955] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.303989] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.304024] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.304059] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.304099] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.304134] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp:7\x1b[m\x1b[K,\n'}
+[2.304173] (armend_visualize) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:3\x1b[m\x1b[K:\n'}
+[2.304207] (armend_visualize) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:27:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstatistics_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.304242] (armend_visualize) StderrLine: {'line': b'   27 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[2.304296] (armend_visualize) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.305795] (-) TimerEvent: {}
+[2.405987] (-) TimerEvent: {}
+[2.506256] (-) TimerEvent: {}
+[2.606527] (-) TimerEvent: {}
+[2.706795] (-) TimerEvent: {}
+[2.807066] (-) TimerEvent: {}
+[2.907322] (-) TimerEvent: {}
+[3.007590] (-) TimerEvent: {}
+[3.107861] (-) TimerEvent: {}
+[3.208133] (-) TimerEvent: {}
+[3.308394] (-) TimerEvent: {}
+[3.408662] (-) TimerEvent: {}
+[3.508938] (-) TimerEvent: {}
+[3.609229] (-) TimerEvent: {}
+[3.709503] (-) TimerEvent: {}
+[3.809796] (-) TimerEvent: {}
+[3.910100] (-) TimerEvent: {}
+[4.010368] (-) TimerEvent: {}
+[4.110649] (-) TimerEvent: {}
+[4.180204] (armend_visualize) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/main.dir/build.make:76\xef\xbc\x9aCMakeFiles/main.dir/src/main.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[4.180635] (armend_visualize) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137\xef\xbc\x9aCMakeFiles/main.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[4.181087] (armend_visualize) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[4.183843] (armend_visualize) CommandEnded: {'returncode': 2}
+[4.210725] (-) TimerEvent: {}
+[4.246613] (armend_visualize) JobEnded: {'identifier': 'armend_visualize', 'rc': 2}
+[4.257141] (-) EventReactorShutdown: {}

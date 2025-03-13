@@ -1,0 +1,4 @@
+source;share/armend_visualize/local_setup.bash
+source;share/armend_visualize/local_setup.dsv
+source;share/armend_visualize/local_setup.sh
+source;share/armend_visualize/local_setup.zsh

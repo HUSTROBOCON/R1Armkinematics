@@ -1,0 +1,118 @@
+[0.000000] (-) TimerEvent: {}
+[0.000359] (-) JobUnselected: {'identifier': 'armForwardkinematics'}
+[0.000524] (-) JobUnselected: {'identifier': 'arm_dynamics_hw'}
+[0.000620] (-) JobUnselected: {'identifier': 'gui_pkg'}
+[0.000646] (-) JobUnselected: {'identifier': 'lock_utils'}
+[0.000677] (-) JobUnselected: {'identifier': 'mit_msgs'}
+[0.000694] (-) JobUnselected: {'identifier': 'optimal_control_problem'}
+[0.000873] (-) JobUnselected: {'identifier': 'xsm_msg'}
+[0.000894] (armend_visualize) JobQueued: {'identifier': 'armend_visualize', 'dependencies': OrderedDict([('mit_msgs', '/home/xsm/R1_ws/install/mit_msgs')])}
+[0.000916] (armend_visualize) JobStarted: {'identifier': 'armend_visualize'}
+[0.016109] (armend_visualize) JobProgress: {'identifier': 'armend_visualize', 'progress': 'cmake'}
+[0.016838] (armend_visualize) JobProgress: {'identifier': 'armend_visualize', 'progress': 'build'}
+[0.017443] (armend_visualize) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xsm/R1_ws/build/armend_visualize', '--', '-j16', '-l16'], 'cwd': '/home/xsm/R1_ws/build/armend_visualize', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'xsm'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/xsm/R1_ws/install/mit_msgs/lib:/home/xsm/R1_ws/install/xsmmsg/lib:/home/xsm/R1_ws/install/xsm_msg/lib:/home/xsm/R1_ws/install/optimal_control_problem/lib:/home/xsm/R1_ws/install/lock_utils/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia'), ('HOME', '/home/xsm'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/xsm/R1_ws/src'), ('TERM_PROGRAM_VERSION', '1.95.3'), ('DESKTOP_SESSION', 'ubuntu'), ('DEBUGPY_ADAPTER_ENDPOINTS', '/home/xsm/.vscode/extensions/ms-python.debugpy-2025.0.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-e3ef959b450903d3.txt'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2039'), ('BUNDLED_DEBUGPY_PATH', '/home/xsm/.vscode/extensions/ms-python.debugpy-2025.4.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c990f80bd94a6f9a835a40b467d34695'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('CONDA_ALLOW_SOFTLINKS', 'false'), ('COLCON_PREFIX_PATH', '/home/xsm/R1_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'xsm'), ('CONDA_ROOT', '/home/xsm/anaconda3'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'xsm'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/xsm/anaconda3/condabin:/opt/ros/humble/bin:/home/xsm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/xsm/.vscode/extensions/ms-python.debugpy-2025.4.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/xsm-ASUS-TUF-Gaming-A15-FA506QM-FA506QM:@/tmp/.ICE-unix/2039,unix/xsm-ASUS-TUF-Gaming-A15-FA506QM-FA506QM:/tmp/.ICE-unix/2039'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/32f1cdbb_75af_4828_80fc_62309d8d2b36'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/xsm/.vscode/extensions/ms-python.debugpy-2025.4.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-e3ef959b450903d3.txt'), ('LD_PRELOAD', '/usr/lib/x86_64-linux-gnu/libGLEW.so'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-4fe38402e5.sock'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/home/xsm/R1_ws/install/armend_visualize:/home/xsm/R1_ws/install/xsmmsg:/home/xsm/R1_ws/install/xsm_msg:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/xsm/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xsm/R1_ws/build/armend_visualize'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/xsm/anaconda3/bin/conda'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c990f80bd94a6f9a835a40b467d34695'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/xsm/R1_ws/install/xsmmsg/local/lib/python3.10/dist-packages:/home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages:/home/xsm/R1_ws/install/mit_msgs/local/lib/python3.10/dist-packages:/home/xsm/R1_ws/install/gui_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/armend_visualize:/home/xsm/R1_ws/install/xsmmsg:/home/xsm/R1_ws/install/xsm_msg:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble')]), 'shell': False}
+[0.082400] (armend_visualize) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target main\x1b[0m\n'}
+[0.099890] (-) TimerEvent: {}
+[0.109682] (armend_visualize) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o\x1b[0m\n'}
+[0.119050] (armend_visualize) StderrLine: {'line': b'\x1b[01m\x1b[Kcc1plus:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp: not a directory\n'}
+[0.199975] (-) TimerEvent: {}
+[0.300261] (-) TimerEvent: {}
+[0.400533] (-) TimerEvent: {}
+[0.500852] (-) TimerEvent: {}
+[0.601174] (-) TimerEvent: {}
+[0.701434] (-) TimerEvent: {}
+[0.801688] (-) TimerEvent: {}
+[0.901993] (-) TimerEvent: {}
+[1.002367] (-) TimerEvent: {}
+[1.102640] (-) TimerEvent: {}
+[1.202923] (-) TimerEvent: {}
+[1.303286] (-) TimerEvent: {}
+[1.403684] (-) TimerEvent: {}
+[1.503963] (-) TimerEvent: {}
+[1.604310] (-) TimerEvent: {}
+[1.704687] (-) TimerEvent: {}
+[1.804975] (-) TimerEvent: {}
+[1.905241] (-) TimerEvent: {}
+[2.005526] (-) TimerEvent: {}
+[2.105877] (-) TimerEvent: {}
+[2.206141] (-) TimerEvent: {}
+[2.306403] (-) TimerEvent: {}
+[2.406759] (-) TimerEvent: {}
+[2.507020] (-) TimerEvent: {}
+[2.607267] (-) TimerEvent: {}
+[2.707545] (-) TimerEvent: {}
+[2.807857] (-) TimerEvent: {}
+[2.908122] (-) TimerEvent: {}
+[3.008373] (-) TimerEvent: {}
+[3.108645] (-) TimerEvent: {}
+[3.209021] (-) TimerEvent: {}
+[3.309284] (-) TimerEvent: {}
+[3.409560] (-) TimerEvent: {}
+[3.509947] (-) TimerEvent: {}
+[3.610413] (-) TimerEvent: {}
+[3.710894] (-) TimerEvent: {}
+[3.811243] (-) TimerEvent: {}
+[3.911684] (-) TimerEvent: {}
+[4.012043] (-) TimerEvent: {}
+[4.112348] (-) TimerEvent: {}
+[4.212656] (-) TimerEvent: {}
+[4.312964] (-) TimerEvent: {}
+[4.413220] (-) TimerEvent: {}
+[4.513428] (-) TimerEvent: {}
+[4.613735] (-) TimerEvent: {}
+[4.714107] (-) TimerEvent: {}
+[4.814394] (-) TimerEvent: {}
+[4.914684] (-) TimerEvent: {}
+[5.014950] (-) TimerEvent: {}
+[5.115210] (-) TimerEvent: {}
+[5.215461] (-) TimerEvent: {}
+[5.315685] (-) TimerEvent: {}
+[5.415953] (-) TimerEvent: {}
+[5.516207] (-) TimerEvent: {}
+[5.616455] (-) TimerEvent: {}
+[5.716732] (-) TimerEvent: {}
+[5.817102] (-) TimerEvent: {}
+[5.917355] (-) TimerEvent: {}
+[6.017609] (-) TimerEvent: {}
+[6.117907] (-) TimerEvent: {}
+[6.218185] (-) TimerEvent: {}
+[6.318441] (-) TimerEvent: {}
+[6.418690] (-) TimerEvent: {}
+[6.519074] (-) TimerEvent: {}
+[6.619538] (-) TimerEvent: {}
+[6.719826] (-) TimerEvent: {}
+[6.820103] (-) TimerEvent: {}
+[6.920480] (-) TimerEvent: {}
+[7.020785] (-) TimerEvent: {}
+[7.121067] (-) TimerEvent: {}
+[7.155599] (armend_visualize) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable main\x1b[0m\n'}
+[7.221220] (-) TimerEvent: {}
+[7.321512] (-) TimerEvent: {}
+[7.421780] (-) TimerEvent: {}
+[7.464361] (armend_visualize) StdoutLine: {'line': b'[100%] Built target main\n'}
+[7.478402] (armend_visualize) CommandEnded: {'returncode': 0}
+[7.521854] (-) TimerEvent: {}
+[7.537665] (armend_visualize) JobProgress: {'identifier': 'armend_visualize', 'progress': 'install'}
+[7.550890] (armend_visualize) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xsm/R1_ws/build/armend_visualize'], 'cwd': '/home/xsm/R1_ws/build/armend_visualize', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'xsm'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/xsm/R1_ws/install/mit_msgs/lib:/home/xsm/R1_ws/install/xsmmsg/lib:/home/xsm/R1_ws/install/xsm_msg/lib:/home/xsm/R1_ws/install/optimal_control_problem/lib:/home/xsm/R1_ws/install/lock_utils/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia'), ('HOME', '/home/xsm'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/xsm/R1_ws/src'), ('TERM_PROGRAM_VERSION', '1.95.3'), ('DESKTOP_SESSION', 'ubuntu'), ('DEBUGPY_ADAPTER_ENDPOINTS', '/home/xsm/.vscode/extensions/ms-python.debugpy-2025.0.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-e3ef959b450903d3.txt'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2039'), ('BUNDLED_DEBUGPY_PATH', '/home/xsm/.vscode/extensions/ms-python.debugpy-2025.4.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c990f80bd94a6f9a835a40b467d34695'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('CONDA_ALLOW_SOFTLINKS', 'false'), ('COLCON_PREFIX_PATH', '/home/xsm/R1_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'xsm'), ('CONDA_ROOT', '/home/xsm/anaconda3'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'xsm'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/xsm/anaconda3/condabin:/opt/ros/humble/bin:/home/xsm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/xsm/.vscode/extensions/ms-python.debugpy-2025.4.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/xsm-ASUS-TUF-Gaming-A15-FA506QM-FA506QM:@/tmp/.ICE-unix/2039,unix/xsm-ASUS-TUF-Gaming-A15-FA506QM-FA506QM:/tmp/.ICE-unix/2039'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/32f1cdbb_75af_4828_80fc_62309d8d2b36'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/xsm/.vscode/extensions/ms-python.debugpy-2025.4.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-e3ef959b450903d3.txt'), ('LD_PRELOAD', '/usr/lib/x86_64-linux-gnu/libGLEW.so'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-4fe38402e5.sock'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/home/xsm/R1_ws/install/armend_visualize:/home/xsm/R1_ws/install/xsmmsg:/home/xsm/R1_ws/install/xsm_msg:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/xsm/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xsm/R1_ws/build/armend_visualize'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/xsm/anaconda3/bin/conda'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c990f80bd94a6f9a835a40b467d34695'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/xsm/R1_ws/install/xsmmsg/local/lib/python3.10/dist-packages:/home/xsm/R1_ws/install/xsm_msg/local/lib/python3.10/dist-packages:/home/xsm/R1_ws/install/mit_msgs/local/lib/python3.10/dist-packages:/home/xsm/R1_ws/install/gui_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/armend_visualize:/home/xsm/R1_ws/install/xsmmsg:/home/xsm/R1_ws/install/xsm_msg:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble')]), 'shell': False}
+[7.561695] (armend_visualize) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.561920] (armend_visualize) StdoutLine: {'line': b'-- Installing: /home/xsm/R1_ws/install/armend_visualize/lib/armend_visualize/main\n'}
+[7.565754] (armend_visualize) StdoutLine: {'line': b'-- Set runtime path of "/home/xsm/R1_ws/install/armend_visualize/lib/armend_visualize/main" to ""\n'}
+[7.565983] (armend_visualize) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/ament_index/resource_index/package_run_dependencies/armend_visualize\n'}
+[7.566106] (armend_visualize) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/ament_index/resource_index/parent_prefix_path/armend_visualize\n'}
+[7.566175] (armend_visualize) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/environment/ament_prefix_path.sh\n'}
+[7.566235] (armend_visualize) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/environment/ament_prefix_path.dsv\n'}
+[7.566317] (armend_visualize) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/environment/path.sh\n'}
+[7.566392] (armend_visualize) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/environment/path.dsv\n'}
+[7.566446] (armend_visualize) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/local_setup.bash\n'}
+[7.566495] (armend_visualize) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/local_setup.sh\n'}
+[7.566537] (armend_visualize) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/local_setup.zsh\n'}
+[7.566582] (armend_visualize) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/local_setup.dsv\n'}
+[7.566667] (armend_visualize) StdoutLine: {'line': b'-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/package.dsv\n'}
+[7.566718] (armend_visualize) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/ament_index/resource_index/packages/armend_visualize\n'}
+[7.566760] (armend_visualize) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/cmake/armend_visualizeConfig.cmake\n'}
+[7.566801] (armend_visualize) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/cmake/armend_visualizeConfig-version.cmake\n'}
+[7.566842] (armend_visualize) StdoutLine: {'line': b'-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/package.xml\n'}
+[7.568515] (armend_visualize) CommandEnded: {'returncode': 0}
+[7.621936] (-) TimerEvent: {}
+[7.639901] (armend_visualize) JobEnded: {'identifier': 'armend_visualize', 'rc': 0}
+[7.640418] (-) EventReactorShutdown: {}

@@ -1,0 +1,16 @@
+/home/xsm/R1_ws/install/armend_visualize/lib/armend_visualize/main
+/home/xsm/R1_ws/install/armend_visualize/share/ament_index/resource_index/package_run_dependencies/armend_visualize
+/home/xsm/R1_ws/install/armend_visualize/share/ament_index/resource_index/parent_prefix_path/armend_visualize
+/home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/environment/ament_prefix_path.sh
+/home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/environment/ament_prefix_path.dsv
+/home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/environment/path.sh
+/home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/environment/path.dsv
+/home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/local_setup.bash
+/home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/local_setup.sh
+/home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/local_setup.zsh
+/home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/local_setup.dsv
+/home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/package.dsv
+/home/xsm/R1_ws/install/armend_visualize/share/ament_index/resource_index/packages/armend_visualize
+/home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/cmake/armend_visualizeConfig.cmake
+/home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/cmake/armend_visualizeConfig-version.cmake
+/home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/package.xml

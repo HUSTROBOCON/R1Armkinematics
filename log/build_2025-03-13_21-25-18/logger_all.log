@@ -1,0 +1,528 @@
+[0.187s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.187s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x79d2de120a00>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x79d2de2155a0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x79d2de2155a0>>)
+[0.390s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.390s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.390s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.390s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.390s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.390s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.390s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/xsm/R1_ws'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src/armForwardkinematics) by extensions ['ignore', 'ignore_ament_install']
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src/armForwardkinematics) by extension 'ignore'
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src/armForwardkinematics) by extension 'ignore_ament_install'
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src/armForwardkinematics) by extensions ['colcon_pkg']
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src/armForwardkinematics) by extension 'colcon_pkg'
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src/armForwardkinematics) by extensions ['colcon_meta']
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src/armForwardkinematics) by extension 'colcon_meta'
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src/armForwardkinematics) by extensions ['ros']
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src/armForwardkinematics) by extension 'ros'
+[0.404s] DEBUG:colcon.colcon_core.package_identification:Package 'src/armForwardkinematics' with type 'ros.ament_cmake' and name 'armForwardkinematics'
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_dynamics_hw) by extensions ['ignore', 'ignore_ament_install']
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_dynamics_hw) by extension 'ignore'
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_dynamics_hw) by extension 'ignore_ament_install'
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_dynamics_hw) by extensions ['colcon_pkg']
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_dynamics_hw) by extension 'colcon_pkg'
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_dynamics_hw) by extensions ['colcon_meta']
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_dynamics_hw) by extension 'colcon_meta'
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_dynamics_hw) by extensions ['ros']
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_dynamics_hw) by extension 'ros'
+[0.405s] DEBUG:colcon.colcon_core.package_identification:Package 'src/arm_dynamics_hw' with type 'ros.ament_cmake' and name 'arm_dynamics_hw'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/armend_visualize) by extensions ['ignore', 'ignore_ament_install']
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/armend_visualize) by extension 'ignore'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/armend_visualize) by extension 'ignore_ament_install'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/armend_visualize) by extensions ['colcon_pkg']
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/armend_visualize) by extension 'colcon_pkg'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/armend_visualize) by extensions ['colcon_meta']
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/armend_visualize) by extension 'colcon_meta'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/armend_visualize) by extensions ['ros']
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/armend_visualize) by extension 'ros'
+[0.407s] DEBUG:colcon.colcon_core.package_identification:Package 'src/armend_visualize' with type 'ros.ament_cmake' and name 'armend_visualize'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_pkg) by extension 'ignore'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_pkg) by extension 'ignore_ament_install'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_pkg) by extensions ['colcon_pkg']
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_pkg) by extension 'colcon_pkg'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_pkg) by extensions ['colcon_meta']
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_pkg) by extension 'colcon_meta'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_pkg) by extensions ['ros']
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_pkg) by extension 'ros'
+[0.408s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gui_pkg' with type 'ros.ament_python' and name 'gui_pkg'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/public) by extensions ['ignore', 'ignore_ament_install']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/public) by extension 'ignore'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/public) by extension 'ignore_ament_install'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/public) by extensions ['colcon_pkg']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/public) by extension 'colcon_pkg'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/public) by extensions ['colcon_meta']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/public) by extension 'colcon_meta'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/public) by extensions ['ros']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/public) by extension 'ros'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/public) by extensions ['cmake', 'python']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/public) by extension 'cmake'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/public) by extension 'python'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/public) by extensions ['python_setup_py']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/public) by extension 'python_setup_py'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/OptimalControlProblem) by extensions ['ignore', 'ignore_ament_install']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/OptimalControlProblem) by extension 'ignore'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/OptimalControlProblem) by extension 'ignore_ament_install'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/OptimalControlProblem) by extensions ['colcon_pkg']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/OptimalControlProblem) by extension 'colcon_pkg'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/OptimalControlProblem) by extensions ['colcon_meta']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/OptimalControlProblem) by extension 'colcon_meta'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/OptimalControlProblem) by extensions ['ros']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/OptimalControlProblem) by extension 'ros'
+[0.409s] DEBUG:colcon.colcon_core.package_identification:Package 'src/public/OptimalControlProblem' with type 'ros.ament_cmake' and name 'optimal_control_problem'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/lock_utils) by extensions ['ignore', 'ignore_ament_install']
+[0.410s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/lock_utils) by extension 'ignore'
+[0.410s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/lock_utils) by extension 'ignore_ament_install'
+[0.410s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/lock_utils) by extensions ['colcon_pkg']
+[0.410s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/lock_utils) by extension 'colcon_pkg'
+[0.410s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/lock_utils) by extensions ['colcon_meta']
+[0.410s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/lock_utils) by extension 'colcon_meta'
+[0.410s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/lock_utils) by extensions ['ros']
+[0.410s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/lock_utils) by extension 'ros'
+[0.411s] DEBUG:colcon.colcon_core.package_identification:Package 'src/public/lock_utils' with type 'ros.ament_cmake' and name 'lock_utils'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/mit_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/mit_msgs) by extension 'ignore'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/mit_msgs) by extension 'ignore_ament_install'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/mit_msgs) by extensions ['colcon_pkg']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/mit_msgs) by extension 'colcon_pkg'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/mit_msgs) by extensions ['colcon_meta']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/mit_msgs) by extension 'colcon_meta'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/mit_msgs) by extensions ['ros']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(src/public/mit_msgs) by extension 'ros'
+[0.412s] DEBUG:colcon.colcon_core.package_identification:Package 'src/public/mit_msgs' with type 'ros.ament_cmake' and name 'mit_msgs'
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(src/xsm_msg) by extensions ['ignore', 'ignore_ament_install']
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(src/xsm_msg) by extension 'ignore'
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(src/xsm_msg) by extension 'ignore_ament_install'
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(src/xsm_msg) by extensions ['colcon_pkg']
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(src/xsm_msg) by extension 'colcon_pkg'
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(src/xsm_msg) by extensions ['colcon_meta']
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(src/xsm_msg) by extension 'colcon_meta'
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(src/xsm_msg) by extensions ['ros']
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(src/xsm_msg) by extension 'ros'
+[0.413s] DEBUG:colcon.colcon_core.package_identification:Package 'src/xsm_msg' with type 'ros.ament_cmake' and name 'xsm_msg'
+[0.413s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.413s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.413s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.413s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.413s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.445s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.445s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.448s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/xsm/R1_ws/install
+[0.450s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 336 installed packages in /opt/ros/humble
+[0.451s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.522s] Level 5:colcon.colcon_core.verb:set package 'gui_pkg' build argument 'cmake_args' from command line to 'None'
+[0.522s] Level 5:colcon.colcon_core.verb:set package 'gui_pkg' build argument 'cmake_target' from command line to 'None'
+[0.522s] Level 5:colcon.colcon_core.verb:set package 'gui_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.522s] Level 5:colcon.colcon_core.verb:set package 'gui_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.522s] Level 5:colcon.colcon_core.verb:set package 'gui_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.522s] Level 5:colcon.colcon_core.verb:set package 'gui_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.522s] Level 5:colcon.colcon_core.verb:set package 'gui_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.522s] Level 5:colcon.colcon_core.verb:set package 'gui_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.522s] Level 5:colcon.colcon_core.verb:set package 'gui_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.522s] DEBUG:colcon.colcon_core.verb:Building package 'gui_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/xsm/R1_ws/build/gui_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/xsm/R1_ws/install/gui_pkg', 'merge_install': False, 'path': '/home/xsm/R1_ws/src/gui_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'lock_utils' build argument 'cmake_args' from command line to 'None'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'lock_utils' build argument 'cmake_target' from command line to 'None'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'lock_utils' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'lock_utils' build argument 'cmake_clean_cache' from command line to 'False'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'lock_utils' build argument 'cmake_clean_first' from command line to 'False'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'lock_utils' build argument 'cmake_force_configure' from command line to 'False'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'lock_utils' build argument 'ament_cmake_args' from command line to 'None'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'lock_utils' build argument 'catkin_cmake_args' from command line to 'None'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'lock_utils' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.523s] DEBUG:colcon.colcon_core.verb:Building package 'lock_utils' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/xsm/R1_ws/build/lock_utils', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/xsm/R1_ws/install/lock_utils', 'merge_install': False, 'path': '/home/xsm/R1_ws/src/public/lock_utils', 'symlink_install': False, 'test_result_base': None}
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'mit_msgs' build argument 'cmake_args' from command line to 'None'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'mit_msgs' build argument 'cmake_target' from command line to 'None'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'mit_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'mit_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'mit_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'mit_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'mit_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'mit_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'mit_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.523s] DEBUG:colcon.colcon_core.verb:Building package 'mit_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/xsm/R1_ws/build/mit_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/xsm/R1_ws/install/mit_msgs', 'merge_install': False, 'path': '/home/xsm/R1_ws/src/public/mit_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'optimal_control_problem' build argument 'cmake_args' from command line to 'None'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'optimal_control_problem' build argument 'cmake_target' from command line to 'None'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'optimal_control_problem' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'optimal_control_problem' build argument 'cmake_clean_cache' from command line to 'False'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'optimal_control_problem' build argument 'cmake_clean_first' from command line to 'False'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'optimal_control_problem' build argument 'cmake_force_configure' from command line to 'False'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'optimal_control_problem' build argument 'ament_cmake_args' from command line to 'None'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'optimal_control_problem' build argument 'catkin_cmake_args' from command line to 'None'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'optimal_control_problem' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.524s] DEBUG:colcon.colcon_core.verb:Building package 'optimal_control_problem' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/xsm/R1_ws/build/optimal_control_problem', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/xsm/R1_ws/install/optimal_control_problem', 'merge_install': False, 'path': '/home/xsm/R1_ws/src/public/OptimalControlProblem', 'symlink_install': False, 'test_result_base': None}
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'xsm_msg' build argument 'cmake_args' from command line to 'None'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'xsm_msg' build argument 'cmake_target' from command line to 'None'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'xsm_msg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'xsm_msg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'xsm_msg' build argument 'cmake_clean_first' from command line to 'False'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'xsm_msg' build argument 'cmake_force_configure' from command line to 'False'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'xsm_msg' build argument 'ament_cmake_args' from command line to 'None'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'xsm_msg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'xsm_msg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.524s] DEBUG:colcon.colcon_core.verb:Building package 'xsm_msg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/xsm/R1_ws/build/xsm_msg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/xsm/R1_ws/install/xsm_msg', 'merge_install': False, 'path': '/home/xsm/R1_ws/src/xsm_msg', 'symlink_install': False, 'test_result_base': None}
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'armForwardkinematics' build argument 'cmake_args' from command line to 'None'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'armForwardkinematics' build argument 'cmake_target' from command line to 'None'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'armForwardkinematics' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'armForwardkinematics' build argument 'cmake_clean_cache' from command line to 'False'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'armForwardkinematics' build argument 'cmake_clean_first' from command line to 'False'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'armForwardkinematics' build argument 'cmake_force_configure' from command line to 'False'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'armForwardkinematics' build argument 'ament_cmake_args' from command line to 'None'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'armForwardkinematics' build argument 'catkin_cmake_args' from command line to 'None'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'armForwardkinematics' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.525s] DEBUG:colcon.colcon_core.verb:Building package 'armForwardkinematics' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/xsm/R1_ws/build/armForwardkinematics', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/xsm/R1_ws/install/armForwardkinematics', 'merge_install': False, 'path': '/home/xsm/R1_ws/src/armForwardkinematics', 'symlink_install': False, 'test_result_base': None}
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'arm_dynamics_hw' build argument 'cmake_args' from command line to 'None'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'arm_dynamics_hw' build argument 'cmake_target' from command line to 'None'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'arm_dynamics_hw' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'arm_dynamics_hw' build argument 'cmake_clean_cache' from command line to 'False'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'arm_dynamics_hw' build argument 'cmake_clean_first' from command line to 'False'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'arm_dynamics_hw' build argument 'cmake_force_configure' from command line to 'False'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'arm_dynamics_hw' build argument 'ament_cmake_args' from command line to 'None'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'arm_dynamics_hw' build argument 'catkin_cmake_args' from command line to 'None'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'arm_dynamics_hw' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.525s] DEBUG:colcon.colcon_core.verb:Building package 'arm_dynamics_hw' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/xsm/R1_ws/build/arm_dynamics_hw', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/xsm/R1_ws/install/arm_dynamics_hw', 'merge_install': False, 'path': '/home/xsm/R1_ws/src/arm_dynamics_hw', 'symlink_install': False, 'test_result_base': None}
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'armend_visualize' build argument 'cmake_args' from command line to 'None'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'armend_visualize' build argument 'cmake_target' from command line to 'None'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'armend_visualize' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'armend_visualize' build argument 'cmake_clean_cache' from command line to 'False'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'armend_visualize' build argument 'cmake_clean_first' from command line to 'False'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'armend_visualize' build argument 'cmake_force_configure' from command line to 'False'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'armend_visualize' build argument 'ament_cmake_args' from command line to 'None'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'armend_visualize' build argument 'catkin_cmake_args' from command line to 'None'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'armend_visualize' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.525s] DEBUG:colcon.colcon_core.verb:Building package 'armend_visualize' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/xsm/R1_ws/build/armend_visualize', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/xsm/R1_ws/install/armend_visualize', 'merge_install': False, 'path': '/home/xsm/R1_ws/src/armend_visualize', 'symlink_install': False, 'test_result_base': None}
+[0.525s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.526s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.526s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/xsm/R1_ws/src/public/mit_msgs' with build type 'ament_cmake'
+[0.526s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/xsm/R1_ws/src/public/mit_msgs'
+[0.530s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.530s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.530s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.533s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/xsm/R1_ws/src/public/lock_utils' with build type 'ament_cmake'
+[0.534s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/xsm/R1_ws/src/public/lock_utils'
+[0.534s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.534s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.537s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/xsm/R1_ws/src/gui_pkg' with build type 'ament_python'
+[0.537s] Level 1:colcon.colcon_core.shell:create_environment_hook('gui_pkg', 'ament_prefix_path')
+[0.537s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/gui_pkg/share/gui_pkg/hook/ament_prefix_path.ps1'
+[0.538s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xsm/R1_ws/install/gui_pkg/share/gui_pkg/hook/ament_prefix_path.dsv'
+[0.539s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/gui_pkg/share/gui_pkg/hook/ament_prefix_path.sh'
+[0.540s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.540s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.543s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/xsm/R1_ws/src/public/OptimalControlProblem' with build type 'ament_cmake'
+[0.543s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/xsm/R1_ws/src/public/OptimalControlProblem'
+[0.543s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.543s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.546s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/xsm/R1_ws/src/xsm_msg' with build type 'ament_cmake'
+[0.546s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/xsm/R1_ws/src/xsm_msg'
+[0.546s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.547s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.554s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xsm/R1_ws/build/mit_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake /home/xsm/R1_ws/src/public/mit_msgs -DCMAKE_INSTALL_PREFIX=/home/xsm/R1_ws/install/mit_msgs
+[0.558s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xsm/R1_ws/build/lock_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake /home/xsm/R1_ws/src/public/lock_utils -DCMAKE_INSTALL_PREFIX=/home/xsm/R1_ws/install/lock_utils
+[0.754s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/xsm/R1_ws/src/gui_pkg'
+[0.755s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.755s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.763s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xsm/R1_ws/build/optimal_control_problem': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake /home/xsm/R1_ws/src/public/OptimalControlProblem -DCMAKE_INSTALL_PREFIX=/home/xsm/R1_ws/install/optimal_control_problem
+[0.766s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xsm/R1_ws/build/xsm_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake /home/xsm/R1_ws/src/xsm_msg -DCMAKE_INSTALL_PREFIX=/home/xsm/R1_ws/install/xsm_msg
+[0.996s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xsm/R1_ws/build/optimal_control_problem' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake /home/xsm/R1_ws/src/public/OptimalControlProblem -DCMAKE_INSTALL_PREFIX=/home/xsm/R1_ws/install/optimal_control_problem
+[0.998s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xsm/R1_ws/build/optimal_control_problem': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/xsm/R1_ws/build/optimal_control_problem -- -j16 -l16
+[1.073s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xsm/R1_ws/build/lock_utils' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake /home/xsm/R1_ws/src/public/lock_utils -DCMAKE_INSTALL_PREFIX=/home/xsm/R1_ws/install/lock_utils
+[1.075s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xsm/R1_ws/build/lock_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/xsm/R1_ws/build/lock_utils -- -j16 -l16
+[1.091s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xsm/R1_ws/build/optimal_control_problem' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/xsm/R1_ws/build/optimal_control_problem -- -j16 -l16
+[1.160s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xsm/R1_ws/build/optimal_control_problem': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --install /home/xsm/R1_ws/build/optimal_control_problem
+[1.163s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xsm/R1_ws/src/gui_pkg': PYTHONPATH=/home/xsm/R1_ws/build/gui_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xsm/R1_ws/install/gui_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/gui_pkg build --build-base /home/xsm/R1_ws/build/gui_pkg/build install --record /home/xsm/R1_ws/build/gui_pkg/install.log --single-version-externally-managed install_data
+[1.165s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xsm/R1_ws/build/lock_utils' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/xsm/R1_ws/build/lock_utils -- -j16 -l16
+[1.175s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(optimal_control_problem)
+[1.176s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xsm/R1_ws/build/optimal_control_problem' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --install /home/xsm/R1_ws/build/optimal_control_problem
+[1.180s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/optimal_control_problem' for CMake module files
+[1.181s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/optimal_control_problem' for CMake config files
+[1.181s] Level 1:colcon.colcon_core.shell:create_environment_hook('optimal_control_problem', 'cmake_prefix_path')
+[1.181s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/hook/cmake_prefix_path.ps1'
+[1.182s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/hook/cmake_prefix_path.dsv'
+[1.182s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/hook/cmake_prefix_path.sh'
+[1.183s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/optimal_control_problem/lib'
+[1.183s] Level 1:colcon.colcon_core.shell:create_environment_hook('optimal_control_problem', 'ld_library_path_lib')
+[1.183s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/hook/ld_library_path_lib.ps1'
+[1.183s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/hook/ld_library_path_lib.dsv'
+[1.183s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/hook/ld_library_path_lib.sh'
+[1.184s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/optimal_control_problem/bin'
+[1.184s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/optimal_control_problem/lib/pkgconfig/optimal_control_problem.pc'
+[1.184s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/optimal_control_problem/lib/python3.10/site-packages'
+[1.184s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/optimal_control_problem/bin'
+[1.185s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/package.ps1'
+[1.185s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/package.dsv'
+[1.186s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/package.sh'
+[1.187s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/package.bash'
+[1.187s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/package.zsh'
+[1.188s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xsm/R1_ws/install/optimal_control_problem/share/colcon-core/packages/optimal_control_problem)
+[1.227s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xsm/R1_ws/build/lock_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --install /home/xsm/R1_ws/build/lock_utils
+[1.242s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lock_utils)
+[1.242s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/lock_utils' for CMake module files
+[1.243s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xsm/R1_ws/build/lock_utils' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --install /home/xsm/R1_ws/build/lock_utils
+[1.243s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/lock_utils' for CMake config files
+[1.243s] Level 1:colcon.colcon_core.shell:create_environment_hook('lock_utils', 'cmake_prefix_path')
+[1.243s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/lock_utils/share/lock_utils/hook/cmake_prefix_path.ps1'
+[1.244s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xsm/R1_ws/install/lock_utils/share/lock_utils/hook/cmake_prefix_path.dsv'
+[1.244s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/lock_utils/share/lock_utils/hook/cmake_prefix_path.sh'
+[1.245s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/lock_utils/lib'
+[1.245s] Level 1:colcon.colcon_core.shell:create_environment_hook('lock_utils', 'ld_library_path_lib')
+[1.245s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/lock_utils/share/lock_utils/hook/ld_library_path_lib.ps1'
+[1.246s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xsm/R1_ws/install/lock_utils/share/lock_utils/hook/ld_library_path_lib.dsv'
+[1.246s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/lock_utils/share/lock_utils/hook/ld_library_path_lib.sh'
+[1.246s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/lock_utils/bin'
+[1.246s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/lock_utils/lib/pkgconfig/lock_utils.pc'
+[1.247s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/lock_utils/lib/python3.10/site-packages'
+[1.247s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/lock_utils/bin'
+[1.247s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/lock_utils/share/lock_utils/package.ps1'
+[1.248s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xsm/R1_ws/install/lock_utils/share/lock_utils/package.dsv'
+[1.248s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/lock_utils/share/lock_utils/package.sh'
+[1.249s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/lock_utils/share/lock_utils/package.bash'
+[1.249s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/lock_utils/share/lock_utils/package.zsh'
+[1.249s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xsm/R1_ws/install/lock_utils/share/colcon-core/packages/lock_utils)
+[1.251s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(optimal_control_problem)
+[1.251s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/optimal_control_problem' for CMake module files
+[1.251s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/optimal_control_problem' for CMake config files
+[1.252s] Level 1:colcon.colcon_core.shell:create_environment_hook('optimal_control_problem', 'cmake_prefix_path')
+[1.252s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/hook/cmake_prefix_path.ps1'
+[1.252s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/hook/cmake_prefix_path.dsv'
+[1.252s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/hook/cmake_prefix_path.sh'
+[1.253s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/optimal_control_problem/lib'
+[1.253s] Level 1:colcon.colcon_core.shell:create_environment_hook('optimal_control_problem', 'ld_library_path_lib')
+[1.253s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/hook/ld_library_path_lib.ps1'
+[1.253s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/hook/ld_library_path_lib.dsv'
+[1.254s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/hook/ld_library_path_lib.sh'
+[1.254s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/optimal_control_problem/bin'
+[1.254s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/optimal_control_problem/lib/pkgconfig/optimal_control_problem.pc'
+[1.254s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/optimal_control_problem/lib/python3.10/site-packages'
+[1.254s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/optimal_control_problem/bin'
+[1.254s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/package.ps1'
+[1.255s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/package.dsv'
+[1.255s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/package.sh'
+[1.256s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/package.bash'
+[1.256s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/optimal_control_problem/share/optimal_control_problem/package.zsh'
+[1.256s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xsm/R1_ws/install/optimal_control_problem/share/colcon-core/packages/optimal_control_problem)
+[1.317s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lock_utils)
+[1.318s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/lock_utils' for CMake module files
+[1.318s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/lock_utils' for CMake config files
+[1.319s] Level 1:colcon.colcon_core.shell:create_environment_hook('lock_utils', 'cmake_prefix_path')
+[1.319s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/lock_utils/share/lock_utils/hook/cmake_prefix_path.ps1'
+[1.319s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xsm/R1_ws/install/lock_utils/share/lock_utils/hook/cmake_prefix_path.dsv'
+[1.320s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/lock_utils/share/lock_utils/hook/cmake_prefix_path.sh'
+[1.320s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/lock_utils/lib'
+[1.320s] Level 1:colcon.colcon_core.shell:create_environment_hook('lock_utils', 'ld_library_path_lib')
+[1.320s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/lock_utils/share/lock_utils/hook/ld_library_path_lib.ps1'
+[1.321s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xsm/R1_ws/install/lock_utils/share/lock_utils/hook/ld_library_path_lib.dsv'
+[1.321s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/lock_utils/share/lock_utils/hook/ld_library_path_lib.sh'
+[1.321s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/lock_utils/bin'
+[1.321s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/lock_utils/lib/pkgconfig/lock_utils.pc'
+[1.321s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/lock_utils/lib/python3.10/site-packages'
+[1.321s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/lock_utils/bin'
+[1.322s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/lock_utils/share/lock_utils/package.ps1'
+[1.322s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xsm/R1_ws/install/lock_utils/share/lock_utils/package.dsv'
+[1.322s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/lock_utils/share/lock_utils/package.sh'
+[1.323s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/lock_utils/share/lock_utils/package.bash'
+[1.323s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/lock_utils/share/lock_utils/package.zsh'
+[1.323s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xsm/R1_ws/install/lock_utils/share/colcon-core/packages/lock_utils)
+[1.405s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/gui_pkg' for CMake module files
+[1.405s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xsm/R1_ws/src/gui_pkg' returned '0': PYTHONPATH=/home/xsm/R1_ws/build/gui_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xsm/R1_ws/install/gui_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/gui_pkg build --build-base /home/xsm/R1_ws/build/gui_pkg/build install --record /home/xsm/R1_ws/build/gui_pkg/install.log --single-version-externally-managed install_data
+[1.405s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/gui_pkg' for CMake config files
+[1.406s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/gui_pkg/lib'
+[1.406s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/gui_pkg/bin'
+[1.406s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/gui_pkg/lib/pkgconfig/gui_pkg.pc'
+[1.406s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/gui_pkg/lib/python3.10/site-packages'
+[1.406s] Level 1:colcon.colcon_core.shell:create_environment_hook('gui_pkg', 'pythonpath')
+[1.406s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/gui_pkg/share/gui_pkg/hook/pythonpath.ps1'
+[1.407s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xsm/R1_ws/install/gui_pkg/share/gui_pkg/hook/pythonpath.dsv'
+[1.407s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/gui_pkg/share/gui_pkg/hook/pythonpath.sh'
+[1.408s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/gui_pkg/bin'
+[1.408s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gui_pkg)
+[1.408s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/gui_pkg/share/gui_pkg/package.ps1'
+[1.408s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xsm/R1_ws/install/gui_pkg/share/gui_pkg/package.dsv'
+[1.409s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/gui_pkg/share/gui_pkg/package.sh'
+[1.409s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/gui_pkg/share/gui_pkg/package.bash'
+[1.409s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/gui_pkg/share/gui_pkg/package.zsh'
+[1.409s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xsm/R1_ws/install/gui_pkg/share/colcon-core/packages/gui_pkg)
+[1.786s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xsm/R1_ws/build/xsm_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake /home/xsm/R1_ws/src/xsm_msg -DCMAKE_INSTALL_PREFIX=/home/xsm/R1_ws/install/xsm_msg
+[1.787s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xsm/R1_ws/build/xsm_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/xsm/R1_ws/build/xsm_msg -- -j16 -l16
+[1.928s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xsm/R1_ws/build/mit_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake /home/xsm/R1_ws/src/public/mit_msgs -DCMAKE_INSTALL_PREFIX=/home/xsm/R1_ws/install/mit_msgs
+[1.930s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xsm/R1_ws/build/mit_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/xsm/R1_ws/build/mit_msgs -- -j16 -l16
+[2.138s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xsm/R1_ws/build/xsm_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/xsm/R1_ws/build/xsm_msg -- -j16 -l16
+[2.274s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xsm/R1_ws/build/mit_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/xsm/R1_ws/build/mit_msgs -- -j16 -l16
+[2.297s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xsm/R1_ws/build/xsm_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --install /home/xsm/R1_ws/build/xsm_msg
+[2.353s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xsm_msg)
+[2.353s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/xsm_msg' for CMake module files
+[2.354s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xsm/R1_ws/build/xsm_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --install /home/xsm/R1_ws/build/xsm_msg
+[2.354s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/xsm_msg' for CMake config files
+[2.355s] Level 1:colcon.colcon_core.shell:create_environment_hook('xsm_msg', 'cmake_prefix_path')
+[2.355s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/hook/cmake_prefix_path.ps1'
+[2.355s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/hook/cmake_prefix_path.dsv'
+[2.355s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/hook/cmake_prefix_path.sh'
+[2.356s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/xsm_msg/lib'
+[2.356s] Level 1:colcon.colcon_core.shell:create_environment_hook('xsm_msg', 'ld_library_path_lib')
+[2.356s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/hook/ld_library_path_lib.ps1'
+[2.356s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/hook/ld_library_path_lib.dsv'
+[2.357s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/hook/ld_library_path_lib.sh'
+[2.357s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/xsm_msg/bin'
+[2.357s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/xsm_msg/lib/pkgconfig/xsm_msg.pc'
+[2.357s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/xsm_msg/lib/python3.10/site-packages'
+[2.357s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/xsm_msg/bin'
+[2.357s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/package.ps1'
+[2.358s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/package.dsv'
+[2.358s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/package.sh'
+[2.358s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/package.bash'
+[2.359s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/package.zsh'
+[2.359s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xsm/R1_ws/install/xsm_msg/share/colcon-core/packages/xsm_msg)
+[2.513s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xsm_msg)
+[2.513s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/xsm_msg' for CMake module files
+[2.514s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/xsm_msg' for CMake config files
+[2.514s] Level 1:colcon.colcon_core.shell:create_environment_hook('xsm_msg', 'cmake_prefix_path')
+[2.514s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/hook/cmake_prefix_path.ps1'
+[2.515s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/hook/cmake_prefix_path.dsv'
+[2.515s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/hook/cmake_prefix_path.sh'
+[2.515s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/xsm_msg/lib'
+[2.515s] Level 1:colcon.colcon_core.shell:create_environment_hook('xsm_msg', 'ld_library_path_lib')
+[2.516s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/hook/ld_library_path_lib.ps1'
+[2.516s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/hook/ld_library_path_lib.dsv'
+[2.516s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/hook/ld_library_path_lib.sh'
+[2.516s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/xsm_msg/bin'
+[2.516s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/xsm_msg/lib/pkgconfig/xsm_msg.pc'
+[2.517s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/xsm_msg/lib/python3.10/site-packages'
+[2.517s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/xsm_msg/bin'
+[2.517s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/package.ps1'
+[2.517s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/package.dsv'
+[2.518s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/package.sh'
+[2.518s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/package.bash'
+[2.518s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/package.zsh'
+[2.519s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xsm/R1_ws/install/xsm_msg/share/colcon-core/packages/xsm_msg)
+[2.537s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xsm/R1_ws/build/mit_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --install /home/xsm/R1_ws/build/mit_msgs
+[2.598s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mit_msgs)
+[2.598s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/mit_msgs' for CMake module files
+[2.599s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xsm/R1_ws/build/mit_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --install /home/xsm/R1_ws/build/mit_msgs
+[2.599s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/mit_msgs' for CMake config files
+[2.600s] Level 1:colcon.colcon_core.shell:create_environment_hook('mit_msgs', 'cmake_prefix_path')
+[2.600s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/mit_msgs/share/mit_msgs/hook/cmake_prefix_path.ps1'
+[2.600s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xsm/R1_ws/install/mit_msgs/share/mit_msgs/hook/cmake_prefix_path.dsv'
+[2.600s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/mit_msgs/share/mit_msgs/hook/cmake_prefix_path.sh'
+[2.601s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/mit_msgs/lib'
+[2.601s] Level 1:colcon.colcon_core.shell:create_environment_hook('mit_msgs', 'ld_library_path_lib')
+[2.601s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/mit_msgs/share/mit_msgs/hook/ld_library_path_lib.ps1'
+[2.601s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xsm/R1_ws/install/mit_msgs/share/mit_msgs/hook/ld_library_path_lib.dsv'
+[2.602s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/mit_msgs/share/mit_msgs/hook/ld_library_path_lib.sh'
+[2.602s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/mit_msgs/bin'
+[2.602s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/mit_msgs/lib/pkgconfig/mit_msgs.pc'
+[2.602s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/mit_msgs/lib/python3.10/site-packages'
+[2.602s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/mit_msgs/bin'
+[2.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/mit_msgs/share/mit_msgs/package.ps1'
+[2.603s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xsm/R1_ws/install/mit_msgs/share/mit_msgs/package.dsv'
+[2.603s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/mit_msgs/share/mit_msgs/package.sh'
+[2.603s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/mit_msgs/share/mit_msgs/package.bash'
+[2.604s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/mit_msgs/share/mit_msgs/package.zsh'
+[2.604s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xsm/R1_ws/install/mit_msgs/share/colcon-core/packages/mit_msgs)
+[2.866s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mit_msgs)
+[2.866s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/mit_msgs' for CMake module files
+[2.866s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/mit_msgs' for CMake config files
+[2.867s] Level 1:colcon.colcon_core.shell:create_environment_hook('mit_msgs', 'cmake_prefix_path')
+[2.867s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/mit_msgs/share/mit_msgs/hook/cmake_prefix_path.ps1'
+[2.867s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xsm/R1_ws/install/mit_msgs/share/mit_msgs/hook/cmake_prefix_path.dsv'
+[2.868s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/mit_msgs/share/mit_msgs/hook/cmake_prefix_path.sh'
+[2.868s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/mit_msgs/lib'
+[2.868s] Level 1:colcon.colcon_core.shell:create_environment_hook('mit_msgs', 'ld_library_path_lib')
+[2.868s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/mit_msgs/share/mit_msgs/hook/ld_library_path_lib.ps1'
+[2.869s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xsm/R1_ws/install/mit_msgs/share/mit_msgs/hook/ld_library_path_lib.dsv'
+[2.869s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xsm/R1_ws/install/mit_msgs/share/mit_msgs/hook/ld_library_path_lib.sh'
+[2.869s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/mit_msgs/bin'
+[2.870s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/mit_msgs/lib/pkgconfig/mit_msgs.pc'
+[2.870s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/mit_msgs/lib/python3.10/site-packages'
+[2.870s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/mit_msgs/bin'
+[2.870s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/mit_msgs/share/mit_msgs/package.ps1'
+[2.870s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xsm/R1_ws/install/mit_msgs/share/mit_msgs/package.dsv'
+[2.871s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/mit_msgs/share/mit_msgs/package.sh'
+[2.871s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/mit_msgs/share/mit_msgs/package.bash'
+[2.871s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/mit_msgs/share/mit_msgs/package.zsh'
+[2.872s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xsm/R1_ws/install/mit_msgs/share/colcon-core/packages/mit_msgs)
+[2.872s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/xsm/R1_ws/src/armForwardkinematics' with build type 'ament_cmake'
+[2.872s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/xsm/R1_ws/src/armForwardkinematics'
+[2.872s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.872s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.875s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/xsm/R1_ws/src/arm_dynamics_hw' with build type 'ament_cmake'
+[2.875s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/xsm/R1_ws/src/arm_dynamics_hw'
+[2.876s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.876s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.879s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/xsm/R1_ws/src/armend_visualize' with build type 'ament_cmake'
+[2.879s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/xsm/R1_ws/src/armend_visualize'
+[2.879s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.879s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.887s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xsm/R1_ws/build/armForwardkinematics': CMAKE_PREFIX_PATH=/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/xsmmsg:/home/xsm/R1_ws/install/xsm_msg:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/xsm/R1_ws/install/mit_msgs/lib:/home/xsm/R1_ws/install/xsmmsg/lib:/home/xsm/R1_ws/install/xsm_msg/lib:/home/xsm/R1_ws/install/optimal_control_problem/lib:/home/xsm/R1_ws/install/lock_utils/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia /usr/bin/cmake /home/xsm/R1_ws/src/armForwardkinematics -DCMAKE_INSTALL_PREFIX=/home/xsm/R1_ws/install/armForwardkinematics
+[2.892s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xsm/R1_ws/build/armend_visualize': CMAKE_PREFIX_PATH=/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/xsmmsg:/home/xsm/R1_ws/install/xsm_msg:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/xsm/R1_ws/install/mit_msgs/lib:/home/xsm/R1_ws/install/xsmmsg/lib:/home/xsm/R1_ws/install/xsm_msg/lib:/home/xsm/R1_ws/install/optimal_control_problem/lib:/home/xsm/R1_ws/install/lock_utils/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia /usr/bin/cmake /home/xsm/R1_ws/src/armend_visualize -DCMAKE_INSTALL_PREFIX=/home/xsm/R1_ws/install/armend_visualize
+[2.894s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xsm/R1_ws/build/arm_dynamics_hw': CMAKE_PREFIX_PATH=/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/xsmmsg:/home/xsm/R1_ws/install/xsm_msg:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/xsm/R1_ws/install/mit_msgs/lib:/home/xsm/R1_ws/install/lock_utils/lib:/home/xsm/R1_ws/install/xsmmsg/lib:/home/xsm/R1_ws/install/xsm_msg/lib:/home/xsm/R1_ws/install/optimal_control_problem/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia /usr/bin/cmake /home/xsm/R1_ws/src/arm_dynamics_hw -DCMAKE_INSTALL_PREFIX=/home/xsm/R1_ws/install/arm_dynamics_hw
+[4.263s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xsm/R1_ws/build/arm_dynamics_hw' returned '0': CMAKE_PREFIX_PATH=/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/xsmmsg:/home/xsm/R1_ws/install/xsm_msg:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/xsm/R1_ws/install/mit_msgs/lib:/home/xsm/R1_ws/install/lock_utils/lib:/home/xsm/R1_ws/install/xsmmsg/lib:/home/xsm/R1_ws/install/xsm_msg/lib:/home/xsm/R1_ws/install/optimal_control_problem/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia /usr/bin/cmake /home/xsm/R1_ws/src/arm_dynamics_hw -DCMAKE_INSTALL_PREFIX=/home/xsm/R1_ws/install/arm_dynamics_hw
+[4.265s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xsm/R1_ws/build/arm_dynamics_hw': CMAKE_PREFIX_PATH=/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/xsmmsg:/home/xsm/R1_ws/install/xsm_msg:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/xsm/R1_ws/install/mit_msgs/lib:/home/xsm/R1_ws/install/lock_utils/lib:/home/xsm/R1_ws/install/xsmmsg/lib:/home/xsm/R1_ws/install/xsm_msg/lib:/home/xsm/R1_ws/install/optimal_control_problem/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia /usr/bin/cmake --build /home/xsm/R1_ws/build/arm_dynamics_hw -- -j16 -l16
+[4.299s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xsm/R1_ws/build/armend_visualize' returned '1': CMAKE_PREFIX_PATH=/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/xsmmsg:/home/xsm/R1_ws/install/xsm_msg:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/xsm/R1_ws/install/mit_msgs/lib:/home/xsm/R1_ws/install/xsmmsg/lib:/home/xsm/R1_ws/install/xsm_msg/lib:/home/xsm/R1_ws/install/optimal_control_problem/lib:/home/xsm/R1_ws/install/lock_utils/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia /usr/bin/cmake /home/xsm/R1_ws/src/armend_visualize -DCMAKE_INSTALL_PREFIX=/home/xsm/R1_ws/install/armend_visualize
+[4.314s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(armend_visualize)
+[4.315s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/armend_visualize' for CMake module files
+[4.315s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/armend_visualize' for CMake config files
+[4.315s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/armend_visualize/bin'
+[4.315s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/armend_visualize/lib/pkgconfig/armend_visualize.pc'
+[4.315s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/armend_visualize/lib/python3.10/site-packages'
+[4.316s] Level 1:colcon.colcon_core.environment:checking '/home/xsm/R1_ws/install/armend_visualize/bin'
+[4.316s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/package.ps1'
+[4.317s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/package.dsv'
+[4.317s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/package.sh'
+[4.317s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/package.bash'
+[4.318s] INFO:colcon.colcon_core.shell:Creating package script '/home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/package.zsh'
+[4.318s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xsm/R1_ws/install/armend_visualize/share/colcon-core/packages/armend_visualize)
+[4.727s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.727s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.727s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[4.728s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.736s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.736s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.736s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.808s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.808s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/xsm/R1_ws/install/local_setup.ps1'
+[4.809s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/xsm/R1_ws/install/_local_setup_util_ps1.py'
+[4.811s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/xsm/R1_ws/install/setup.ps1'
+[4.812s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/xsm/R1_ws/install/local_setup.sh'
+[4.813s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/xsm/R1_ws/install/_local_setup_util_sh.py'
+[4.813s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/xsm/R1_ws/install/setup.sh'
+[4.815s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/xsm/R1_ws/install/local_setup.bash'
+[4.816s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/xsm/R1_ws/install/setup.bash'
+[4.817s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/xsm/R1_ws/install/local_setup.zsh'
+[4.817s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/xsm/R1_ws/install/setup.zsh'

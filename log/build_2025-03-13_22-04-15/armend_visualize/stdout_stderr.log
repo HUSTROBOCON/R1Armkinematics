@@ -1,0 +1,90 @@
+[35m[1mConsolidate compiler generated dependencies of target main[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp: not a directory
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp:7[m[K,
+                 from [01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:3[m[K:
+[01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:[m[K In lambda function:
+[01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:17:70:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+   17 |             RCLCPP_INFO(this->get_logger(), "I heard: [%f, %f, %f]", [01;31m[Kmsg[m[K->joint_states.position[0], msg->joint_states.position[1], msg->joint_states.position[2]);
+      |                                                                      [01;31m[K^~~[m[K
+[01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:17:70:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/home/xsm/R1_ws/install/mit_msgs/include/mit_msgs/mit_msgs/msg/detail/mit_low_state__struct.hpp:20[m[K,
+                 from [01m[K/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp:4[m[K,
+                 from [01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:3[m[K:
+[01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__struct.hpp:20[m[K,
+                 from [01m[K/home/xsm/R1_ws/install/mit_msgs/include/mit_msgs/mit_msgs/msg/detail/mit_low_state__struct.hpp:22[m[K,
+                 from [01m[K/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp:4[m[K,
+                 from [01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:3[m[K:
+[01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__struct.hpp:22[m[K,
+                 from [01m[K/home/xsm/R1_ws/install/mit_msgs/include/mit_msgs/mit_msgs/msg/detail/mit_low_state__struct.hpp:22[m[K,
+                 from [01m[K/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp:4[m[K,
+                 from [01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:3[m[K:
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kgeometry_msgs::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/home/xsm/R1_ws/install/mit_msgs/include/mit_msgs/mit_msgs/msg/detail/mit_low_state__struct.hpp:22[m[K,
+                 from [01m[K/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp:4[m[K,
+                 from [01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:3[m[K:
+[01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__struct.hpp:36:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::msg[m[K’
+   36 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp:4[m[K,
+                 from [01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:3[m[K:
+[01m[K/home/xsm/R1_ws/install/mit_msgs/include/mit_msgs/mit_msgs/msg/detail/mit_low_state__struct.hpp:35:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kmit_msgs::msg[m[K’
+   35 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:30[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp:7[m[K,
+                 from [01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:3[m[K:
+[01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp:7[m[K,
+                 from [01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:3[m[K:
+[01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/main.dir/build.make:76：CMakeFiles/main.dir/src/main.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/main.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

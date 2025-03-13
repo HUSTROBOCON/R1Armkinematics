@@ -1,0 +1,23 @@
+[35m[1mConsolidate compiler generated dependencies of target main[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp: not a directory
+[100%] [32m[1mLinking CXX executable main[0m
+[100%] Built target main
+-- Install configuration: ""
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/lib/armend_visualize/main
+-- Set runtime path of "/home/xsm/R1_ws/install/armend_visualize/lib/armend_visualize/main" to ""
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/ament_index/resource_index/package_run_dependencies/armend_visualize
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/ament_index/resource_index/parent_prefix_path/armend_visualize
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/environment/ament_prefix_path.sh
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/environment/ament_prefix_path.dsv
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/environment/path.sh
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/environment/path.dsv
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/local_setup.bash
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/local_setup.sh
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/local_setup.zsh
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/local_setup.dsv
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/package.dsv
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/ament_index/resource_index/packages/armend_visualize
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/cmake/armend_visualizeConfig.cmake
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/cmake/armend_visualizeConfig-version.cmake
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/package.xml

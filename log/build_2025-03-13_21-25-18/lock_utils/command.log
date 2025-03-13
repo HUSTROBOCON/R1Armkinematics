@@ -1,0 +1,6 @@
+Invoking command in '/home/xsm/R1_ws/build/lock_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake /home/xsm/R1_ws/src/public/lock_utils -DCMAKE_INSTALL_PREFIX=/home/xsm/R1_ws/install/lock_utils
+Invoked command in '/home/xsm/R1_ws/build/lock_utils' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake /home/xsm/R1_ws/src/public/lock_utils -DCMAKE_INSTALL_PREFIX=/home/xsm/R1_ws/install/lock_utils
+Invoking command in '/home/xsm/R1_ws/build/lock_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/xsm/R1_ws/build/lock_utils -- -j16 -l16
+Invoked command in '/home/xsm/R1_ws/build/lock_utils' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/xsm/R1_ws/build/lock_utils -- -j16 -l16
+Invoking command in '/home/xsm/R1_ws/build/lock_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --install /home/xsm/R1_ws/build/lock_utils
+Invoked command in '/home/xsm/R1_ws/build/lock_utils' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble /usr/bin/cmake --install /home/xsm/R1_ws/build/lock_utils

@@ -1,0 +1,31 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp: not a directory
+In file included from [01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:8[m[K:
+/home/xsm/R1_ws/src/armend_visualize/include/matplotlib-cpp-master/matplotlibcpp.h: In instantiation of ‘[01m[Kbool matplotlibcpp::detail::plot_impl<std::integral_constant<bool, false> >::operator()(const IterableX&, const IterableY&, const string&) [with IterableX = float [10000]; IterableY = float [10000]; std::string = std::__cxx11::basic_string<char>][m[K’:
+[01m[K/home/xsm/R1_ws/src/armend_visualize/include/matplotlib-cpp-master/matplotlibcpp.h:2865:70:[m[K   required from ‘[01m[Kbool matplotlibcpp::plot(const A&, const B&, const string&, Args ...) [with A = float [10000]; B = float [10000]; Args = {}; std::string = std::__cxx11::basic_string<char>][m[K’
+[01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:41:14:[m[K   required from here
+[01m[K/home/xsm/R1_ws/src/armend_visualize/include/matplotlib-cpp-master/matplotlibcpp.h:2821:29:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Klong int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 2821 |         for(size_t i = 0; [01;35m[Ki < xs[m[K; ++i) {
+      |                           [01;35m[K~~^~~~[m[K
+[100%] [32m[1mLinking CXX executable main[0m
+[100%] Built target main
+-- Install configuration: ""
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/lib/armend_visualize/main
+-- Set runtime path of "/home/xsm/R1_ws/install/armend_visualize/lib/armend_visualize/main" to ""
+-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/launch
+-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/launch/visual_launch.py
+-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/ament_index/resource_index/package_run_dependencies/armend_visualize
+-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/ament_index/resource_index/parent_prefix_path/armend_visualize
+-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/environment/ament_prefix_path.sh
+-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/environment/path.sh
+-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/environment/path.dsv
+-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/local_setup.bash
+-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/local_setup.sh
+-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/local_setup.zsh
+-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/local_setup.dsv
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/package.dsv
+-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/ament_index/resource_index/packages/armend_visualize
+-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/cmake/armend_visualizeConfig.cmake
+-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/cmake/armend_visualizeConfig-version.cmake
+-- Up-to-date: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/package.xml

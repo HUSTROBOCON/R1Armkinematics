@@ -1,4 +1,5 @@
 /home/xsm/R1_ws/install/armend_visualize/lib/armend_visualize/main
+/home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/launch/visual_launch.py
 /home/xsm/R1_ws/install/armend_visualize/share/ament_index/resource_index/package_run_dependencies/armend_visualize
 /home/xsm/R1_ws/install/armend_visualize/share/ament_index/resource_index/parent_prefix_path/armend_visualize
 /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/environment/ament_prefix_path.sh

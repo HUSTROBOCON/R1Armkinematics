@@ -27,6 +27,10 @@ Eigen::Vector3d armend_visualize::forwardKinematics(const Eigen::Vector3d& q)
 void armend_visualize::draw(Eigen::Vector3d q)
 {
     RCLCPP_INFO(this->get_logger(), "Drawing");
+    if (q(0) == 0 && q(1) == 0 && q(2) == 0)
+    {
+        return;
+    }
     Eigen ::Vector3d endpos = forwardKinematics(q);
     // 传入值赋第一个点，其他点依次后移
     for (int i = 9999; i > 0; i--)
@@ -38,10 +42,6 @@ void armend_visualize::draw(Eigen::Vector3d q)
     figure_Y[0] = endpos(2);
 
     plt::clf();
-        // plt::yticks({-0.1,-0.5,0,0.5,0.1});
-        // for (int i = 0; i < 6; i++) {
-        //     plt::plot(x, y[i]);
-        // }
     plt::plot(figure_X,figure_Y,"r");
     plt::pause(0.01);
 
@@ -50,10 +50,13 @@ void armend_visualize::draw(Eigen::Vector3d q)
 armend_visualize::armend_visualize() : Node("armend_visualize")
 {
     RCLCPP_INFO(this->get_logger(), "Hello World");
+    // 这里和config文件中的参数对应
+    Eigen::Vector3d init_q(-45 * M_PI / 180, 135 * M_PI / 180, 90 * M_PI / 180);
+    Eigen::Vector3d init_pos = forwardKinematics(init_q);
     for (int i = 0; i < 10000; i++)
     {
-        figure_X[i] = 0;
-        figure_Y[i] = 0;
+        figure_X[i] = init_pos(0);
+        figure_Y[i] = init_pos(2);
     }
     SubjointState_ =this->create_subscription<mit_msgs::msg::MITLowState>(
         "gazebo_low_state_topic",

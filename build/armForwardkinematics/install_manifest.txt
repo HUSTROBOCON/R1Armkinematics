@@ -1,4 +1,5 @@
 /home/xsm/R1_ws/install/armForwardkinematics/lib/armForwardkinematics/pino_armkine_node
+/home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/launch/allstart_launch.py
 /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics/launch/armInv.py
 /home/xsm/R1_ws/install/armForwardkinematics/share/armForwardkinematics//config/config.yaml
 /home/xsm/R1_ws/install/armForwardkinematics/share/ament_index/resource_index/package_run_dependencies/armForwardkinematics

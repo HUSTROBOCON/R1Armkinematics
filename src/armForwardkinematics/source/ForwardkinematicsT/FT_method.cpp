@@ -14,6 +14,7 @@
 #include "ForwardkinematicsT/FT_method.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "xsm_msg/msg/hwrev.hpp"
+#include "xsm_msg/msg/path.hpp"
 
                                                                                                                              
 double FT_method:: nomalizeangle(double angle)
@@ -362,15 +363,19 @@ FT_method ::FT_method() :
     velcircle = linespeedpathPlan(Nnum);
     yawcircle = lineyawPlan(Nnum);
     wristcircle = linewristPlan(Nnum);
+
+    poscircle_pub_ = this->create_publisher<xsm_msg::msg::Path>("poscircle", 10);
+
     // for (int i = 0; i < Nnum; i++)
     // {
     //     // RCLCPP_INFO(this->get_logger(), "poscircle: %f, %f", poscircle(i, 0), poscircle(i, 2));
     //     RCLCPP_INFO(this->get_logger(), "velcircle: %f, %f", velcircle(i, 0), velcircle(i, 1));
     // }
 
+    // 发布矩阵数据
+
     // 定时器
     RCLCPP_INFO(this->get_logger(), "FT_method::FT_method has been callback.");
-
 
     FTrobotStatusSub_ = this->create_subscription<mit_msgs::msg::MITLowState>(
             "gazebo_low_state_topic",
@@ -384,9 +389,7 @@ FT_method ::FT_method() :
     jamesPub_ = this->create_publisher<xsm_msg::msg::Hwrev>(
             "james_armtaustate",
             1);
-    
-
-    
+      
 }
 
 Eigen::Vector3d FT_method::forwardKinematics(const Eigen::Vector3d& q)

@@ -17,6 +17,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/xsm/R1_ws/build/xsm_msg/rosidl_generator_py/xsm_msg/msg/__init__.py" "/home/xsm/R1_ws/build/xsm_msg/rosidl_generator_py/xsm_msg/_xsm_msg_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/xsm/R1_ws/build/xsm_msg/rosidl_generator_py/xsm_msg/msg/_hwrev.py" "/home/xsm/R1_ws/build/xsm_msg/rosidl_generator_py/xsm_msg/_xsm_msg_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/xsm/R1_ws/build/xsm_msg/rosidl_generator_py/xsm_msg/msg/_hwrev_s.c" "/home/xsm/R1_ws/build/xsm_msg/rosidl_generator_py/xsm_msg/_xsm_msg_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/xsm/R1_ws/build/xsm_msg/rosidl_generator_py/xsm_msg/msg/_path.py" "/home/xsm/R1_ws/build/xsm_msg/rosidl_generator_py/xsm_msg/_xsm_msg_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/xsm/R1_ws/build/xsm_msg/rosidl_generator_py/xsm_msg/msg/_path_s.c" "/home/xsm/R1_ws/build/xsm_msg/rosidl_generator_py/xsm_msg/_xsm_msg_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

@@ -527,6 +527,10 @@ CMakeFiles/main.dir/src/main.cpp.o
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__traits.hpp
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/path.hpp
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__struct.hpp
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__builder.hpp
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__traits.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp
  /usr/include/c++/11/csignal
  /usr/include/signal.h

@@ -1,6 +1,7 @@
 {
   "package_name": "xsm_msg",
   "non_idl_tuples": [
-    "/home/xsm/R1_ws/src/xsm_msg:msg/Hwrev.msg"
+    "/home/xsm/R1_ws/src/xsm_msg:msg/Hwrev.msg",
+    "/home/xsm/R1_ws/src/xsm_msg:msg/Path.msg"
   ]
 }

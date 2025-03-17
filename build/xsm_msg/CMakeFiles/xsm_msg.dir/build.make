@@ -67,6 +67,7 @@ include CMakeFiles/xsm_msg.dir/compiler_depend.make
 include CMakeFiles/xsm_msg.dir/progress.make
 
 CMakeFiles/xsm_msg: /home/xsm/R1_ws/src/xsm_msg/msg/Hwrev.msg
+CMakeFiles/xsm_msg: /home/xsm/R1_ws/src/xsm_msg/msg/Path.msg
 
 xsm_msg: CMakeFiles/xsm_msg
 xsm_msg: CMakeFiles/xsm_msg.dir/build.make

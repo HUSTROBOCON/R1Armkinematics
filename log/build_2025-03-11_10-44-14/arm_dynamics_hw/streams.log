@@ -1,7 +1,0 @@
-[0.017s] Invoking command in '/home/xsm/R1_ws/build/arm_dynamics_hw': CMAKE_PREFIX_PATH=/home/xsm/R1_ws/install/mit_msgs:/home/xsm/R1_ws/install/lock_utils:/home/xsm/R1_ws/install/optimal_control_problem:/home/xsm/R1_ws/install/arm_dynamics_hw:/home/xsm/R1_ws/install/armForwardkinematics:/home/xsm/R1_ws/install/gui_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/xsm/R1_ws/install/mit_msgs/lib:/home/xsm/R1_ws/install/lock_utils/lib:/home/xsm/R1_ws/install/optimal_control_problem/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/nvidia /usr/bin/cmake --build /home/xsm/R1_ws/build/arm_dynamics_hw -- -j16 -l16
-[0.083s] [35m[1mConsolidate compiler generated dependencies of target publisher[0m
-[0.083s] [35m[1mConsolidate compiler generated dependencies of target arm_dynamics_hw[0m
-[0.104s] [ 20%] [32mBuilding CXX object CMakeFiles/arm_dynamics_hw.dir/src/gazebo_tuner/GazeboTuner.cpp.o[0m
-[0.104s] [ 60%] Built target publisher
-[26.506s] [ 80%] [32m[1mLinking CXX executable arm_dynamics_hw[0m
-[27.014s] [100%] Built target arm_dynamics_hw

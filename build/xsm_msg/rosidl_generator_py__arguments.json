@@ -3,7 +3,8 @@
   "output_dir": "/home/xsm/R1_ws/build/xsm_msg/rosidl_generator_py/xsm_msg",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
-    "/home/xsm/R1_ws/build/xsm_msg/rosidl_adapter/xsm_msg:msg/Hwrev.idl"
+    "/home/xsm/R1_ws/build/xsm_msg/rosidl_adapter/xsm_msg:msg/Hwrev.idl",
+    "/home/xsm/R1_ws/build/xsm_msg/rosidl_adapter/xsm_msg:msg/Path.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
@@ -19,6 +20,7 @@
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
-    "/home/xsm/R1_ws/build/xsm_msg/rosidl_adapter/xsm_msg/msg/Hwrev.idl"
+    "/home/xsm/R1_ws/build/xsm_msg/rosidl_adapter/xsm_msg/msg/Hwrev.idl",
+    "/home/xsm/R1_ws/build/xsm_msg/rosidl_adapter/xsm_msg/msg/Path.idl"
   ]
 }

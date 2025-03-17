@@ -526,6 +526,10 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/xsm/R1_ws/src/armend_visualize/src/mai
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__traits.hpp \
+  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/path.hpp \
+  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__struct.hpp \
+  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__builder.hpp \
+  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
   /usr/include/signal.h \
@@ -1688,6 +1692,16 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/xsm/R1_ws/src/armend_visualize/src/mai
 
 /usr/include/x86_64-linux-gnu/bits/sigthread.h:
 
+/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
+
+/usr/include/python3.10/osmodule.h:
+
+/usr/include/c++/11/bits/stl_numeric.h:
+
+/usr/include/linux/close_range.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:
 
 /home/xsm/R1_ws/src/armend_visualize/include/eigen/Eigen/src/Core/Matrix.h:
@@ -1729,8 +1743,6 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/xsm/R1_ws/src/armend_visualize/src/mai
 /usr/include/python3.10/ceval.h:
 
 /usr/include/c++/11/bits/stl_uninitialized.h:
-
-/usr/include/stdint.h:
 
 /usr/include/c++/11/bits/ptr_traits.h:
 
@@ -2062,6 +2074,10 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/xsm/R1_ws/src/armend_visualize/src/mai
 
 /usr/include/c++/11/bits/stl_tempbuf.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
+
+/home/xsm/R1_ws/src/armend_visualize/include/eigen/Eigen/src/Core/StableNorm.h:
+
 /home/xsm/R1_ws/install/mit_msgs/include/mit_msgs/mit_msgs/msg/detail/mit_low_state__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/qos_event.hpp:
@@ -2123,10 +2139,6 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/xsm/R1_ws/src/armend_visualize/src/mai
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/home/xsm/R1_ws/src/armend_visualize/include/eigen/Eigen/src/Core/StableNorm.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
 
 /opt/ros/humble/include/rcl/rcl/allocator.h:
 
@@ -2548,6 +2560,8 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/xsm/R1_ws/src/armend_visualize/src/mai
 
 /home/xsm/R1_ws/src/armend_visualize/include/eigen/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h:
 
+/home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/path.hpp:
+
 /usr/include/python3.10/pymath.h:
 
 /home/xsm/R1_ws/src/armend_visualize/include/eigen/Eigen/src/Core/util/IntegralConstant.h:
@@ -2619,6 +2633,8 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/xsm/R1_ws/src/armend_visualize/src/mai
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
 /home/xsm/R1_ws/src/armend_visualize/include/eigen/Eigen/src/plugins/CommonCwiseBinaryOps.inc:
+
+/home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__traits.hpp:
 
 /home/xsm/R1_ws/src/armend_visualize/include/eigen/Eigen/src/plugins/MatrixCwiseUnaryOps.inc:
 
@@ -2693,6 +2709,8 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/xsm/R1_ws/src/armend_visualize/src/mai
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
 /home/xsm/R1_ws/src/armend_visualize/include/eigen/Eigen/src/Core/Stride.h:
+
+/home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__struct.hpp:
 
 /home/xsm/R1_ws/src/armend_visualize/include/eigen/Eigen/src/Core/Ref.h:
 
@@ -3028,8 +3046,6 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/xsm/R1_ws/src/armend_visualize/src/mai
 
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
-
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__struct.hpp:
@@ -3080,6 +3096,10 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/xsm/R1_ws/src/armend_visualize/src/mai
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__traits.hpp:
 
+/usr/include/stdint.h:
+
+/home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__builder.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
@@ -3109,11 +3129,3 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/xsm/R1_ws/src/armend_visualize/src/mai
 /usr/include/x86_64-linux-gnu/bits/sigstksz.h:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
-
-/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
-
-/usr/include/python3.10/osmodule.h:
-
-/usr/include/c++/11/bits/stl_numeric.h:
-
-/usr/include/linux/close_range.h:

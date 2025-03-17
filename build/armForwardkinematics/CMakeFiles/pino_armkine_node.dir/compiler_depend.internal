@@ -2125,6 +2125,10 @@ CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/FT_method.cpp.o
  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__struct.hpp
  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__builder.hpp
  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__traits.hpp
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/path.hpp
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__struct.hpp
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__builder.hpp
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__traits.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp
  /usr/include/c++/11/csignal
  /usr/include/signal.h
@@ -4603,6 +4607,10 @@ CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/path.cpp.o
  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__struct.hpp
  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__builder.hpp
  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__traits.hpp
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/path.hpp
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__struct.hpp
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__builder.hpp
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__traits.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp
  /usr/include/c++/11/csignal
  /usr/include/signal.h
@@ -7081,6 +7089,10 @@ CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzVel.cpp.o
  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__struct.hpp
  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__builder.hpp
  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__traits.hpp
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/path.hpp
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__struct.hpp
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__builder.hpp
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__traits.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp
  /usr/include/c++/11/csignal
  /usr/include/signal.h
@@ -9559,6 +9571,10 @@ CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzmcg.cpp.o
  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__struct.hpp
  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__builder.hpp
  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__traits.hpp
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/path.hpp
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__struct.hpp
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__builder.hpp
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__traits.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp
  /usr/include/c++/11/csignal
  /usr/include/signal.h
@@ -12541,4 +12557,8 @@ CMakeFiles/pino_armkine_node.dir/src/armPino.cpp.o
  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__struct.hpp
  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__builder.hpp
  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__traits.hpp
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/path.hpp
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__struct.hpp
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__builder.hpp
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__traits.hpp
 

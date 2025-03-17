@@ -10,6 +10,7 @@ find_package(ament_cmake REQUIRED)
 find_package(Python3 REQUIRED COMPONENTS Interpreter Development)
 find_package(rclcpp REQUIRED)
 find_package(mit_msgs REQUIRED)
+find_package(xsm_msg REQUIRED)
 
 include_directories(include)
 include_directories(include/eigen)
@@ -23,6 +24,7 @@ set(dependencies
     rclcpp
     std_msgs
     mit_msgs
+    xsm_msg
 )
 
 

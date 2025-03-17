@@ -2000,6 +2000,10 @@ CMakeFiles/pino_armkine_node.dir/source/ForwardkinematicsT/zwzVel.cpp.o: \
  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__struct.hpp \
  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__builder.hpp \
  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__traits.hpp \
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/path.hpp \
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__struct.hpp \
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__builder.hpp \
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__traits.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \

@@ -2355,4 +2355,8 @@ CMakeFiles/pino_armkine_node.dir/src/armPino.cpp.o: \
  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/hwrev.hpp \
  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__struct.hpp \
  /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__builder.hpp \
- /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__traits.hpp
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/hwrev__traits.hpp \
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/path.hpp \
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__struct.hpp \
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__builder.hpp \
+ /home/xsm/R1_ws/install/xsm_msg/include/xsm_msg/xsm_msg/msg/detail/path__traits.hpp

@@ -1,6 +1,0 @@
-[31mCMake Error at include/armend_visualize/visualize.hpp:9:
-  Parse error.  Expected "(", got identifier with text "armend_visualize".
-Call Stack (most recent call first):
-  CMakeLists.txt:17 (include)
-
-[0m

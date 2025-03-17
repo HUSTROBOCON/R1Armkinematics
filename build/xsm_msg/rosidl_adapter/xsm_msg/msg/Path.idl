@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from xsm_msg/msg/Path.msg
+// generated code does not contain a copyright notice
+
+
+module xsm_msg {
+  module msg {
+    @verbatim (language="comment", text=
+      "矩阵的行数和列数")
+    struct Path {
+      int32 rows;
+
+      int32 cols;
+
+      @verbatim (language="comment", text=
+        "按行主序存储的矩阵数据")
+      sequence<double> data;
+    };
+  };
+};

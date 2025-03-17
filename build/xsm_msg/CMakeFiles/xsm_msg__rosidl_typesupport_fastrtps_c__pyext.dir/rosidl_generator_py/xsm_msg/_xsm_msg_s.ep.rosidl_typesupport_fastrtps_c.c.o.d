@@ -204,4 +204,8 @@ CMakeFiles/xsm_msg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py
  /home/xsm/R1_ws/build/xsm_msg/rosidl_generator_c/xsm_msg/msg/detail/hwrev__type_support.h \
  /home/xsm/R1_ws/build/xsm_msg/rosidl_generator_c/xsm_msg/msg/rosidl_generator_c__visibility_control.h \
  /home/xsm/R1_ws/build/xsm_msg/rosidl_generator_c/xsm_msg/msg/detail/hwrev__struct.h \
- /home/xsm/R1_ws/build/xsm_msg/rosidl_generator_c/xsm_msg/msg/detail/hwrev__functions.h
+ /home/xsm/R1_ws/build/xsm_msg/rosidl_generator_c/xsm_msg/msg/detail/hwrev__functions.h \
+ /home/xsm/R1_ws/build/xsm_msg/rosidl_generator_c/xsm_msg/msg/detail/path__type_support.h \
+ /home/xsm/R1_ws/build/xsm_msg/rosidl_generator_c/xsm_msg/msg/detail/path__struct.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+ /home/xsm/R1_ws/build/xsm_msg/rosidl_generator_c/xsm_msg/msg/detail/path__functions.h

@@ -1,0 +1,154 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter Development Development.Module Development.Embed 
+-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found mit_msgs: 0.0.0 (/home/xsm/R1_ws/install/mit_msgs/share/mit_msgs/cmake)
+-- Found xsm_msg: 0.0.0 (/home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake)
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/xsm/R1_ws/src/armend_visualize/include;/home/xsm/R1_ws/src/armend_visualize/include/eigen;/home/xsm/R1_ws/src/armend_visualize/include/matplotlib-cpp-master;/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp;/home/xsm/R1_ws/src/armend_visualize/include/eigen-3.4.0
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/xsm/R1_ws/build/armend_visualize
+[ 50%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp: not a directory
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp:8[m[K,
+                 from [01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:3[m[K:
+[01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:[m[K In lambda function:
+[01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:86:48:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[KEigen::DenseCoeffsBase<Eigen::Matrix<double, -1, -1>, 1>::Scalar[m[K’ {aka ‘[01m[Kdouble[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   86 |                 RCLCPP_INFO(this->get_logger(),[01;35m[K"poscircle %d"[m[K , [32m[Kposcircle(i,j)[m[K);
+      |                                                [01;35m[K^~~~~~~~~~~~~~[m[K   [32m[K~~~~~~~~~~~~~~[m[K
+      |                                                                          [32m[K|[m[K
+      |                                                                          [32m[KEigen::DenseCoeffsBase<Eigen::Matrix<double, -1, -1>, 1>::Scalar {aka double}[m[K
+[01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:86:60:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   86 |                 RCLCPP_INFO(this->get_logger(),"poscircle [01;36m[K%d[m[K" , poscircle(i,j));
+      |                                                           [01;36m[K~^[m[K
+      |                                                            [01;36m[K|[m[K
+      |                                                            [01;36m[Kint[m[K
+      |                                                           [32m[K%f[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp:8[m[K,
+                 from [01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:3[m[K:
+[01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:91:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[KEigen::Index[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   91 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"Received matrix with dimensions %dx%d"[m[K,
+      |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   92 |                    [32m[Kposcircle.rows()[m[K, poscircle.cols());
+      |                    [32m[K~~~~~~~~~~~~~~~~[m[K      
+      |                                  [32m[K|[m[K
+      |                                  [32m[KEigen::Index {aka long int}[m[K
+[01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:91:75:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   91 |         RCLCPP_INFO(this->get_logger(), "Received matrix with dimensions [01;36m[K%d[m[Kx%d",
+      |                                                                          [01;36m[K~^[m[K
+      |                                                                           [01;36m[K|[m[K
+      |                                                                           [01;36m[Kint[m[K
+      |                                                                          [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/xsm/R1_ws/src/armend_visualize/include/armend_visualize/visualize.hpp:8[m[K,
+                 from [01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:3[m[K:
+[01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:91:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[KEigen::Index[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   91 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"Received matrix with dimensions %dx%d"[m[K,
+      |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   92 |                    poscircle.rows(), [32m[Kposcircle.cols()[m[K);
+      |                                      [32m[K~~~~~~~~~~~~~~~~[m[K
+      |                                                    [32m[K|[m[K
+      |                                                    [32m[KEigen::Index {aka long int}[m[K
+[01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:91:78:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   91 |         RCLCPP_INFO(this->get_logger(), "Received matrix with dimensions %dx[01;36m[K%d[m[K",
+      |                                                                             [01;36m[K~^[m[K
+      |                                                                              [01;36m[K|[m[K
+      |                                                                              [01;36m[Kint[m[K
+      |                                                                             [32m[K%ld[m[K
+In file included from [01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:9[m[K:
+/home/xsm/R1_ws/src/armend_visualize/include/matplotlib-cpp-master/matplotlibcpp.h: In instantiation of ‘[01m[Kbool matplotlibcpp::detail::plot_impl<std::integral_constant<bool, false> >::operator()(const IterableX&, const IterableY&, const string&) [with IterableX = float [10000]; IterableY = float [10000]; std::string = std::__cxx11::basic_string<char>][m[K’:
+[01m[K/home/xsm/R1_ws/src/armend_visualize/include/matplotlib-cpp-master/matplotlibcpp.h:2865:70:[m[K   required from ‘[01m[Kbool matplotlibcpp::plot(const A&, const B&, const string&, Args ...) [with A = float [10000]; B = float [10000]; Args = {}; std::string = std::__cxx11::basic_string<char>][m[K’
+[01m[K/home/xsm/R1_ws/src/armend_visualize/src/main.cpp:60:14:[m[K   required from here
+[01m[K/home/xsm/R1_ws/src/armend_visualize/include/matplotlib-cpp-master/matplotlibcpp.h:2821:29:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Klong int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 2821 |         for(size_t i = 0; [01;35m[Ki < xs[m[K; ++i) {
+      |                           [01;35m[K~~^~~~[m[K
+[100%] [32m[1mLinking CXX executable main[0m
+[100%] Built target main
+-- Install configuration: ""
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/lib/armend_visualize/main
+-- Set runtime path of "/home/xsm/R1_ws/install/armend_visualize/lib/armend_visualize/main" to ""
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/launch
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/launch/visual_launch.py
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/ament_index/resource_index/package_run_dependencies/armend_visualize
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/ament_index/resource_index/parent_prefix_path/armend_visualize
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/environment/ament_prefix_path.sh
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/environment/ament_prefix_path.dsv
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/environment/path.sh
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/environment/path.dsv
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/local_setup.bash
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/local_setup.sh
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/local_setup.zsh
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/local_setup.dsv
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/package.dsv
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/ament_index/resource_index/packages/armend_visualize
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/cmake/armend_visualizeConfig.cmake
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/cmake/armend_visualizeConfig-version.cmake
+-- Installing: /home/xsm/R1_ws/install/armend_visualize/share/armend_visualize/package.xml

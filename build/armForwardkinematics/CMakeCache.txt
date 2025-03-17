@@ -607,9 +607,6 @@ xmllint_BIN:FILEPATH=/usr/bin/xmllint
 //The directory containing a CMake configuration file for xsm_msg.
 xsm_msg_DIR:PATH=/home/xsm/R1_ws/install/xsm_msg/share/xsm_msg/cmake
 
-//The directory containing a CMake configuration file for xsmmsg.
-xsmmsg_DIR:PATH=xsmmsg_DIR-NOTFOUND
-
 //The directory containing a CMake configuration file for yaml.
 yaml_DIR:PATH=/opt/ros/humble/cmake
 

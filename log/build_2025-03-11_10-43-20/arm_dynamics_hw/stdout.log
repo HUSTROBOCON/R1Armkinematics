@@ -1,5 +1,0 @@
-[ 60%] [32mBuilding CXX object CMakeFiles/arm_dynamics_hw.dir/src/gazebo_tuner/GazeboTuner.cpp.o[0m
-[ 60%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/publisher/publisher.cpp.o[0m
-[ 60%] [32mBuilding CXX object CMakeFiles/arm_dynamics_hw.dir/src/gazebo_tuner/main.cpp.o[0m
-[ 80%] [32m[1mLinking CXX executable publisher[0m
-[ 80%] Built target publisher

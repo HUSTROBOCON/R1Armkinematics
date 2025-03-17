@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/xsm_msg/msg/__init__.py"
   "../rosidl_generator_py/xsm_msg/msg/_hwrev.py"
   "../rosidl_generator_py/xsm_msg/msg/_hwrev_s.c"
+  "../rosidl_generator_py/xsm_msg/msg/_path.py"
+  "../rosidl_generator_py/xsm_msg/msg/_path_s.c"
   "CMakeFiles/xsm_msg__py"
 )
 

@@ -6,3 +6,4 @@ xsm_msg.egg-info/dependency_links.txt
 xsm_msg.egg-info/top_level.txt
 xsm_msg/msg/__init__.py
 xsm_msg/msg/_hwrev.py
+xsm_msg/msg/_path.py

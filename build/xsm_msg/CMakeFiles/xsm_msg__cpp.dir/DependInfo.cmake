@@ -15,6 +15,10 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/xsm/R1_ws/build/xsm_msg/rosidl_generator_cpp/xsm_msg/msg/detail/hwrev__builder.hpp" "/home/xsm/R1_ws/build/xsm_msg/rosidl_generator_cpp/xsm_msg/msg/hwrev.hpp"
   "/home/xsm/R1_ws/build/xsm_msg/rosidl_generator_cpp/xsm_msg/msg/detail/hwrev__struct.hpp" "/home/xsm/R1_ws/build/xsm_msg/rosidl_generator_cpp/xsm_msg/msg/hwrev.hpp"
   "/home/xsm/R1_ws/build/xsm_msg/rosidl_generator_cpp/xsm_msg/msg/detail/hwrev__traits.hpp" "/home/xsm/R1_ws/build/xsm_msg/rosidl_generator_cpp/xsm_msg/msg/hwrev.hpp"
+  "/home/xsm/R1_ws/build/xsm_msg/rosidl_generator_cpp/xsm_msg/msg/detail/path__builder.hpp" "/home/xsm/R1_ws/build/xsm_msg/rosidl_generator_cpp/xsm_msg/msg/hwrev.hpp"
+  "/home/xsm/R1_ws/build/xsm_msg/rosidl_generator_cpp/xsm_msg/msg/detail/path__struct.hpp" "/home/xsm/R1_ws/build/xsm_msg/rosidl_generator_cpp/xsm_msg/msg/hwrev.hpp"
+  "/home/xsm/R1_ws/build/xsm_msg/rosidl_generator_cpp/xsm_msg/msg/detail/path__traits.hpp" "/home/xsm/R1_ws/build/xsm_msg/rosidl_generator_cpp/xsm_msg/msg/hwrev.hpp"
+  "/home/xsm/R1_ws/build/xsm_msg/rosidl_generator_cpp/xsm_msg/msg/path.hpp" "/home/xsm/R1_ws/build/xsm_msg/rosidl_generator_cpp/xsm_msg/msg/hwrev.hpp"
   )
 
 

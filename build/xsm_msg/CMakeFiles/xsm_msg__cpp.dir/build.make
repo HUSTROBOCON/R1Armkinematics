@@ -70,6 +70,10 @@ CMakeFiles/xsm_msg__cpp: rosidl_generator_cpp/xsm_msg/msg/hwrev.hpp
 CMakeFiles/xsm_msg__cpp: rosidl_generator_cpp/xsm_msg/msg/detail/hwrev__builder.hpp
 CMakeFiles/xsm_msg__cpp: rosidl_generator_cpp/xsm_msg/msg/detail/hwrev__struct.hpp
 CMakeFiles/xsm_msg__cpp: rosidl_generator_cpp/xsm_msg/msg/detail/hwrev__traits.hpp
+CMakeFiles/xsm_msg__cpp: rosidl_generator_cpp/xsm_msg/msg/path.hpp
+CMakeFiles/xsm_msg__cpp: rosidl_generator_cpp/xsm_msg/msg/detail/path__builder.hpp
+CMakeFiles/xsm_msg__cpp: rosidl_generator_cpp/xsm_msg/msg/detail/path__struct.hpp
+CMakeFiles/xsm_msg__cpp: rosidl_generator_cpp/xsm_msg/msg/detail/path__traits.hpp
 
 rosidl_generator_cpp/xsm_msg/msg/hwrev.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/xsm_msg/msg/hwrev.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -87,6 +91,7 @@ rosidl_generator_cpp/xsm_msg/msg/hwrev.hpp: /opt/ros/humble/share/rosidl_generat
 rosidl_generator_cpp/xsm_msg/msg/hwrev.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/xsm_msg/msg/hwrev.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/xsm_msg/msg/hwrev.hpp: rosidl_adapter/xsm_msg/msg/Hwrev.idl
+rosidl_generator_cpp/xsm_msg/msg/hwrev.hpp: rosidl_adapter/xsm_msg/msg/Path.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/xsm/R1_ws/build/xsm_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/xsm/R1_ws/build/xsm_msg/rosidl_generator_cpp__arguments.json
 
@@ -99,11 +104,27 @@ rosidl_generator_cpp/xsm_msg/msg/detail/hwrev__struct.hpp: rosidl_generator_cpp/
 rosidl_generator_cpp/xsm_msg/msg/detail/hwrev__traits.hpp: rosidl_generator_cpp/xsm_msg/msg/hwrev.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/xsm_msg/msg/detail/hwrev__traits.hpp
 
+rosidl_generator_cpp/xsm_msg/msg/path.hpp: rosidl_generator_cpp/xsm_msg/msg/hwrev.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/xsm_msg/msg/path.hpp
+
+rosidl_generator_cpp/xsm_msg/msg/detail/path__builder.hpp: rosidl_generator_cpp/xsm_msg/msg/hwrev.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/xsm_msg/msg/detail/path__builder.hpp
+
+rosidl_generator_cpp/xsm_msg/msg/detail/path__struct.hpp: rosidl_generator_cpp/xsm_msg/msg/hwrev.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/xsm_msg/msg/detail/path__struct.hpp
+
+rosidl_generator_cpp/xsm_msg/msg/detail/path__traits.hpp: rosidl_generator_cpp/xsm_msg/msg/hwrev.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/xsm_msg/msg/detail/path__traits.hpp
+
 xsm_msg__cpp: CMakeFiles/xsm_msg__cpp
 xsm_msg__cpp: rosidl_generator_cpp/xsm_msg/msg/detail/hwrev__builder.hpp
 xsm_msg__cpp: rosidl_generator_cpp/xsm_msg/msg/detail/hwrev__struct.hpp
 xsm_msg__cpp: rosidl_generator_cpp/xsm_msg/msg/detail/hwrev__traits.hpp
+xsm_msg__cpp: rosidl_generator_cpp/xsm_msg/msg/detail/path__builder.hpp
+xsm_msg__cpp: rosidl_generator_cpp/xsm_msg/msg/detail/path__struct.hpp
+xsm_msg__cpp: rosidl_generator_cpp/xsm_msg/msg/detail/path__traits.hpp
 xsm_msg__cpp: rosidl_generator_cpp/xsm_msg/msg/hwrev.hpp
+xsm_msg__cpp: rosidl_generator_cpp/xsm_msg/msg/path.hpp
 xsm_msg__cpp: CMakeFiles/xsm_msg__cpp.dir/build.make
 .PHONY : xsm_msg__cpp
 

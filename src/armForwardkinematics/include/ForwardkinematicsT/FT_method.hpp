@@ -23,6 +23,7 @@
 #include "mit_msgs/msg/mit_low_state.hpp"
 #include <ament_index_cpp/get_package_share_directory.hpp>
 #include "xsm_msg/msg/hwrev.hpp"
+#include "xsm_msg/msg/path.hpp"
 #include "rclcpp/rclcpp.hpp"
 
 
@@ -131,6 +132,7 @@ private:
     Eigen::Vector3d init_pos ;
 
     // ros订阅
+    rclcpp::Publisher<xsm_msg::msg::Path>::SharedPtr poscircle_pub_;
     rclcpp::Subscription<mit_msgs::msg::MITLowState>::SharedPtr FTrobotStatusSub_;
     rclcpp::Publisher<mit_msgs::msg::MITJointCommands>::SharedPtr
             jointCommandPub_;
@@ -174,6 +176,7 @@ private:
     Eigen::VectorXd lineyawPlan( int pathnum);
     Eigen::VectorXd linewristPlan( int pathnum);
 
+    void publishMatrixData(const Eigen::MatrixXd& matrix) ;
     // 动力学方程，赵为之版
     Eigen::Vector3d zwzmcgcal(Eigen::Vector3d q, Eigen::Vector3d dq, Eigen::Vector3d ddq);
 

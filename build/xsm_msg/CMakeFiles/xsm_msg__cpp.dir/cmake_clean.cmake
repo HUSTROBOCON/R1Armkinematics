@@ -3,7 +3,11 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/xsm_msg/msg/detail/hwrev__builder.hpp"
   "rosidl_generator_cpp/xsm_msg/msg/detail/hwrev__struct.hpp"
   "rosidl_generator_cpp/xsm_msg/msg/detail/hwrev__traits.hpp"
+  "rosidl_generator_cpp/xsm_msg/msg/detail/path__builder.hpp"
+  "rosidl_generator_cpp/xsm_msg/msg/detail/path__struct.hpp"
+  "rosidl_generator_cpp/xsm_msg/msg/detail/path__traits.hpp"
   "rosidl_generator_cpp/xsm_msg/msg/hwrev.hpp"
+  "rosidl_generator_cpp/xsm_msg/msg/path.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -78,11 +78,18 @@ rosidl_typesupport_introspection_c/xsm_msg/msg/detail/hwrev__rosidl_typesupport_
 rosidl_typesupport_introspection_c/xsm_msg/msg/detail/hwrev__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em
 rosidl_typesupport_introspection_c/xsm_msg/msg/detail/hwrev__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
 rosidl_typesupport_introspection_c/xsm_msg/msg/detail/hwrev__rosidl_typesupport_introspection_c.h: rosidl_adapter/xsm_msg/msg/Hwrev.idl
+rosidl_typesupport_introspection_c/xsm_msg/msg/detail/hwrev__rosidl_typesupport_introspection_c.h: rosidl_adapter/xsm_msg/msg/Path.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/xsm/R1_ws/build/xsm_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/xsm/R1_ws/build/xsm_msg/rosidl_typesupport_introspection_c__arguments.json
 
+rosidl_typesupport_introspection_c/xsm_msg/msg/detail/path__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/xsm_msg/msg/detail/hwrev__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/xsm_msg/msg/detail/path__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/xsm_msg/msg/detail/hwrev__type_support.c: rosidl_typesupport_introspection_c/xsm_msg/msg/detail/hwrev__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/xsm_msg/msg/detail/hwrev__type_support.c
+
+rosidl_typesupport_introspection_c/xsm_msg/msg/detail/path__type_support.c: rosidl_typesupport_introspection_c/xsm_msg/msg/detail/hwrev__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/xsm_msg/msg/detail/path__type_support.c
 
 CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/hwrev__type_support.c.o: CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/hwrev__type_support.c.o: rosidl_typesupport_introspection_c/xsm_msg/msg/detail/hwrev__type_support.c
@@ -98,21 +105,37 @@ CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_in
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/hwrev__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xsm/R1_ws/build/xsm_msg/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/hwrev__type_support.c -o CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/hwrev__type_support.c.s
 
+CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/path__type_support.c.o: CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/path__type_support.c.o: rosidl_typesupport_introspection_c/xsm_msg/msg/detail/path__type_support.c
+CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/path__type_support.c.o: CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xsm/R1_ws/build/xsm_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/path__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/path__type_support.c.o -MF CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/path__type_support.c.o.d -o CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/path__type_support.c.o -c /home/xsm/R1_ws/build/xsm_msg/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/path__type_support.c
+
+CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/path__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/path__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/xsm/R1_ws/build/xsm_msg/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/path__type_support.c > CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/path__type_support.c.i
+
+CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/path__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/path__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xsm/R1_ws/build/xsm_msg/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/path__type_support.c -o CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/path__type_support.c.s
+
 # Object files for target xsm_msg__rosidl_typesupport_introspection_c
 xsm_msg__rosidl_typesupport_introspection_c_OBJECTS = \
-"CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/hwrev__type_support.c.o"
+"CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/hwrev__type_support.c.o" \
+"CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/path__type_support.c.o"
 
 # External object files for target xsm_msg__rosidl_typesupport_introspection_c
 xsm_msg__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 
 libxsm_msg__rosidl_typesupport_introspection_c.so: CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/hwrev__type_support.c.o
+libxsm_msg__rosidl_typesupport_introspection_c.so: CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xsm_msg/msg/detail/path__type_support.c.o
 libxsm_msg__rosidl_typesupport_introspection_c.so: CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/build.make
 libxsm_msg__rosidl_typesupport_introspection_c.so: libxsm_msg__rosidl_generator_c.so
 libxsm_msg__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
 libxsm_msg__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libxsm_msg__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librcutils.so
 libxsm_msg__rosidl_typesupport_introspection_c.so: CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xsm/R1_ws/build/xsm_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libxsm_msg__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xsm/R1_ws/build/xsm_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libxsm_msg__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -125,6 +148,8 @@ CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/clean:
 
 CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/xsm_msg/msg/detail/hwrev__rosidl_typesupport_introspection_c.h
 CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/xsm_msg/msg/detail/hwrev__type_support.c
+CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/xsm_msg/msg/detail/path__rosidl_typesupport_introspection_c.h
+CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/xsm_msg/msg/detail/path__type_support.c
 	cd /home/xsm/R1_ws/build/xsm_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xsm/R1_ws/src/xsm_msg /home/xsm/R1_ws/src/xsm_msg /home/xsm/R1_ws/build/xsm_msg /home/xsm/R1_ws/build/xsm_msg /home/xsm/R1_ws/build/xsm_msg/CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c.dir/depend
 

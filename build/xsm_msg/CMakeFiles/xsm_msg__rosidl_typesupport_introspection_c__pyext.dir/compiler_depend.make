@@ -245,8 +245,16 @@ CMakeFiles/xsm_msg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generat
   rosidl_generator_c/xsm_msg/msg/detail/hwrev__type_support.h \
   rosidl_generator_c/xsm_msg/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/xsm_msg/msg/detail/hwrev__struct.h \
-  rosidl_generator_c/xsm_msg/msg/detail/hwrev__functions.h
+  rosidl_generator_c/xsm_msg/msg/detail/hwrev__functions.h \
+  rosidl_generator_c/xsm_msg/msg/detail/path__type_support.h \
+  rosidl_generator_c/xsm_msg/msg/detail/path__struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+  rosidl_generator_c/xsm_msg/msg/detail/path__functions.h
 
+
+rosidl_generator_c/xsm_msg/msg/detail/path__functions.h:
+
+rosidl_generator_c/xsm_msg/msg/detail/path__struct.h:
 
 rosidl_generator_c/xsm_msg/msg/detail/hwrev__functions.h:
 
@@ -354,6 +362,8 @@ rosidl_generator_c/xsm_msg/msg/rosidl_generator_c__visibility_control.h:
 
 /usr/include/ctype.h:
 
+rosidl_generator_c/xsm_msg/msg/detail/path__type_support.h:
+
 /usr/include/python3.10/unicodeobject.h:
 
 /usr/include/python3.10/pylifecycle.h:
@@ -381,6 +391,8 @@ rosidl_generator_c/xsm_msg/msg/rosidl_generator_c__visibility_control.h:
 /usr/include/python3.10/fileobject.h:
 
 /usr/include/x86_64-linux-gnu/bits/statx-generic.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
